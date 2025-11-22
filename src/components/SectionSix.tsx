@@ -1,16 +1,7 @@
-"use client";
 
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const SectionSix = () => {
-  useEffect(() => {
-      AOS.init({
-        duration: 1000, 
-        once: false,
-      });
-    }, []);
+
   return (
     <>
       <div className="grid grid-cols-3 w-full relative my-4 md:my-20">

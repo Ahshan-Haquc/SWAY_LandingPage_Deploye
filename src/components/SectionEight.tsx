@@ -9,7 +9,7 @@ const SectionEight = () => {
         
         {/* box */}
         <div className="p-2 md:p-8 flex flex-col items-center gap-3">
-          <div className="w-full h-44 md:h-88 relative">
+          <div className="w-full h-44 md:h-88 relative" data-aos="fade-right">
             <Image
               src="https://images.pexels.com/photos/949126/pexels-photo-949126.jpeg"
               fill
@@ -45,7 +45,7 @@ const SectionEight = () => {
         </div>
         {/* box */}
         <div className="p-2 md:p-8 flex flex-col items-center gap-3">
-          <div className="w-full h-44 md:h-88 relative">
+          <div className="w-full h-44 md:h-88 relative" data-aos="fade-left">
             <Image
               src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg"
               fill

@@ -1,22 +1,13 @@
-"use client";
 
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const SectionSeven = () => {
-  useEffect(() => {
-      AOS.init({
-        duration: 1000, 
-        once: false,
-      });
-    }, []);
+
   return (
     <>
     
     <div className="grid grid-cols-3 w-full relative my-4 md:my-20">
       {/* Box 1 */}
-      <div className="aspect-square overflow-hidden " data-aos="fade-left" data-aos-delay="300">
+      <div className="aspect-square overflow-hidden " data-aos="fade-left" >
         <img
           src="https://images.pexels.com/photos/34804814/pexels-photo-34804814.jpeg"
           className="w-full h-full object-cover"
