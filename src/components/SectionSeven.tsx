@@ -43,7 +43,7 @@ const SectionSeven = () => {
       </div>
     </div>
 
-    {/* text part  */}
+    {/* text part hello */}
     <div className="bg-white py-2 md:py-8 px-4 md:px-12 xl:px-24">
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 max-w-7xl mx-auto">
