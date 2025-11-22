@@ -46,7 +46,7 @@ const SideBar = () => {
             return (
               <Link
                 key={index}
-                href={page.href}
+                href="/"
                 className={`block text-lg py-2 px-3 rounded-lg transition
                 ${
                   isActive
@@ -72,7 +72,7 @@ const SideBar = () => {
             return (
               <Link
                 key={index}
-                href={page.href}
+                href="/"
                 className={`text-lg font-medium py-2 px-4 rounded-lg transition
                   ${
                     isActive
