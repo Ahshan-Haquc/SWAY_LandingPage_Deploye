@@ -25,14 +25,14 @@ const ChatIcon = () => {
     <>
       {showIcon && (
         <div className="fixed top-3 left-1/2 -translate-x-1/2 z-50 
-                        bg-black/40  px-4 md:px-8 py-2 
-                        rounded-full flex gap-3 items-center shadow-lg text-nowrap">
+                        bg-black/40  px-1 md:px-3 py-1 md:py-2 
+                        rounded-full flex gap-1 md:gap-4 items-center shadow-lg text-nowrap">
           
-          <button className="text-white text-xs md:text-sm px-3 py-1 md:px-4 md:py-2 rounded-full hover:bg-[#FF6464] transition">
+          <button className="text-white text-xs md:text-sm px-2 md:px-4 py-2 rounded-full hover:bg-[#FF6464] transition">
             CONTACT US
           </button>
 
-          <button className="text-white text-xs md:text-sm px-3 py-1 md:px-4 md:py-2 rounded-full hover:bg-[#FF6464] transition">
+          <button className="text-white text-xs md:text-sm px-2 md:px-4 py-2 rounded-full hover:bg-[#FF6464] transition">
             FREE CONSULTATION
           </button>
         </div>
