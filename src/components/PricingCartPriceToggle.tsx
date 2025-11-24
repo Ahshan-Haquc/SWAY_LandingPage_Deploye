@@ -44,7 +44,7 @@ const PricingCartPriceToggle = ({pricingName}:{pricingName: string}) => {
 
         {/* Monthly Price Box */}
         <div
-          className="w-1/2 p-4 flex flex-col items-start rounded-lg cursor-pointer transition-all duration-300"
+          className="w-1/2 p-2 lg:p-4 flex flex-col items-start rounded-lg cursor-pointer transition-all duration-300"
           style={{
             backgroundColor: selectedPlan === "monthly" ? ACTIVE_BG : LIGHT_BG,
             color: "black",
@@ -55,9 +55,9 @@ const PricingCartPriceToggle = ({pricingName}:{pricingName: string}) => {
             <div className="w-4 h-4 rounded-full border border-black flex items-center justify-center">
               <div className="w-2 h-2 rounded-full" style={{ backgroundColor: selectedPlan === "monthly" ? "#FF6464" : LIGHT_BG,}}></div>
             </div>
-            <span className="text-sm font-bold">MONTHLY</span>
+            <span className="text-xs xl:text-sm font-bold">MONTHLY</span>
           </div>
-          <p className="text-2xl font-bold">£1050</p>
+          <p className="text-lg xl:text-2xl font-bold">£1050</p>
         </div>
 
         {/* Annual Price Box */}
@@ -73,9 +73,9 @@ const PricingCartPriceToggle = ({pricingName}:{pricingName: string}) => {
             <div className="w-4 h-4 rounded-full border border-black flex items-center justify-center">
               <div className="w-2 h-2 rounded-full" style={{ backgroundColor: selectedPlan === "annual" ? "#FF6464" : LIGHT_BG,}}></div>
             </div>
-            <span className="text-sm font-bold">ANNUALLY</span>
+            <span className="text-xs xl:text-sm font-bold">ANNUALLY</span>
           </div>
-          <p className="text-2xl font-bold">£11,440</p>
+          <p className="text-lg xl:text-2xl font-bold">£11,440</p>
           <p className="text-xs">SAVE £500</p>
           <p className="text-xs">v's monthly price</p>
           <p className="text-xs">Pay in 2 x instalments</p>

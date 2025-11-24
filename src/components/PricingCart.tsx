@@ -69,7 +69,7 @@ const PricingCart = ({
 
   return (
     <div
-      className="h-[90vh] md:min-h-[450px] md:max-h-fit w-full md:w-1/3 p-2 md:p-4 flex flex-col items-center text-center overflow-auto hover:scale-102 hover:-translate-y-5  duration-300 shadow-lg"
+      className=" max-h-fit md:min-h-[450px] md:max-h-fit w-full md:w-1/3 p-2 md:p-4 flex flex-col items-center text-center  hover:scale-102 hover:-translate-y-5  duration-300 shadow-lg"
       style={{ backgroundColor: CORAL_RED, color: textColor }}
       data-aso="fade-up" 
     >
