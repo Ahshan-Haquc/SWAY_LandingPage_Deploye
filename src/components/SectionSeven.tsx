@@ -7,7 +7,7 @@ const SectionSeven = () => {
     
     <div className="grid grid-cols-3 w-full relative my-4 md:my-20">
       {/* Box 1 */}
-      <div className="aspect-square overflow-hidden " data-aos="fade-left" >
+      <div className="aspect-square overflow-hidden " data-aos="fade-left" data-aos-delay="500">
         <img
           src="https://images.pexels.com/photos/34804814/pexels-photo-34804814.jpeg"
           className="w-full h-full object-cover"
@@ -16,7 +16,7 @@ const SectionSeven = () => {
       </div>
 
       {/* Box 2 */}
-      <div className="aspect-square overflow-hidden scale-110 z-10"  data-aos="zoom-in">
+      <div className="aspect-square overflow-hidden scale-110 z-10"  data-aos="zoom-in" data-aos-delay="200">
         <img
           src="https://images.pexels.com/photos/34551069/pexels-photo-34551069.jpeg"
           className="w-full h-full object-cover"
@@ -25,7 +25,7 @@ const SectionSeven = () => {
       </div>
 
       {/* Box 3 */}
-      <div className="aspect-square overflow-hidden " data-aos="fade-right" data-aos-delay="300">
+      <div className="aspect-square overflow-hidden " data-aos="fade-right" data-aos-delay="500">
         <img
           src="https://images.pexels.com/photos/221210/pexels-photo-221210.jpeg"
           className="w-full h-full object-cover"
@@ -35,7 +35,7 @@ const SectionSeven = () => {
     </div>
 
     {/* text part hello */}
-    <div className="bg-white py-2 md:py-8 px-4 md:px-12 xl:px-24">
+    <div className="bg-white py-2 md:py-8 px-4 md:px-12 xl:px-24"  data-aos="zoom-in" data-aos-delay="300">
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 max-w-7xl mx-auto">
         

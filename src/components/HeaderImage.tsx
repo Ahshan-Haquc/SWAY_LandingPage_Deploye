@@ -26,7 +26,7 @@ const HeaderImage = () => {
       </div>
 
       {/* Box 2 */}
-      <div className="aspect-square overflow-hidden scale-110" data-aos="zoom-in">
+      <div className="aspect-square overflow-hidden scale-110 z-20" data-aos="zoom-in">
         <img
           src="https://images.pexels.com/photos/34950/pexels-photo.jpg"
           className="w-full h-full object-cover"

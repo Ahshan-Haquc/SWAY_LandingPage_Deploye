@@ -6,7 +6,7 @@ import { pricingData } from "../data/pricingData";
 const SectionNine = () => {
   return (
     <div className="bg-[#FAEFB8] px-2 md:px-8 my-0 md:mb-0 md:mt-16 ">
-      <h2 className="w-fit mx-auto text-2xl font-light tracking-wide bg-[#FAEFB8] px-8 py-4 -translate-y-4">
+      <h2 className="w-fit mx-auto text-2xl font-light tracking-wide bg-[#FAEFB8] px-8 py-4 -translate-y-4"  data-aos="fade-down" data-aos-delay="300">
         WAYS TO SWAY
       </h2>
       <h4 className="text-xs font-bold mb-1 text-gray-600 text-center">

@@ -21,7 +21,7 @@ const ThirdSection = () => {
   };
 
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full overflow-hidden"  data-aos="zoom-in" data-aos-delay="100">
       <Slider {...settings} className="w-full">
         
         {/* SLIDE 1 */}

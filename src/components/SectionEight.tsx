@@ -8,7 +8,7 @@ const SectionEight = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 z-20">
         {/* box */}
         <div className="p-2 md:p-8 flex flex-col items-center gap-3">
-          <div className="w-full h-44 md:h-88 relative">
+          <div className="w-full h-44 md:h-88 relative"  data-aos="fade-right" data-aos-delay="300">
             <Image
               src="https://images.pexels.com/photos/949126/pexels-photo-949126.jpeg"
               fill
@@ -17,7 +17,7 @@ const SectionEight = () => {
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
-          <div className="flex flex-col items-center space-y-2 md:space-y-4 z-20 text-gray-200">
+          <div className="flex flex-col items-center space-y-2 md:space-y-4 z-20 text-gray-200"  data-aos="zoom-in" data-aos-delay="200">
             {/* Main Headline */}
             <h2 className="text-lg md:text-xl font-light text-[#FAEFB8] tracking-wide text-nowrap">
               CORPORATE TRAINING
@@ -48,7 +48,7 @@ const SectionEight = () => {
         </div>
         {/* box */}
         <div className="p-2 md:p-8 flex flex-col items-center gap-3">
-          <div className="w-full h-44 md:h-88 relative">
+          <div className="w-full h-44 md:h-88 relative"  data-aos="fade-left" data-aos-delay="300">
             <Image
               src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg"
               fill
@@ -57,7 +57,7 @@ const SectionEight = () => {
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
-          <div className="flex flex-col items-center space-y-2 md:space-y-4 z-20 text-gray-200">
+          <div className="flex flex-col items-center space-y-2 md:space-y-4 z-20 text-gray-200"  data-aos="zoom-in" data-aos-delay="200">
             {/* Main Headline */}
             <h2 className="text-lg md:text-xl font-light text-[#FAEFB8] tracking-wide text-center text-wrap">
               RESIDENTIAL - TRAINING & GYM MANAGEMENT

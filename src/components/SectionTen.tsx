@@ -2,7 +2,7 @@ import React from 'react';
 
 const SectionTen = () => {
     return (
-        <div className='my-3 md:my-8 p-3 md:p-5 bg-[#80B1FB] h-fit md:h-44 flex flex-col justify-between'>
+        <div className='my-3 md:my-8 p-3 md:p-5 bg-[#80B1FB] h-fit md:h-44 flex flex-col justify-between'  data-aos="fade-up" data-aos-delay="300">
             <h2 className="text-lg md:text-2xl font-light text-white tracking-wide text-nowrap">
             LEARN TO MOVE THE SWAY WAY
           </h2>

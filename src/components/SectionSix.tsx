@@ -6,7 +6,7 @@ const SectionSix = () => {
     <>
       <div className="grid grid-cols-3 w-full relative my-4 md:my-20">
         {/* Box 1 */}
-        <div className="aspect-square overflow-hidden " data-aos="fade-left" data-aos-delay="300">
+        <div className="aspect-square overflow-hidden " data-aos="fade-left" data-aos-delay="500">
           <img
             src="https://images.pexels.com/photos/703012/pexels-photo-703012.jpeg"
             className="w-full h-full object-cover"
@@ -15,7 +15,7 @@ const SectionSix = () => {
         </div>
 
         {/* Box 2 */}
-        <div className="aspect-square overflow-hidden scale-110 z-10" data-aos="zoom-in">
+        <div className="aspect-square overflow-hidden scale-110 z-10" data-aos="zoom-in" data-aos-delay="200">
           <img
             src="https://images.pexels.com/photos/1472887/pexels-photo-1472887.jpeg"
             className="w-full h-full object-cover"
@@ -24,7 +24,7 @@ const SectionSix = () => {
         </div>
 
         {/* Box 3 */}
-        <div className="aspect-square overflow-hidden " data-aos="fade-right" data-aos-delay="300">
+        <div className="aspect-square overflow-hidden " data-aos="fade-right" data-aos-delay="500">
           <img
             src="https://images.pexels.com/photos/841128/pexels-photo-841128.jpeg"
             className="w-full h-full object-cover"
@@ -34,7 +34,7 @@ const SectionSix = () => {
       </div>
 
       {/* text part  */}
-      <div className="bg-white py-2 md:py-3 px-4 md:px-12 xl:px-24">
+      <div className="bg-white py-2 md:py-3 px-4 md:px-12 xl:px-24" data-aos="zoom-in" data-aos-delay="300">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 max-w-7xl mx-auto">
           <div className="flex flex-col items-center space-y-2 md:space-y-4">
             {/* Main Headline */}
@@ -83,7 +83,7 @@ const SectionSix = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center gap-5 my-6 md:my-8">
+      <div className="flex justify-center items-center gap-5 my-6 md:my-8"  data-aos="zoom-in" data-aos-delay="300">
         <button className="w-44 sm:w-64 mt-4 py-1 md:py-3 px-3 md:px-6 bg-[#FF6464] text-white text-sm md:text-lg font-semibold rounded-full shadow-lg hover:bg-red-500 transition duration-300">
           BOOK
         </button>
