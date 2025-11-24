@@ -5,6 +5,12 @@ import Providers from "@/redux/providers";
 import SideBar from "@/components/SideBar";
 import ChatIcon from "@/components/NavBar";
 
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 export const metadata: Metadata = {
   title: "Sway",
@@ -19,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-      className="mx-auto flex justify-center"
+      className={`${montserrat.className} mx-auto flex justify-center`}
       >
         <Providers>
         <div className="w-full max-w-7xl px-0 md:px-10">

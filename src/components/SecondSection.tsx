@@ -1,7 +1,7 @@
 import React from "react";
 
 const infoText = [
-    "Every body is unique - and your wellness should be too.",
+    "SWAY WILL MOVE YOU LIKE NO OTHER WELLNESS EXPERIENCE.",
     "Most people see a trainer, dietitian, physio, or therapist in isolation. Each expert does great work, but rarely together.",
     "At Sway, we do things differently. ",
     "Your specialists operate as one team, designing a single, seamless plan built entirely around you. Strength. Nutrition. Recovery. Lifestyle. Every session moves you closer to your goals, with experts collaborating behind the  scenes to deliver faster, smarter, and longer-lasting results.",

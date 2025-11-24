@@ -84,10 +84,10 @@ const SectionSix = () => {
         </div>
       </div>
       <div className="flex justify-center items-center gap-5 my-6 md:my-8"  data-aos="zoom-in" data-aos-delay="300">
-        <button className="w-44 sm:w-64 mt-4 py-1 md:py-3 px-3 md:px-6 bg-[#FF6464] text-white text-sm md:text-lg font-semibold rounded-full shadow-lg hover:bg-red-500 transition duration-300">
+        <button className="w-44 sm:w-64 mt-4 py-1 md:py-3 px-3 md:px-6 bg-[#FF6464] text-gray-700 text-sm md:text-lg font-semibold rounded-full shadow-lg hover:bg-red-500 transition duration-300">
           BOOK
         </button>
-        <button className="w-44 sm:w-64 mt-4 py-1 md:py-3 px-3 md:px-6 border border-[#FF6464] text-black hover:text-white text-sm md:text-lg font-semibold rounded-full shadow-lg hover:bg-red-500 transition duration-300">
+        <button className="w-44 sm:w-64 mt-4 py-1 md:py-3 px-3 md:px-6 border border-[#FF6464] text-gray-700 hover:text-white text-sm md:text-lg font-semibold rounded-full shadow-lg hover:bg-red-500 transition duration-300">
           Google Map
         </button>
       </div>

@@ -20,7 +20,8 @@ const PricingCart = ({
   monthlyPrice,
   annualPrice,
   annualSave,
-  animationDelay
+  animationDelay,
+  
 }: {
   bgColor: string;
   textColor: string;
@@ -69,7 +70,7 @@ const PricingCart = ({
 
   return (
     <div
-      className=" max-h-fit md:min-h-[450px] md:max-h-fit w-full md:w-1/3 p-2 md:p-4 flex flex-col items-center text-center  hover:scale-102 hover:-translate-y-5  duration-300 shadow-lg"
+      className={` max-h-fit md:min-h-[650px] md:max-h-fit w-full md:w-1/3 p-2 md:p-4 flex flex-col items-center text-center   hover:-translate-y-5  duration-300 shadow-lg ${title==="MOMENTUM" && "-translate-y-10 hover:-translate-y-15"}`}
       style={{ backgroundColor: CORAL_RED, color: textColor }}
       data-aso="fade-up" 
     >

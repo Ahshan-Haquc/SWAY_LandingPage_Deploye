@@ -29,7 +29,7 @@ const SectionEight = () => {
             </p>
 
             {/* Detailed Description */}
-            <p className="text-xs md:text-sm font-light  text-center">
+            <p className="text-xs md:text-sm font-light  text-center px-2 md:px-6">
               Elevate workplace performance with tailored fitness, movement, and
               wellbeing training. From Pilates and strength to recovery and
               posture workshops, each session is customised for your team's
@@ -69,7 +69,7 @@ const SectionEight = () => {
             </p>
 
             {/* Detailed Description */}
-            <p className="text-xs md:text-sm font-light  text-center">
+            <p className="text-xs md:text-sm font-light  text-center  px-2 md:px-6">
               Create a fitness ecosystem that blends community, quality, and
               convenience. From tailored group classes in Mobility, Strength,
               Pilates, Yoga, or bespoke sessions, to on-site coaching and
