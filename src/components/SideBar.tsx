@@ -37,6 +37,7 @@ const SideBar = () => {
             p-6 flex flex-col gap-5
             animate-fadeIn
           "
+          data-aos="fade-right"
         >
             <div className=" hover:scale-105 " onClick={()=>dispatch(toggleMobileMenu())}>
                 <Menu className='h-6 w-6 md:h-10 md:w-10 object-contain '/>
@@ -64,7 +65,7 @@ const SideBar = () => {
 
       {/* DESKTOP SIDEBAR */}
       {mobileMenuOpen && (
-      <div className="hidden md:flex flex-col fixed top-18 left-0 h-fit w-64 bg-[#4e4d59] shadow-lg p-6 z-50 rounded-tr-3xl rounded-br-3xl">
+      <div className="hidden md:flex flex-col fixed top-18 left-0 h-fit w-64 bg-[#4e4d59] shadow-lg p-6 z-50 rounded-tr-3xl rounded-br-3xl" data-aos="fade-right">
         <div className="flex flex-col gap-4 mt-10">
             
           {pages.map((page, index) => {

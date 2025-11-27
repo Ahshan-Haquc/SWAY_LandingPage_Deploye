@@ -28,7 +28,7 @@ export default function ResourcesPage() {
     <ResourceHeader/>
     <div className="w-full h-fit">
       {/* -------- TOP SECTION -------- */}
-      <div className="text-center max-w-3xl mx-auto pt-10 px-4">
+      <div className="text-center max-w-3xl mx-auto pt-10 px-4" data-aos="fade-up" data-aos-delay="200">
         <h2 className="text-xl md:text-2xl font-semibold tracking-wide">
           EXPERT ADVICE. FREE TO ACCESS.
         </h2>
@@ -42,7 +42,7 @@ export default function ResourcesPage() {
       </div>
 
       {/* -------- GUIDE LIST SECTION -------- */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto mt-16 px-4 md:px-0">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto mt-16 px-4 md:px-0" data-aos="fade-up" data-aos-delay="200">
         
         {/* Column 1 */}
         <div className="flex flex-col items-center">
@@ -107,6 +107,7 @@ export default function ResourcesPage() {
       <div
         ref={emailSectionRef}
         className="my-15 bg-[#78A6F5] text-white py-16 px-6"
+        data-aos="fade-up" data-aos-delay="200"
       >
         <div className="max-w-3xl mx-auto text-center">
           

@@ -1,11 +1,17 @@
 "use client";
-
+import { useEffect } from "react";
 import headerImage from "../../../public/ResourceHeader.jpg"
 import headerLogo from "../../../public/SwayWhiteLogo.png"
 import Image from "next/image";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const ResourceHeader = () => {
-
+useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      once: false,
+    });
+  }, []);
   return (
     <div className="w-full h-[250px] md:h-[500px] xl:h-[650px]  relative">
       <div data-aos="zoom-in" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xs md:text-2xl xl:text-3xl font-normal text-white text-nowrap z-40" data-aos-delay="400">
