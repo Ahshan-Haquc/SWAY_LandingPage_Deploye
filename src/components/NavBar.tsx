@@ -1,40 +1,49 @@
 "use client";
-
-import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import React, { useState } from "react";
 
 const ChatIcon = () => {
-  const [showIcon, setShowIcon] = useState(false);
+  const pathname = usePathname() ?? "/";
+  const [showIcon] = useState(true);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
+  const isActive = (path: string) =>
+    path === "/"
+      ? pathname === "/"
+      : pathname.startsWith(path); // adjust matching as needed
 
-      if (scrollTop > 120) {
-        setShowIcon(true);
-      } else {
-        setShowIcon(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const baseBtn =
+    "text-white text-xs md:text-sm px-2 md:px-4 py-2 rounded-full transition";
 
   return (
     <>
       {showIcon && (
-        <div className="fixed top-3 left-1/2 -translate-x-1/2 z-50 
-                        bg-black/40  px-1 md:px-3 py-1 md:py-2 
-                        rounded-full flex gap-1 md:gap-4 items-center shadow-lg text-nowrap">
-          
-          <button className="text-white text-xs md:text-sm px-2 md:px-4 py-2 rounded-full hover:bg-[#FF6464] transition">
+        <div
+          className="fixed top-3 left-1/2 -translate-x-1/2 z-50 
+                      bg-black/40 px-1 md:px-3 py-1 md:py-2 
+                      rounded-full flex gap-1 md:gap-4 items-center shadow-lg text-nowrap"
+        >
+          <Link
+            href="/contact"
+            className={`${baseBtn} ${
+              isActive("/contact")
+                ? "bg-[#FF6464]" // active color
+                : "hover:bg-[#FF6464] bg-transparent"
+            }`}
+          >
             CONTACT US
-          </button>
+          </Link>
 
-          <button className="text-white text-xs md:text-sm px-2 md:px-4 py-2 rounded-full hover:bg-[#FF6464] transition">
+          <Link
+            href="/consultation"
+            className={`${baseBtn} ${
+              isActive("/consultation")
+                ? "bg-[#FF6464]" // active color
+                : "hover:bg-[#FF6464] bg-transparent"
+            }`}
+          >
             FREE CONSULTATION
-          </button>
+          </Link>
         </div>
       )}
     </>

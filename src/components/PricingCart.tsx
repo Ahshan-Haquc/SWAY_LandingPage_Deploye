@@ -51,27 +51,27 @@ const PricingCart = ({
 
   const FeatureIcon = ({ Icon, text }: { Icon: React.ElementType, text: string }) => (
     <div className="flex flex-col items-center space-y-2 w-1/4">
-      <Icon size={30} strokeWidth={1.5} style={{ color: textColor }} />
-      <p className="text-xs font-medium text-center" style={{ color: textColor }}>
+      <Icon size={30} strokeWidth={1.5}  />
+      <p className="text-xs font-medium text-center" >
         {text}
       </p>
     </div>
   );
 
   const FeatureIcon2 = ({ Icon, text, text2 }: { Icon: React.ElementType, text: string, text2: string }) => (
-    <div className="flex justify-center items-center space-y-2 w-1/2">
-      <Icon size={30} strokeWidth={1.5} style={{ color: textColor }} />
+    <div className="flex justify-center items-center space-y-2 w-1/2 group-hover:text-white text-black">
+      <Icon size={30} strokeWidth={1.5}  />
       <div>
-        <p className="text-xs font-medium" style={{ color: textColor }}>{text}</p>
-        <p className="text-xs font-medium" style={{ color: textColor }}>{text2}</p>
+        <p className="text-xs font-medium" >{text}</p>
+        <p className="text-xs font-medium" >{text2}</p>
       </div>
     </div>
   );
 
   return (
     <div
-      className={` max-h-fit md:min-h-[650px] md:max-h-fit w-full md:w-1/3 p-2 md:p-4 flex flex-col items-center text-center   hover:-translate-y-5  duration-300 shadow-lg ${title==="MOMENTUM" && "-translate-y-10 hover:-translate-y-15"}`}
-      style={{ backgroundColor: CORAL_RED, color: textColor }}
+      className={`group text-black max-h-fit md:min-h-[600px] md:max-h-fit w-full md:w-1/3 p-2 md:p-4 flex flex-col items-center text-center   hover:-translate-y-5  duration-300 bg-[#b4cffd] hover:bg-[#ff6464] hover:text-white ${title==="MOMENTUM" && "-translate-y-10 hover:-translate-y-15"}`}
+      // style={{ backgroundColor: CORAL_RED, color: textColor }}
       data-aso="fade-up" 
     >
 

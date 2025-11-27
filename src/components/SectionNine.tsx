@@ -50,7 +50,7 @@ const SectionNine = () => {
         <h3 className="text-sm md:text-[16px] text-black text-center mb-2 md:mb-5">
           THREE MEMBERSHIPS. ONE TEAM. YOUR JOURNEY, YOUR CHOICE.{" "}
         </h3>
-        <div className="py-4 md:py-16 flex flex-col md:flex-row justify-between">
+        <div className="py-4 md:py-16 flex flex-col md:flex-row justify-between gap-1">
           {pricingData.map((item, i) => (
             <PricingCart key={i} {...item} />
           ))}

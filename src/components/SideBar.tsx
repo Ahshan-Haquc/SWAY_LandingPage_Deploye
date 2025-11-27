@@ -9,9 +9,9 @@ import { useDispatch, useSelector } from "react-redux";
 
 const pages = [
   { name: "Home", href: "/" },
-  { name: "Contact", href: "/c" },
+  { name: "Contact", href: "/contact" },
   { name: "Join Mailing List", href: "/j" },
-  { name: "Resources", href: "/r" },
+  { name: "Resources", href: "/resource" },
   { name: "Shop", href: "/s" },
 ];
 
@@ -46,7 +46,7 @@ const SideBar = () => {
             return (
               <Link
                 key={index}
-                href="/"
+                href={page.href}
                 className={`block text-lg py-2 px-3 rounded-lg transition
                 ${
                   isActive
@@ -64,7 +64,7 @@ const SideBar = () => {
 
       {/* DESKTOP SIDEBAR */}
       {mobileMenuOpen && (
-      <div className="hidden md:flex flex-col fixed top-16 left-0 h-fit w-64 bg-[#4e4d59] shadow-lg p-6 z-50 rounded-tr-3xl rounded-br-3xl">
+      <div className="hidden md:flex flex-col fixed top-18 left-0 h-fit w-64 bg-[#4e4d59] shadow-lg p-6 z-50 rounded-tr-3xl rounded-br-3xl">
         <div className="flex flex-col gap-4 mt-10">
             
           {pages.map((page, index) => {
@@ -72,13 +72,14 @@ const SideBar = () => {
             return (
               <Link
                 key={index}
-                href="/"
+                href={page.href}
                 className={`text-lg font-medium py-2 px-4 rounded-lg transition
                   ${
                     isActive
                       ? "bg-[#FF6464] text-black shadow-md"
                       : "text-gray-300 hover:bg-white/10"
                   }`}
+                  onClick={() => dispatch(toggleMobileMenu())}
               >
                 {page.name}
               </Link>
