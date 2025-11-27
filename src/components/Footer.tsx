@@ -1,7 +1,8 @@
-// components/Footer.jsx
 import React from 'react';
 import { Instagram, Linkedin, Mail, Smartphone } from 'lucide-react'; 
 import { BsWhatsapp } from 'react-icons/bs';
+import Image from 'next/image';
+import Logo from '../../public/SwayWhiteLogo.png'
 
 const Footer = () => {
 
@@ -16,7 +17,15 @@ const Footer = () => {
       
       {/* Top Section: Logo and Icon */}
       <div className="flex justify-between items-start mb-12">
-        {/* Logo Text */}
+        <div className="relative h-22">
+          <Image alt="SWAG" fill src={Logo} className='h-full object-contain'/>
+        </div>
+        
+        <div className="text-[#FF6464] text-5xl font-light">
+          Y
+        </div>
+      </div>
+      {/* <div className="flex justify-between items-start mb-12">
         <div className="flex items-center text-4xl md:text-5xl font-light tracking-wide">
           <span className="font-serif">SWAY</span>
           <span className="text-[#FF6464] border-l border-red-400 h-10 ml-2 mr-2 pt-2 pb-2"></span>
@@ -26,7 +35,7 @@ const Footer = () => {
         <div className="text-[#FF6464] text-5xl font-light">
           Y
         </div>
-      </div>
+      </div> */}
 
       {/* Tagline */}
       <div className="mb-16 font-thin text-red-400/80 text-[10px] md:text-sm">

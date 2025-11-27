@@ -1,5 +1,10 @@
-// components/PersonalTrainingSection.jsx
 "use client";
+import img1 from '../../public/img1.jpg'
+import img2 from '../../public/img2.jpg'
+import img3 from '../../public/img3.jpg'
+import img4 from '../../public/img4.jpg'
+import img5 from '../../public/img5.jpg'
+import img6 from '../../public/img6.jpg'
 
 import React from "react";
 import Image from "next/image";
@@ -16,7 +21,7 @@ const trainingData = [
     linkHref: "#",
     price: "Prices start at £75 per session. See pricing options below.",
     tags: ["1:1", "2:1", "in-person", "on-line"],
-    image: "https://images.pexels.com/photos/34950/pexels-photo.jpg",
+    image: img1,
   },
 
   {
@@ -28,7 +33,7 @@ const trainingData = [
       "Start with a 60-minute consultation and get your personalised 12-week plan.",
     price: "See pricing options below.",
     tags: ["1:1", "in-person", "on-line"],
-    image: "https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg",
+    image: img2,
   },
 
   {
@@ -39,7 +44,7 @@ const trainingData = [
     description2: "Start moving better.",
     price: "Prices start at £75 per session. See pricing options below.",
     tags: ["1:1", "in-person"],
-    image: "https://images.pexels.com/photos/4056723/pexels-photo-4056723.jpeg",
+    image: img3,
   },
 
   {
@@ -52,7 +57,7 @@ const trainingData = [
     linkHref: "#",
     price: "Prices start at £75 per session. See pricing options below.",
     tags: ["1:1", "2:1", "in-person", "on-line"],
-    image: "https://images.pexels.com/photos/34714129/pexels-photo-34714129.jpeg",
+    image: img4,
   },
 
   {
@@ -63,7 +68,7 @@ const trainingData = [
     description2: "Begin your mental wellness journey.",
     price: "Prices start at £75 per session. See pricing options below.",
     tags: ["1:1", "in-person", "on-line"],
-    image: "https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg",
+    image: img5,
   },
 
   {
@@ -74,7 +79,7 @@ const trainingData = [
     description2: "Book a massage session today - feel renewed.",
     price: "Prices start at £75 per session. See pricing options below.",
     tags: ["1:1", "in-person"],
-    image: "https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg",
+    image: img6,
   },
 ];
 
@@ -95,7 +100,7 @@ const PersonalTrainingSection = () => {
         {trainingData.map((item, index) => (
           <div
             key={index}
-            className="w-full max-w-7xl md:h-[80vh] h-screen p-4 md:p-8 bg-white border-2 border-gray-500"
+            className="w-full max-w-7xl  h-screen md:h-[600px] p-4 md:p-8 bg-white border-2 border-gray-500"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-12 h-full">
 
@@ -145,15 +150,16 @@ const PersonalTrainingSection = () => {
               </div>
 
               {/* RIGHT COLUMN - IMAGE */}
-              <div className="relative h-44 md:h-full w-full">
+              <div className="relative w-full aspect-square">
                 <Image
                   src={item.image}
                   alt={item.title}
                   fill
-                  className="rounded-lg object-cover"
+                  className="object-cover rounded-lg"
                   priority
                 />
               </div>
+
 
             </div>
           </div>

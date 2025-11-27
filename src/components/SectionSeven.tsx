@@ -1,37 +1,38 @@
-
+import headerSecondImage from '../../public/SwayThirdHeader.jpg'
+import Image from "next/image";
 
 const SectionSeven = () => {
 
   return (
     <>
     
-    <div className="grid grid-cols-3 w-full relative my-4 md:my-20">
-      {/* Box 1 */}
-      <div className="aspect-square overflow-hidden " data-aos="fade-left" data-aos-delay="500">
-        <img
-          src="https://images.pexels.com/photos/34804814/pexels-photo-34804814.jpeg"
-          className="w-full h-full object-cover"
+    <div className="w-full h-[250px] md:h-[500px] xl:h-[650px]  relative">
+        {/* Box 1 */}
+        <div className="aspect-square overflow-hidden " data-aos="zoom-in" data-aos-delay="300">
+        <Image
+          src={headerSecondImage}
+          className="w-full object-contain"
           alt="Random Pexels"
         />
       </div>
 
       {/* Box 2 */}
-      <div className="aspect-square overflow-hidden scale-110 z-10"  data-aos="zoom-in" data-aos-delay="200">
+      {/* <div className="aspect-square overflow-hidden scale-110 z-10"  data-aos="zoom-in" data-aos-delay="200">
         <img
           src="https://images.pexels.com/photos/34551069/pexels-photo-34551069.jpeg"
           className="w-full h-full object-cover"
           alt="Random Pexels"
         />
-      </div>
+      </div> */}
 
       {/* Box 3 */}
-      <div className="aspect-square overflow-hidden " data-aos="fade-right" data-aos-delay="500">
+      {/* <div className="aspect-square overflow-hidden " data-aos="fade-right" data-aos-delay="500">
         <img
           src="https://images.pexels.com/photos/221210/pexels-photo-221210.jpeg"
           className="w-full h-full object-cover"
           alt="Random Pexels"
         />
-      </div>
+      </div> */}
     </div>
 
     {/* text part hello */}

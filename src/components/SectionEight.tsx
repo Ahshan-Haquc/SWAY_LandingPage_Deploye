@@ -1,4 +1,6 @@
 import Image from "next/image";
+import imgOne from '../../public/curated.jpg'
+import imgTwo from '../../public/yankruv.jpg'
 import React from "react";
 
 const SectionEight = () => {
@@ -11,7 +13,7 @@ const SectionEight = () => {
         <div className="p-2 md:p-8 flex flex-col items-center gap-3">
           <div className="w-full h-44 md:h-88 relative"  data-aos="fade-right" data-aos-delay="300">
             <Image
-              src="https://images.pexels.com/photos/949126/pexels-photo-949126.jpeg"
+              src={imgOne}
               fill
               alt="Image"
               className="object-cover"
@@ -51,7 +53,7 @@ const SectionEight = () => {
         <div className="p-2 md:p-8 flex flex-col items-center gap-3">
           <div className="w-full h-44 md:h-88 relative"  data-aos="fade-left" data-aos-delay="300">
             <Image
-              src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg"
+              src={imgTwo}
               fill
               alt="Image"
               className="object-cover"
