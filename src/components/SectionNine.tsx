@@ -34,20 +34,20 @@ const SectionNine = () => {
   return (
     <div className="bg-[#FAEFB8] px-2 md:px-8 my-0 md:mb-0 md:mt-16">
       <h2
-        className="w-fit mx-auto text-2xl font-light tracking-wide bg-[#FAEFB8] px-8 py-4 -translate-y-4"
+        className="w-fit mx-auto text-2xl font-light tracking-wide bg-[#FAEFB8] text-black px-8 py-4 -translate-y-4"
         data-aos="fade-down"
         data-aos-delay="300"
       >
         WAYS TO SWAY
       </h2>
-      <h4 className="text-xs font-bold mb-1 text-gray-600 text-center">
+      <h4 className="text-xs md:text-sm font-bold mb-1 text-gray-900 text-center">
         Start your journey your way - with a single service, a bulk training
         package, or an all-inclusive membership.
       </h4>
 
       {/* cart section */}
       <div className="mt-8">
-        <h3 className="text-sm md:text-md text-center mb-2 md:mb-5">
+        <h3 className="text-sm md:text-[16px] text-black text-center mb-2 md:mb-5">
           THREE MEMBERSHIPS. ONE TEAM. YOUR JOURNEY, YOUR CHOICE.{" "}
         </h3>
         <div className="py-4 md:py-16 flex flex-col md:flex-row justify-between">
@@ -59,7 +59,7 @@ const SectionNine = () => {
 
       {/* below section */}
       <div className="flex flex-col justify-center gap-4 mt-8 pb-4 md:pb-12">
-        <h3 className="text-sm md:text-md text-center">
+        <h3 className="text-sm md:text-[16px] text-center text-black">
           FOUR PACKAGES. ONE TEAM. YOUR FLEXIBILITY, YOUR PACE.{" "}
         </h3>
         <div className="flex justify-between flex-wrap md:flex-nowrap gap-2 my-4">
@@ -107,7 +107,7 @@ const SectionNine = () => {
           ))}
         </div>
 
-        <h4 className="text-xs font-bold mb-1 text-gray-600 text-center">
+        <h4 className="text-xs md:text-sm font-bold mb-1 text-gray-900 text-center">
           Book your <a href="" className="underline"> free consultation</a> with any membership or package to get today.
         </h4>
       </div>

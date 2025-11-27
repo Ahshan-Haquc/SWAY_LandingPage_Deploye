@@ -4,7 +4,8 @@ import React from "react";
 const SectionEight = () => {
   return (
     <div className="relative py-6 my-0 md:my-12 overflow-hidden">
-      <div className="h-full w-screen absolute top-0 left-0 md:left-6 xl:left-12 bg-[#4E4D59] z-0"></div>
+      {/* <div className="h-full w-screen absolute top-0 left-0 md:left-6 xl:left-12 bg-[#4E4D59] z-0"></div> */}
+      <div className="h-full w-screen absolute top-0 left-0  bg-[#4E4D59] z-0"></div>
       <div className="grid grid-cols-1 md:grid-cols-2 z-20">
         {/* box */}
         <div className="p-2 md:p-8 flex flex-col items-center gap-3">
@@ -42,7 +43,7 @@ const SectionEight = () => {
               When your team moves better, they work better.
             </p>
             <p className="text-xs md:text-sm font-light  text-center">
-              Contact us for a bespoke corporate wellbeing package.
+              <a href="#" className="underline font-medium">Contact us</a> for a bespoke corporate wellbeing package.
             </p>
           </div>
         </div>
@@ -83,7 +84,7 @@ const SectionEight = () => {
               Transform your buildings wellbeing.
             </p>
             <p className="text-xs md:text-sm font-light  text-center">
-              Contact us for premium residential fitness solutions
+              <a href="#" className="underline font-medium">Contact us</a> for premium residential fitness solutions
             </p>
           </div>
         </div>

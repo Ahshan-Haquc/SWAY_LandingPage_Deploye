@@ -24,16 +24,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-      className={`${montserrat.className} mx-auto flex justify-center`}
-      >
+      <head>
+        <meta name="color-scheme" content="light" />
+      </head>
+      <body className={`${montserrat.className} mx-auto flex justify-center`} style={{backgroundColor: "white"}}>
         <Providers>
-        <div className="w-full max-w-7xl px-0 md:px-10">
-        <BurgerMenu/>
-        <SideBar/>
-        <ChatIcon/>
-        {children}
-        </div>
+          <div className="w-full max-w-7xl px-0 md:px-10">
+            <BurgerMenu />
+            <SideBar />
+            <ChatIcon />
+            {children}
+          </div>
         </Providers>
       </body>
     </html>

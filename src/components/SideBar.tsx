@@ -32,7 +32,7 @@ const SideBar = () => {
             md:hidden 
             fixed top-0 left-0 
             w-2/3 h-full
-            bg-[#001a2c] 
+            bg-[#4e4d59] 
             z-[999] 
             p-6 flex flex-col gap-5
             animate-fadeIn
@@ -64,7 +64,7 @@ const SideBar = () => {
 
       {/* DESKTOP SIDEBAR */}
       {mobileMenuOpen && (
-      <div className="hidden md:flex flex-col fixed top-16 left-0 h-fit w-64 bg-[#001a2c] shadow-lg p-6 z-50 rounded-tr-3xl rounded-br-3xl">
+      <div className="hidden md:flex flex-col fixed top-16 left-0 h-fit w-64 bg-[#4e4d59] shadow-lg p-6 z-50 rounded-tr-3xl rounded-br-3xl">
         <div className="flex flex-col gap-4 mt-10">
             
           {pages.map((page, index) => {
@@ -76,7 +76,7 @@ const SideBar = () => {
                 className={`text-lg font-medium py-2 px-4 rounded-lg transition
                   ${
                     isActive
-                      ? "bg-[#FF6464] text-white shadow-md"
+                      ? "bg-[#FF6464] text-black shadow-md"
                       : "text-gray-300 hover:bg-white/10"
                   }`}
               >

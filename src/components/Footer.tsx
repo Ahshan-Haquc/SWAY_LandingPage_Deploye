@@ -12,7 +12,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#483F46] text-white pt-16 pb-8 px-4 md:px-12 xl:px-24"  data-aos="fade-up" data-aos-delay="100">
+    <footer className="bg-[#4e4d59] text-white pt-16 pb-8 px-4 md:px-12 xl:px-24"  data-aos="fade-up" data-aos-delay="100">
       
       {/* Top Section: Logo and Icon */}
       <div className="flex justify-between items-start mb-12">
