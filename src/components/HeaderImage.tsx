@@ -10,17 +10,17 @@ import Image from "next/image";
 const HeaderImage = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, 
+      duration: 1000,
       once: false,
     });
   }, []);
   return (
     <div className="w-full h-[250px] md:h-[500px] xl:h-[650px]  relative">
-      <div data-aos="zoom-in" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xs md:text-2xl xl:text-3xl font-normal text-white text-nowrap z-40" data-aos-delay="400">
+      <div data-aos="zoom-in" className="absolute top-20 md:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xs md:text-2xl xl:text-3xl font-normal text-white text-nowrap z-40" data-aos-delay="400">
         PERSONALISED WELLNESS. REDEFINED FOR EVERY BODY.
       </div>
       {/* Box 1 */}
-      <div className="aspect-square overflow-hidden " data-aos="zoom-in" data-aos-delay="300">
+      <div className="aspect-square overflow-hidden mt-12 md:mt-0" data-aos="zoom-in" data-aos-delay="300">
         <Image
           src={headerImage}
           className="w-full object-contain"
@@ -45,7 +45,7 @@ const HeaderImage = () => {
           alt="Random Pexels"
         />
       </div> */}
-      <div data-aos="zoom-in" className="absolute bottom-3 left-1/2 -translate-x-1/2 z-50 w-40 h-20 sm:w-56 sm:h-28">
+      <div data-aos="zoom-in" className="absolute bottom-15 left-1/2 -translate-x-1/2 z-50 w-40 h-20 sm:w-56 sm:h-28">
         <Image
           src={headerLogo}
           alt="SWAY"
@@ -53,7 +53,20 @@ const HeaderImage = () => {
           height={112}
           className="object-contain"
         />
+
+        {/* Rating Section */}
+        <div className="flex flex-col items-center mt-1 text-white ">
+          <div className="flex gap-1 bg-black/10 px-2 rounded-full">
+            {Array.from({ length: 5 }).map((_, i) => (
+              <span key={i} className="text-yellow-400 text-base sm:text-xl">★</span>
+            ))}
+          </div>
+          <p className="text-xs sm:text-sm mt-1 opacity-90">
+            4.9 · 9.7k Reviews
+          </p>
+        </div>
       </div>
+
     </div>
   );
 };

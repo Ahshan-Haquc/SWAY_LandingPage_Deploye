@@ -10,7 +10,7 @@ import { useDispatch, useSelector } from "react-redux";
 const pages = [
   { name: "Home", href: "/" },
   { name: "Contact", href: "/contact" },
-  { name: "Join Mailing List", href: "/j" },
+  { name: "Join Mailing List", href: "/joinMailingList" },
   { name: "Resources", href: "/resource" },
   { name: "Shop", href: "/s" },
 ];
