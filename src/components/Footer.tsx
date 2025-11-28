@@ -17,7 +17,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#4e4d59] text-white pt-6 pb-8 px-4 md:px-12 xl:px-16" data-aos="fade-up" data-aos-delay="100">
+    <footer className="bg-[#4e4d59] text-white rounded-tl-xl rounded-tr-xl pt-6 pb-8 px-4 md:px-12 xl:px-16" data-aos="fade-up" data-aos-delay="100">
       {/* --- Logo Section --- */}
       <div className="flex justify-between items-center  mb-2">
         <div className="relative w-42 h-26 md:w-88 md:h-32">
