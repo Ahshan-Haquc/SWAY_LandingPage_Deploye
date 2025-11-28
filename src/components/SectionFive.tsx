@@ -3,6 +3,8 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Image from "next/image";
+import LogoIcon from "../../public/LogoIcon.png";
 
 const SectiveFive = () => {
     useEffect(() => {
@@ -12,7 +14,7 @@ const SectiveFive = () => {
       });
     }, []);
   return (
-    <div className="bg-[#4e4d59] text-white p-4 md:p-8 h-40 md:h-50 my-2 flex flex-col justify-between" data-aos="fade-up">
+    <div className="bg-[#4e4d59] text-white p-4 md:p-8 h-40 md:h-60 my-2 flex flex-col justify-between" data-aos="fade-up">
 
       <div className="flex justify-between items-start mb-4">
         {/* Headline */}
@@ -20,8 +22,11 @@ const SectiveFive = () => {
           LET'S SWAY TOGETHER
         </h1>
         
-        <div className="text-[#FF6464] text-5xl md:text-6xl font-light opacity-80">
+        {/* <div className="text-[#FF6464] text-5xl md:text-6xl font-light opacity-80">
           Y
+        </div> */}
+        <div className="relative w-12 h-8 md:w-32 md:h-12">
+          <Image src={LogoIcon} alt="Y" fill className="object-contain" />
         </div>
       </div>
 

@@ -4,6 +4,7 @@ import { Instagram, Linkedin } from "lucide-react";
 import { BsWhatsapp } from "react-icons/bs";
 import Image from "next/image";
 import Logo from "../../public/SwayWhiteLogo.png";
+import LogoIcon from "../../public/LogoIcon.png";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -19,11 +20,14 @@ const Footer = () => {
     <footer className="bg-[#4e4d59] text-white pt-6 pb-8 px-4 md:px-12 xl:px-16" data-aos="fade-up" data-aos-delay="100">
       {/* --- Logo Section --- */}
       <div className="flex justify-between items-center  mb-2">
-        <div className="relative w-42 h-26 md:w-64 md:h-32">
+        <div className="relative w-42 h-26 md:w-88 md:h-32">
           <Image src={Logo} alt="SWAG" fill className="object-contain" />
         </div>
 
-        <div className="text-[#FF6464] text-3xl md:text-5xl font-light">Y</div>
+        {/* <div className="text-[#FF6464] text-3xl md:text-5xl font-light">Y</div> */}
+        <div className="relative w-12 h-8 md:w-32 md:h-12">
+          <Image src={LogoIcon} alt="Y" fill className="object-contain" />
+        </div>
       </div>
 
       {/* --- Tagline --- */}
