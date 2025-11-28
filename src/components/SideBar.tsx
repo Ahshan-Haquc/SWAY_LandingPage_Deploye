@@ -12,7 +12,7 @@ const pages = [
   { name: "Contact", href: "/contact" },
   { name: "Join Mailing List", href: "/joinMailingList" },
   { name: "Resources", href: "/resource" },
-  { name: "Shop", href: "/s" },
+
 ];
 
 const SideBar = () => {
@@ -60,6 +60,12 @@ const SideBar = () => {
               </Link>
             );
           })}
+          <div
+                className="block text-lg py-2 px-3 rounded-lg transition text-gray-300 hover:bg-white/10"
+            
+              >
+                Shop
+              </div>
         </div>
       )}
 
@@ -86,6 +92,11 @@ const SideBar = () => {
               </Link>
             );
           })}
+          <div
+                className="text-lg font-medium py-2 px-4 rounded-lg transition text-gray-300 hover:bg-white/10"
+              >
+                Shop
+              </div>
         </div>
       </div>
       )}

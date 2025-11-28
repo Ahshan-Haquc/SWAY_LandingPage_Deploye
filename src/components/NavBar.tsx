@@ -35,7 +35,7 @@ const ChatIcon = () => {
           </Link>
 
           <Link
-            href="/consultation"
+            href="/"
             className={`${baseBtn} ${
               isActive("/consultation")
                 ? "bg-[#FF6464]" // active color

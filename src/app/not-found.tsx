@@ -1,11 +1,10 @@
-// pages/404.js
+import BurgerMenu from "@/components/BurgerMenu";
 import Link from "next/link";
 import { FaGhost } from "react-icons/fa"; // Changed icon to a more relevant 'ghost' or similar
 
 const NotFound = () => {
   return (
-    // The main container now uses min-h-screen but removes the distracting gradient.
-    // It implies a clean, white/light-mode background by default.
+    <>
     <div className="flex items-center justify-center min-h-screen bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 p-4">
       
       {/* --- Main Content Card --- */}
@@ -45,6 +44,7 @@ const NotFound = () => {
 
       </div>
     </div>
+    </>
   );
 };
 
