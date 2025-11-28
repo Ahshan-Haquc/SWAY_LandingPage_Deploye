@@ -19,7 +19,7 @@ const ChatIcon = () => {
     <>
       {showIcon && (
         <div
-          className="fixed top-3 left-1/2 -translate-x-1/2 z-50 
+          className="fixed top-4 md:top-5 left-1/2 -translate-x-1/2 z-50 
                       bg-black/40 px-1 md:px-3 py-1 md:py-2 
                       rounded-full flex gap-1 md:gap-4 items-center shadow-lg text-nowrap"
         >

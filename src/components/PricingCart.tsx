@@ -109,7 +109,7 @@ const PricingCart = ({
 
   return (
     <div
-      className={`group text-black max-h-fit md:min-h-[600px] md:max-h-fit w-full md:w-1/3 p-2 md:p-4 flex flex-col items-center text-center   hover:-translate-y-5  duration-300 bg-[#b4cffd] hover:bg-[#ff6464] hover:text-white ${title==="MOMENTUM" && "-translate-y-10 hover:-translate-y-15"}`}
+      className={`group text-black max-h-fit md:min-h-[600px] md:max-h-fit rounded-xl w-full md:w-1/3 p-2 md:p-4 flex flex-col items-center text-center   hover:-translate-y-5  duration-300 bg-[#b4cffd] hover:bg-[#ff6464] hover:text-white ${title==="MOMENTUM" && "-translate-y-0 md:-translate-y-10 hover:-translate-y-15"}`}
       // style={{ backgroundColor: CORAL_RED, color: textColor }}
       data-aso="fade-up" 
     >

@@ -14,7 +14,7 @@ const SectiveFive = () => {
       });
     }, []);
   return (
-    <div className="bg-[#4e4d59] text-white p-4 md:p-8 h-40 md:h-60 my-2 flex flex-col justify-between" data-aos="fade-up">
+    <div className="bg-[#4e4d59]  rounded-xl text-white p-4 md:p-8 h-40 md:h-60 my-2 flex flex-col justify-between" data-aos="fade-up">
 
       <div className="flex justify-between items-start mb-4">
         {/* Headline */}

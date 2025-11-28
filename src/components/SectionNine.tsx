@@ -32,9 +32,9 @@ const pricingBoxes = [
 
 const SectionNine = () => {
   return (
-    <div className="bg-[#FAEFB8] px-2 md:px-8 my-0 md:mb-0 md:mt-16">
+    <div className="bg-[#FAEFB8] px-2 md:px-8 mb-7 md:mb-0 md:mt-16  rounded-xl">
       <h2
-        className="w-fit mx-auto text-2xl font-light tracking-wide bg-[#FAEFB8] text-black px-8 py-4 -translate-y-4"
+        className="w-fit mx-auto text-2xl  rounded-xl font-light tracking-wide bg-[#FAEFB8] text-black px-8 py-4 -translate-y-4"
         data-aos="fade-down"
         data-aos-delay="300"
       >
@@ -62,11 +62,11 @@ const SectionNine = () => {
         <h3 className="text-sm md:text-[16px] text-center text-black">
           FOUR PACKAGES. ONE TEAM. YOUR FLEXIBILITY, YOUR PACE.{" "}
         </h3>
-        <div className="flex justify-between flex-wrap md:flex-nowrap gap-2 my-4">
+        <div className="flex justify-between flex-wrap md:flex-nowrap gap-2 my-4 ">
           {pricingBoxes.map((box, i) => (
             <div
               key={i}
-              className={`m-2 md:m-0 p-4 w-full md:w-1/4 min-h-30 md:min-h-40 flex flex-col items-start text-left text-gray-800 border-2 border-gray-600 group hover:bg-red-400 hover:border-red-400 hover:text-white duration-300`}
+              className={`m-2 md:m-0 p-4   rounded-xl w-full md:w-1/4 min-h-30 md:min-h-40 flex flex-col items-start text-left text-gray-800 border-2 border-gray-600 group hover:bg-red-400 hover:border-red-400 hover:text-white duration-300`}
             >
               <div className="flex gap-2 h-full ">
                 <div className="flex items-center space-x-1 mb-1 self-start ">
@@ -107,11 +107,11 @@ const SectionNine = () => {
           ))}
         </div>
 
-        <h4 className="text-xs md:text-sm font-bold mb-1 text-gray-900 text-center">
+        <h4 className="text-xs md:text-sm font-bold  text-gray-900 text-center translate-y-4 md:translate-y-10">
           Book your <a href="" className="underline"> free consultation</a> with any membership or package to get today.
         </h4>
       </div>
-        <div className="w-68 mx-auto text-2xl font-light tracking-wide bg-[#FAEFB8] px-8 py-4 translate-y-4"></div>
+        <div className="w-68 mx-auto  rounded-xl text-2xl font-light tracking-wide bg-[#FAEFB8] px-8 py-4 translate-y-4"></div>
     </div>
   );
 };

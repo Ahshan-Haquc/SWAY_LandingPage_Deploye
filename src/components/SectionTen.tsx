@@ -72,13 +72,22 @@ const SectionTen = () => {
           className={`fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-[999] ${backdropClass}`}
         >
           <div className={`bg-white w-full max-w-sm mx-4 rounded-3xl shadow-2xl p-8 relative ${modalClass}`}>
-
+            
             <button
               onClick={handleClose}
               className="absolute top-4 right-4 text-gray-400 hover:text-gray-800 transition p-1"
             >
               <X size={24} />
             </button>
+
+            {/* Add image here */}
+            <div className="my-6">
+              <img 
+                src="https://images.pexels.com/photos/243698/pexels-photo-243698.jpeg" 
+                alt="Mobile app" 
+                className="w-full h-auto rounded-xl" 
+              />
+            </div>
 
             <div className="flex flex-col items-center text-center">
               <DownloadCloud className="text-[#80B1FB] mb-4" size={48} strokeWidth={1.5} />

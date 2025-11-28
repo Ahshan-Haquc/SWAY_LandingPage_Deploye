@@ -7,7 +7,7 @@ export default function ContactUs() {
     const [form, setForm] = useState({ name: "", email: "", phone: "", service: "", message: "" });
     const [submitted, setSubmitted] = useState(false);
 
-    const services = ["Residential Leisure Design", "Leisure Management", "Pool & Spa Services", "Other"];
+    const services = ["Residential Management", "Coorporate", "Move", "Fuel", "Recovery", "Mind", "Other"];
 
     const handleChange = (e: any) => {
         setForm({ ...form, [e.target.name]: e.target.value });

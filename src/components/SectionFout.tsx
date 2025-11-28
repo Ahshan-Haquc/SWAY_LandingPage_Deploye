@@ -91,7 +91,7 @@ const PersonalTrainingSection = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
   };
 
   return (
@@ -100,7 +100,7 @@ const PersonalTrainingSection = () => {
         {trainingData.map((item, index) => (
           <div
             key={index}
-            className="w-full max-w-7xl  h-screen md:h-[600px] p-4 md:p-8 bg-white border-2 border-gray-500"
+            className="w-full max-w-7xl  h-screen md:h-[600px] p-4 md:p-8 bg-white border-2 border-gray-500  rounded-xl"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-12 h-full">
 

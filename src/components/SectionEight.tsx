@@ -5,7 +5,7 @@ import React from "react";
 
 const SectionEight = () => {
   return (
-    <div className="relative py-6 my-0 md:my-12 overflow-hidden">
+    <div className="relative py-6 my-0 md:my-12 overflow-hidden  rounded-xl">
       {/* <div className="h-full w-screen absolute top-0 left-0 md:left-6 xl:left-12 bg-[#4E4D59] z-0"></div> */}
       <div className="h-full w-screen absolute top-0 left-0  bg-[#4E4D59] z-0"></div>
       <div className="grid grid-cols-1 md:grid-cols-2 z-20">
@@ -16,7 +16,7 @@ const SectionEight = () => {
               src={imgOne}
               fill
               alt="Image"
-              className="object-cover"
+              className="object-cover  rounded-xl"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
@@ -56,7 +56,7 @@ const SectionEight = () => {
               src={imgTwo}
               fill
               alt="Image"
-              className="object-cover"
+              className="object-cover  rounded-xl"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>

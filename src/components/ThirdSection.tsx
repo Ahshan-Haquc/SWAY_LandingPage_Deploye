@@ -17,18 +17,18 @@ const ThirdSection = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
   };
 
   return (
     <div
-      className="w-full overflow-hidden"
+      className="w-full overflow-hidden rounded-xl"
       data-aos="zoom-in"
       data-aos-delay="100"
     >
       <Slider {...settings} className="w-full">
         {/* SLIDE 1 */}
-        <div className="!flex !justify-center !items-center w-full">
+        <div className="!flex !justify-center !items-center w-full ">
           <div className="h-fit xl:h-82 w-full bg-[#FF6464] grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-6 p-4 md:p-12 xl:p-22">
             {/* LEFT BOX */}
             <div className="flex justify-between gap-2 text-white h-fit">
