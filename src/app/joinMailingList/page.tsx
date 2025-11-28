@@ -129,7 +129,7 @@ export default function page() {
 
               {subscribed ? (
                 <div className="rounded-xl bg-emerald-50 border border-emerald-100 p-5 text-emerald-800">
-                  <div className="font-semibold text-lg">You're subscribed ✅</div>
+                  <div className="font-semibold text-lg">You're subscribed </div>
                   <div className="text-sm mt-1 text-emerald-700">Thanks! Check your inbox for the welcome email and first guide.</div>
                   <div className="mt-4">
                     <a
@@ -141,9 +141,9 @@ export default function page() {
                   </div>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <form onSubmit={handleSubmit} className="space-y-4 text-black">
                   <div>
-                    <label htmlFor="name" className="block text-xs text-slate-600 mb-1">
+                    <label htmlFor="name" className="block text-xs  mb-1">
                       Full name (optional)
                     </label>
                     <input
@@ -152,7 +152,7 @@ export default function page() {
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       placeholder="Jane Doe"
-                      className="w-full rounded-xl border border-slate-200 px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#80B1FB]"
+                      className="w-full rounded-xl  border border-slate-200 px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#80B1FB] text-gray-900"
                     />
                   </div>
 
@@ -167,7 +167,7 @@ export default function page() {
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="you@example.com"
                       required
-                      className={`w-full rounded-xl border px-4 py-2 text-sm focus:outline-none focus:ring-2 ${
+                      className={`w-full rounded-xl text-black border px-4 py-2 text-sm focus:outline-none focus:ring-2 ${
                         validateEmail(email) ? "border-slate-200 focus:ring-[#4e4d59]" : "border-red-200 focus:ring-red-300"
                       }`}
                     />

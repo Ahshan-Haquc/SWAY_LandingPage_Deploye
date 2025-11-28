@@ -51,7 +51,7 @@ const HeaderImage = () => {
           alt="SWAY"
           width={224}
           height={112}
-          className="object-contain"
+          className="object-contain "
         />
 
         {/* Rating Section */}
