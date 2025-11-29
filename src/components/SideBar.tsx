@@ -11,8 +11,8 @@ const pages = [
   { name: "Home", href: "/" },
   { name: "Contact", href: "/contact" },
   { name: "Join Mailing List", href: "/joinMailingList" },
+  { name: "Living In Wellness", href: "/livingInWellness" },
   { name: "Resources", href: "/resource" },
-
 ];
 
 const SideBar = () => {
@@ -71,7 +71,7 @@ const SideBar = () => {
 
       {/* DESKTOP SIDEBAR */}
       {mobileMenuOpen && (
-      <div className="hidden md:flex flex-col fixed top-18 left-0 h-fit w-64 bg-[#4e4d59] shadow-lg p-6 z-50 rounded-tr-3xl rounded-br-3xl" data-aos="fade-right">
+      <div className="hidden md:flex flex-col fixed top-20 left-0 h-fit w-64 bg-[#4e4d59] shadow-lg p-6 z-50 rounded-tr-3xl rounded-br-3xl" data-aos="fade-right">
         <div className="flex flex-col gap-4 mt-10">
             
           {pages.map((page, index) => {

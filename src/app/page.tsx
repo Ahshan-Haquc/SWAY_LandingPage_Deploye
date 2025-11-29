@@ -13,7 +13,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="max-w-[1440px] mx-auto w-full">
       <HeaderImage/>
       <SecondSection/>
       <ThirdSection/>
@@ -21,7 +21,7 @@ export default function Home() {
       <SectiveFive/>
       <SectionSix/>
       <SectionSeven/>
-      <SectionEight/>
+      {/* <SectionEight/> */}
       <SectionNine/>
       <SectionTen/>
       <Footer/>

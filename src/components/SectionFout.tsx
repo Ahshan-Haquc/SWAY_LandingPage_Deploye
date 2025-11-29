@@ -95,31 +95,32 @@ const PersonalTrainingSection = () => {
   };
 
   return (
-    <div className="flex justify-center py-8 md:py-16">
+    <div className="flex justify-center py-8 md:py-16 mx-auto  px-2 md:px-0">
       <Slider {...settings} className="w-full">
         {trainingData.map((item, index) => (
           <div
             key={index}
-            className="w-full max-w-7xl  h-screen md:h-[600px] p-4 md:p-8 bg-white border-2 border-gray-500  rounded-xl"
+            className="w-full   h-screen md:h-[500px] xl:h-[750px] p-4 md:p-10 bg-white border-2 border-gray-500  rounded-xl"
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-12 h-full">
+            {/* i want these two div will be center aligned vertically and horizontally */}
+            <div className="grid grid-cols-1 md:grid-cols-2  gap-2 md:gap-12 h-full">
 
               {/* LEFT COLUMN */}
-              <div className="flex flex-col justify-center items-center space-y-6">
-                <h2 className="text-xl md:text-2xl font-normal text-gray-800">
+              <div className="flex flex-col justify-between items-center gap-3 p-6">
+                <h2 className="text-xl md:text-2xl 2xl:text-5xl font-normal text-gray-900 text-center">
                   {item.title}
                 </h2>
 
-                <p className="text-xs md:text-sm text-gray-600">
+                <p className="text-xs md:text-sm xl:text-xl text-gray-800">
                   {item.subtitle}
                 </p>
 
-                <p className="text-xs md:text-sm text-gray-600 text-center leading-relaxed">
+                <p className="text-xs md:text-sm xl:text-xl font-medium text-gray-800 text-center leading-relaxed">
                   {item.description1}
                 </p>
 
                 {/* Description with hyperlink */}
-                <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
+                <p className="text-xs md:text-sm xl:text-xl text-center text-gray-600 leading-relaxed">
                   {item.description2}
                   {item.linkText && (
                     <a
@@ -131,7 +132,7 @@ const PersonalTrainingSection = () => {
                   )}
                 </p>
 
-                <p className="text-xs md:text-sm text-gray-600">{item.price}</p>
+                <p className="text-xs md:text-sm xl:text-xl text-gray-600">{item.price}</p>
 
                 <button className="w-44 sm:w-64 mt-4 py-1 md:py-3 px-3 md:px-6 bg-[#FF6464] text-gray-800 text-sm md:text-lg font-semibold rounded-full shadow-lg hover:bg-[#Faefb8] transition duration-300">
                   BOOK
@@ -150,7 +151,7 @@ const PersonalTrainingSection = () => {
               </div>
 
               {/* RIGHT COLUMN - IMAGE */}
-              <div className="relative w-full aspect-square">
+              <div className="relative w-full aspect-square my-auto pr-4">
                 <Image
                   src={item.image}
                   alt={item.title}

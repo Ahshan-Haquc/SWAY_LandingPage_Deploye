@@ -29,7 +29,7 @@ export default function ResourcesPage() {
     <div className="w-full h-fit">
       {/* -------- TOP SECTION -------- */}
       <div className="text-center max-w-3xl mx-auto pt-10 px-4" data-aos="fade-up" data-aos-delay="200">
-        <h2 className="text-xl md:text-2xl font-semibold tracking-wide">
+        <h2 className="text-xl md:text-2xl font-semibold tracking-wide text-black">
           EXPERT ADVICE. FREE TO ACCESS.
         </h2>
 
@@ -49,7 +49,7 @@ export default function ResourcesPage() {
           <h3 className="font-semibold text-black mb-4 tracking-wide">
             HEADER ONE
           </h3>
-          <ul className="space-y-2 text-sm md:text-base">
+          <ul className="space-y-2 text-sm md:text-base text-black">
             {guides.map((g, i) => (
               <li key={i} className="list-disc ml-5">
                 <button
@@ -68,7 +68,7 @@ export default function ResourcesPage() {
           <h3 className="font-bold text-black mb-4 tracking-wide">
             HEADER TWO
           </h3>
-          <ul className="space-y-2 text-sm md:text-base">
+          <ul className="space-y-2 text-sm md:text-base text-black">
             {guides.map((g, i) => (
               <li key={i} className="list-disc ml-5">
                 <button
@@ -87,7 +87,7 @@ export default function ResourcesPage() {
           <h3 className="font-semibold text-black mb-4 tracking-wide">
             HEADER THREE
           </h3>
-          <ul className="space-y-2 text-sm md:text-base">
+          <ul className="space-y-2 text-sm md:text-base text-black">
             {guides.map((g, i) => (
               <li key={i} className="list-disc ml-5">
                 <button

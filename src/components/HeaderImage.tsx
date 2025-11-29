@@ -16,7 +16,7 @@ const HeaderImage = () => {
   }, []);
   return (
     <div className="w-full h-[250px] md:h-[500px] xl:h-[650px]  relative">
-      <div data-aos="zoom-in" className="absolute top-20 md:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xs md:text-2xl xl:text-3xl font-normal text-white text-nowrap z-40" data-aos-delay="400">
+      <div data-aos="zoom-in" className="absolute top-20 md:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xs md:text-3xl xl:text-4xl font-normal text-white text-nowrap z-40" data-aos-delay="400">
         PERSONALISED WELLNESS. REDEFINED FOR EVERY BODY.
       </div>
       {/* Box 1 */}
@@ -55,13 +55,13 @@ const HeaderImage = () => {
         />
 
         {/* Rating Section */}
-        <div className="flex flex-col items-center mt-1 text-white ">
-          <div className="flex gap-1 bg-black/10 px-2 rounded-full">
+        <div className="flex flex-col items-center mt-3 text-white ">
+          <div className="flex gap-2 md:gap-5 bg-black/10 px-2 rounded-full">
             {Array.from({ length: 5 }).map((_, i) => (
-              <span key={i} className="text-yellow-400 text-base sm:text-xl">★</span>
+              <span key={i} className="text-yellow-400 text-base sm:text-lg">★</span>
             ))}
           </div>
-          <p className="text-xs sm:text-sm mt-1 opacity-90">
+          <p className="text-xs sm:text-sm mt-1 md:mt-4 opacity-90">
             4.9 · 9.7k Reviews
           </p>
         </div>

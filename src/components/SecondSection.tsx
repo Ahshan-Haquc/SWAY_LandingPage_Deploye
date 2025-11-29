@@ -10,18 +10,18 @@ const infoText = [
 
 const SecondSection = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-3 lg:gap-5 py-6 md:py-10 xl:py-12 px-2 md:px-4 text-gray-700"  data-aos="fade-up" data-aos-delay="300">
-      <h1 className="text-sm md:text-xl xl:text-2xl font-normal text-wrap text-center z-40 pb-3">
+    <div className="flex flex-col justify-center items-center gap-3 lg:gap-5 py-6 md:py-10 xl:py-22 px-2 md:px-4 text-gray-700"  data-aos="fade-up" data-aos-delay="300">
+      <h1 className="text-sm md:text-2xl xl:text-3xl  font-normal text-wrap text-center z-40 pb-3">
         SWAY WILL MOVE YOU LIKE NO OTHER WELLNESS EXPERIENCE.
       </h1>
       {
         infoText.map((text, index) => (
-            <p className="text-[10px] md:text-sm text-center" key={index}>
+            <p className="text-[10px] md:text-sm xl:text-lg text-center" key={index}>
         {text}
       </p>
         ))
       }
-      <p className="text-[10px] md:text-sm text-center">
+      <p className="text-[10px] md:text-sm xl:text-lg text-center">
         Begin your journey with a <a href="" className="underline">free consultation</a>. We&apos;ll build your team, your plan, your results.
       </p>
       
