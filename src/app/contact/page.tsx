@@ -20,7 +20,7 @@ export default function ContactUs() {
     };
 
     return (
-        <div className="min-h-screen bg-white text-[#1a2a33] px-6 md:px-20 pt-20 pb-16 flex justify-center items-center">
+        <div className="min-h-screen max-w-[1440px] mx-auto bg-white text-[#1a2a33] px-6 2xl:p-0  pt-20 pb-16 flex justify-center items-center">
 
 
             <div className="grid md:grid-cols-2 gap-16">
@@ -53,87 +53,87 @@ export default function ContactUs() {
                             <a href="#" className="hover:text-[#FF6464]"><BsWhatsapp size={20} /></a>
                         </div>
                     </div>
-                    </div>
+                </div>
 
-                    {/* Right Form */}
-                    <div>
-                        {submitted && (
-                            <div className="mb-6 p-4 bg-green-100 border border-green-300 text-green-700 rounded-lg">
-                                Thank you! Your message has been sent successfully.
-                            </div>
-                        )}
+                {/* Right Form */}
+                <div>
+                    {submitted && (
+                        <div className="mb-6 p-4 bg-green-100 border border-green-300 text-green-700 rounded-lg">
+                            Thank you! Your message has been sent successfully.
+                        </div>
+                    )}
 
-                        <form onSubmit={handleSubmit} className="space-y-5">
-                            <input
-                                type="text"
-                                name="name"
-                                value={form.name}
-                                onChange={handleChange}
-                                placeholder="Name Surname"
-                                required
-                                className="w-full border-2 border-gray-300 rounded-md px-4 py-3 text-sm bg-white  focus:ring-2 focus:ring-gray-300"
-                            />
+                    <form onSubmit={handleSubmit} className="space-y-5">
+                        <input
+                            type="text"
+                            name="name"
+                            value={form.name}
+                            onChange={handleChange}
+                            placeholder="Name Surname"
+                            required
+                            className="w-full border-2 border-gray-300 rounded-md px-4 py-3 text-sm bg-white  focus:ring-2 focus:ring-gray-300"
+                        />
 
-                            <input
-                                type="email"
-                                name="email"
-                                value={form.email}
-                                onChange={handleChange}
-                                placeholder="Email Address"
-                                required
-                                className="w-full border-2 border-gray-300 rounded-md px-4 py-3 text-sm bg-white  focus:ring-2 focus:ring-gray-300"
-                            />
+                        <input
+                            type="email"
+                            name="email"
+                            value={form.email}
+                            onChange={handleChange}
+                            placeholder="Email Address"
+                            required
+                            className="w-full border-2 border-gray-300 rounded-md px-4 py-3 text-sm bg-white  focus:ring-2 focus:ring-gray-300"
+                        />
 
-                            <input
-                                type="text"
-                                name="phone"
-                                value={form.phone}
-                                onChange={handleChange}
-                                placeholder="Phone Number"
-                                required
-                                className="w-full border-2 border-gray-300 rounded-md px-4 py-3 text-sm bg-white  focus:ring-2 focus:ring-gray-300"
-                            />
+                        <input
+                            type="text"
+                            name="phone"
+                            value={form.phone}
+                            onChange={handleChange}
+                            placeholder="Phone Number"
+                            required
+                            className="w-full border-2 border-gray-300 rounded-md px-4 py-3 text-sm bg-white  focus:ring-2 focus:ring-gray-300"
+                        />
 
-                            <select
-                                name="service"
-                                value={form.service}
-                                onChange={handleChange}
-                                required
-                                className="w-full border-2 border-gray-300 rounded-md px-4 py-3 text-sm bg-white  text-gray-600 focus:ring-2 focus:ring-gray-300"
-                            >
-                                <option value="">Please select a service</option>
-                                {services.map((s) => (
-                                    <option key={s} value={s}>{s}</option>
-                                ))}
-                            </select>
+                        <select
+                            name="service"
+                            value={form.service}
+                            onChange={handleChange}
+                            required
+                            className="w-full border-2 border-gray-300 rounded-md px-4 py-3 text-sm bg-white  text-gray-600 focus:ring-2 focus:ring-gray-300"
+                        >
+                            <option value="">Please select a service</option>
+                            {services.map((s) => (
+                                <option key={s} value={s}>{s}</option>
+                            ))}
+                        </select>
 
-                            <textarea
-                                name="message"
-                                value={form.message}
-                                onChange={handleChange}
-                                placeholder="Your Message"
-                                rows={5}
-                                required
-                                className="w-full border-2 border-gray-300 rounded-md px-4 py-3 text-sm bg-white  focus:ring-2 focus:ring-gray-300"
-                            />
+                        <textarea
+                            name="message"
+                            value={form.message}
+                            onChange={handleChange}
+                            placeholder="Your Message"
+                            rows={5}
+                            required
+                            className="w-full border-2 border-gray-300 rounded-md px-4 py-3 text-sm bg-white  focus:ring-2 focus:ring-gray-300"
+                        />
 
-                            <button
-                                type="submit"
-                                className="w-full bg-[#c7b68a] text-white py-3 rounded-md tracking-wide hover:bg-[#b39f74] transition-all flex justify-center items-center gap-2"
-                            >
-                                SEND MESSAGE →
-                            </button>
-                        </form>
-                    </div>
+                        <button
+                            type="submit"
+                            className="w-full bg-[#c7b68a] text-white py-3 rounded-md tracking-wide hover:bg-[#b39f74] transition-all flex justify-center items-center gap-2"
+                        >
+                            SEND MESSAGE →
+                        </button>
+                    </form>
                 </div>
             </div>
-            );
+        </div>
+    );
 }
 
-            function Facebook() {
-  return (
-            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.988H7.898v-2.89h2.54V9.845c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.89h-2.33V21.88C18.343 21.13 22 16.991 22 12z"></path>
-            </svg>
-            );
+function Facebook() {
+    return (
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.988H7.898v-2.89h2.54V9.845c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.89h-2.33V21.88C18.343 21.13 22 16.991 22 12z"></path>
+        </svg>
+    );
 }

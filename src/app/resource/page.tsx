@@ -24,16 +24,16 @@ export default function ResourcesPage() {
   ];
 
   return (
-    <>
+    <div className="max-w-[1440px] mx-auto">
     <ResourceHeader/>
     <div className="w-full h-fit">
       {/* -------- TOP SECTION -------- */}
-      <div className="text-center max-w-3xl mx-auto pt-10 px-4" data-aos="fade-up" data-aos-delay="200">
-        <h2 className="text-xl md:text-2xl font-semibold tracking-wide text-black">
+      <div className="text-center max-w-3xl mx-auto mt-4 md:mt-18 pt-10 px-4" data-aos="fade-up" data-aos-delay="200">
+        <h2 className="text-xl md:text-2xl xl:text-3xl font-semibold tracking-wide text-black">
           EXPERT ADVICE. FREE TO ACCESS.
         </h2>
 
-        <p className="text-gray-600 mt-4 text-sm md:text-base leading-relaxed">
+        <p className="text-gray-600 mt-4 text-sm md:text-base xl:text-lg leading-relaxed">
           Explore a collection of downloadable guides covering a range of health
           and wellness topics. From practical tips to expert advice, these free
           resources are designed to support your progress, build confidence, and
@@ -106,7 +106,7 @@ export default function ResourcesPage() {
       {/* -------- EMAIL INPUT SECTION -------- */}
       <div
         ref={emailSectionRef}
-        className="my-15 bg-[#78A6F5] text-white py-16 px-6"
+        className="my-15 bg-[#78A6F5] text-white py-16 px-6 rounded-2xl"
         data-aos="fade-up" data-aos-delay="200"
       >
         <div className="max-w-3xl mx-auto text-center">
@@ -132,6 +132,6 @@ export default function ResourcesPage() {
 
     </div>
     <Footer/>
-    </>
+    </div>
   );
 }

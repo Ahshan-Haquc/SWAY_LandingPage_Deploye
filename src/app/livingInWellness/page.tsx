@@ -4,6 +4,7 @@ import Image from "next/image";
 import imgOne from '../../../public/curated.jpg'
 import imgTwo from '../../../public/yankruv.jpg'
 import LogoIcon from "../../../public/LogoIcon.png";
+import imgNew from "../../../public/Untitled design.png";
 
 const page = () => {
     return (
@@ -14,11 +15,12 @@ const page = () => {
                     {/* Box 1: Image Left, Text Right */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 z-20 items-center pt-12 mb-12">
                         <div className="w-full h-44 md:h-98 relative" data-aos="fade-right" data-aos-delay="300">
+                            
                             <Image
-                                src={imgOne}
+                                src={imgNew}
                                 fill
                                 alt="Image"
-                                className="object-cover rounded-xl"
+                                className="object-cover rounded-xl "
                                 sizes="(max-width: 768px) 100vw, 50vw"
                             />
                         </div>
@@ -130,3 +132,6 @@ const page = () => {
 };
 
 export default page;
+
+
+
