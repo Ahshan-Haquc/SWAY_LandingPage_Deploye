@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import headerLogo from '../../../public/SwayWhiteLogo.png';
 
 const HeadingImg = ({ h1, h2, h3, phoneImg, isText1Show=false, isText2Show=false }: { h1: any, h2: any, h3: any, phoneImg: any, isText1Show?: boolean, isText2Show?: boolean,}) => {
   return (
