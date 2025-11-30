@@ -18,7 +18,7 @@ const HeadingImg = ({ h1, h2, h3, phoneImg, isText1Show=false, isText2Show=false
       {/* for desktop  */}
       <div className="w-full relative mt-10 md:mt-25 xl:mt-30 hidden md:block">
 
-        {/* ======= CENTER TEXT ======= */}
+        {/*  CENTER TEXT  */}
         {isText1Show && (
         <div
           data-aos="zoom-in"

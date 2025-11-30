@@ -81,7 +81,7 @@ export default function page() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
           {/* Left: Benefits & social proof */}
-          <div className="flex flex-col justify-center gap-6">
+          <div className="flex flex-col justify-center gap-6 ">
             <div className="bg-white rounded-2xl p-6 transform transition hover:scale-[1.01]">
               <h2 className="text-xl text-black font-semibold mb-3">Why subscribe?</h2>
               <ul className="space-y-3 text-slate-700">
@@ -111,7 +111,7 @@ export default function page() {
               </ul>
             </div>
 
-            <div className="bg-linear-to-r border border-[#80b1fb] text-black rounded-2xl p-6 ">
+            <div className="bg-linear-to-r  text-black  p-6 ">
               <div className="text-sm md:text-base">Trusted by</div>
               <div className="mt-3 text-2xl font-bold tracking-tight">12,500+ movers</div>
               <div className="mt-2 text-sm opacity-90">Join a global community pushing their limits, one session at a time.</div>
@@ -120,7 +120,7 @@ export default function page() {
 
           {/* Right: Subscription card */}
           <div>
-            <div className="bg-white rounded-3xl p-6 md:p-8 relative overflow-hidden border border-gray-100">
+            <div className="bg-white rounded-3xl p-6 md:p-8 relative overflow-hidden border border-[#80b1fb]">
               {/* Decorative gradient circle */}
               <div className="absolute -right-20 -top-20 w-56 h-56  bg-linear-to-tr from-[#80b1fb] to-[#B3D2FF] opacity-20 rounded-full pointer-events-none" />
 

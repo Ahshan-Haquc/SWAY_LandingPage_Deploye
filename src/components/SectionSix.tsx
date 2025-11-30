@@ -71,9 +71,9 @@ const SectionSix = () => {
         <button className="w-44 sm:w-64 mt-4 py-1 md:py-3 px-3 md:px-6 bg-[#FF6464] text-gray-700 text-sm md:text-lg font-semibold rounded-full shadow-lg hover:bg-[#Faefb8] transition duration-300">
           BOOK
         </button>
-        <button className="w-44 sm:w-64 mt-4 py-1 md:py-3 px-3 md:px-6 border border-[#FF6464] text-gray-700  text-sm md:text-lg font-semibold rounded-full shadow-lg hover:bg-[#Faefb8] hover:border-[#Faefb8] transition duration-300">
+        <a href="https://maps.app.goo.gl/FHMrit8v5zBdyq6FA" target="_blank" rel="noopener noreferrer" className="w-44 sm:w-64 mt-4 py-1 md:py-3 px-3 md:px-6 border border-[#FF6464] text-gray-700  text-sm md:text-lg font-semibold rounded-full shadow-lg hover:bg-[#Faefb8] hover:border-[#Faefb8] transition duration-300 text-center">
           Google Map
-        </button>
+        </a>
       </div>
     </>
   );
