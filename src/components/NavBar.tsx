@@ -13,21 +13,21 @@ const ChatIcon = () => {
       : pathname.startsWith(path);
 
   const baseBtn =
-    "text-white text-xs md:text-sm px-2 md:px-4 py-2 rounded-full transition";
+    "text-white text-xs md:text-sm px-2 md:px-4 py-4 rounded-full transition";
 
   return (
     <>
       {showIcon && (
         <div
           className="fixed top-4 md:top-5 left-1/2 -translate-x-1/2 z-100 
-                      bg-black/40 backdrop-blur-[10px]  px-1 md:px-3 py-1 md:py-2 
-                      rounded-full flex gap-1 md:gap-4 items-center shadow-lg text-nowrap"
+                      bg-black/40 backdrop-blur-[10px]  px-1  py-1 md:py-1 
+                      rounded-full flex gap-1 md:gap-4 items-center shadow-lg text-nowrap text-white"
         >
           <Link
             href="/contact"
             className={`${baseBtn} ${isActive("/contact")
-                ? "bg-[#FF6464]" // active color
-                : "hover:bg-[#FF6464] bg-transparent"
+                ? "text-[#FF6464]" // active color
+                : "hover:text-[#ffa5a5] "
               }`}
           >
             CONTACT US

@@ -78,7 +78,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import h1 from "../../public/hOne.jpg";
-import h2 from "../../public/img2.jpg";
+import h2 from "../../public/hhtwo.jpg";
 import h3 from "../../public/hThree.jpg";
 import headerLogo from "../../public/SwayWhiteLogo.png";
 import Image from "next/image";
