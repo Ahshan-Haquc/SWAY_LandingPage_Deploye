@@ -1,39 +1,21 @@
 import headerSecondImage from '../../public/SwaySecondHeaderImage.jpg'
+import h1 from '../../public/h4.jpg'
+import h2 from '../../public/h5.jpg'
+import h3 from '../../public/h6.jpg'
 import Image from "next/image";
+import HeadingImg from './headingImage/HeadingImg';
 
 
 const SectionSix = () => {
 
   return (
     <>
-      <div className="w-full h-[250px] md:h-[500px] xl:h-[650px]  relative">
-        {/* Box 1 */}
-        <div className="aspect-square overflow-hidden " data-aos="zoom-in" data-aos-delay="300">
-        <Image
-          src={headerSecondImage}
-          className="w-full object-contain"
-          alt="Random Pexels"
-        />
-      </div>
-
-        {/* Box 2 */}
-        {/* <div className="aspect-square overflow-hidden scale-110 z-10" data-aos="zoom-in" data-aos-delay="200">
-          <img
-            src="https://images.pexels.com/photos/1472887/pexels-photo-1472887.jpeg"
-            className="w-full h-full object-cover"
-            alt="Random Pexels"
-          />
-        </div> */}
-
-        {/* Box 3 */}
-        {/* <div className="aspect-square overflow-hidden " data-aos="fade-right" data-aos-delay="500">
-          <img
-            src="https://images.pexels.com/photos/841128/pexels-photo-841128.jpeg"
-            className="w-full h-full object-cover"
-            alt="Random Pexels"
-          />
-        </div> */}
-      </div>
+      <HeadingImg
+        h1={h1}
+        h2={h2}
+        h3={h3}
+        phoneImg={headerSecondImage}
+      />
 
       {/* text part  */}
       <div className="bg-white mt-22 2xl:mt-28 py-2 md:py-3 px-4 md:px-12 xl:px-24" data-aos="zoom-in" data-aos-delay="300">

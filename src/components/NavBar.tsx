@@ -10,7 +10,7 @@ const ChatIcon = () => {
   const isActive = (path: string) =>
     path === "/"
       ? pathname === "/"
-      : pathname.startsWith(path); // adjust matching as needed
+      : pathname.startsWith(path);
 
   const baseBtn =
     "text-white text-xs md:text-sm px-2 md:px-4 py-2 rounded-full transition";
@@ -19,28 +19,26 @@ const ChatIcon = () => {
     <>
       {showIcon && (
         <div
-          className="fixed top-4 md:top-5 left-1/2 -translate-x-1/2 z-50 
+          className="fixed top-4 md:top-5 left-1/2 -translate-x-1/2 z-100 
                       bg-black/40 backdrop-blur-[10px]  px-1 md:px-3 py-1 md:py-2 
                       rounded-full flex gap-1 md:gap-4 items-center shadow-lg text-nowrap"
         >
           <Link
             href="/contact"
-            className={`${baseBtn} ${
-              isActive("/contact")
+            className={`${baseBtn} ${isActive("/contact")
                 ? "bg-[#FF6464]" // active color
                 : "hover:bg-[#FF6464] bg-transparent"
-            }`}
+              }`}
           >
             CONTACT US
           </Link>
 
           <Link
             href="/"
-            className={`${baseBtn} ${
-              isActive("/consultation")
-                ? "bg-[#FF6464]" // active color
-                : "hover:bg-[#FF6464] bg-transparent"
-            }`}
+            className={`${baseBtn} ${isActive("/consultation")
+                ? "bg-[#FF6464]" 
+                : "bg-[#FF6464] hover:bg-[#FF6464]"
+              }`}
           >
             FREE CONSULTATION
           </Link>
