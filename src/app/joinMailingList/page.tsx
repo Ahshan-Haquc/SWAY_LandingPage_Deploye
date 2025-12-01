@@ -60,7 +60,7 @@ export default function page() {
   };
 
   return (
-    <main className="min-h-screen  py-16 px-6 md:px-12 flex justify-center items-center">
+    <main className="min-h-screen  py-16 px-6 md:px-12 flex justify-center items-center" data-aos="zoom-in">
       <div className="max-w-5xl mx-auto">
 
         {/* Hero */}

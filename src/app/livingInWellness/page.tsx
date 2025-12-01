@@ -144,6 +144,7 @@ import imgNew from "../../../public/Untitled design.png";
 
 const page = () => {
     return (
+        <>
         <div className='min-h-screen text-center'>
             <div className="relative max-w-[1440px] h-fit mx-auto p-6 pt-22 md:pt-0 my-0 mt-0 md:mt-22 overflow-hidden bg-[#4E4D59] rounded-xl text-center">
 
@@ -253,11 +254,9 @@ const page = () => {
                     </div>
                 </div>
             </div>
-
-            <div className="max-w-[1440px] mx-auto text-center">
-                <Footer />
-            </div>
         </div>
+            
+        </>
     );
 };
 

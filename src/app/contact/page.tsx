@@ -22,7 +22,7 @@ export default function ContactUs() {
 
     return (
         <>
-        <div className="min-h-screen max-w-[1440px] mx-auto bg-white text-[#1a2a33] px-6 2xl:p-0  pt-20 pb-16 flex justify-center items-center">
+        <div className="min-h-screen max-w-[1440px] mx-auto bg-white text-[#1a2a33] px-6 2xl:p-0  pt-20 pb-16 flex justify-center items-center" data-aos="zoom-in">
 
 
             <div className="grid md:grid-cols-2 gap-16">
