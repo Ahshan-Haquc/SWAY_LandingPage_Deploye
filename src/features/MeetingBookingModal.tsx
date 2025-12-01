@@ -37,11 +37,11 @@ const MeetingBookingModal = () => {
         }, ANIMATION_DURATION);
     };
 
-    const handleChange = (e) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         alert("This module is under developement when backend is ready.")
         handleClose();
@@ -49,7 +49,7 @@ const MeetingBookingModal = () => {
 
     if (!open) return null;
 
-    const FormField = ({ icon: Icon, type = "text", name, placeholder, children, isSelect = false, isTextarea = false }) => (
+    const FormField = ({ icon: Icon, type = "text", name, placeholder, children, isSelect = false, isTextarea = false }: { icon: React.ComponentType<{ size: number }>, type?: string, name: string, placeholder?: string, children?: React.ReactNode, isSelect?: boolean, isTextarea?: boolean }) => (
         <div className="relative">
             <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">
                 <Icon size={18} />
@@ -171,12 +171,7 @@ const MeetingBookingModal = () => {
                                 />
                             </div>
 
-                            <FormField
-                                icon={Clock}
-                                name="duration"
-                                value={formData.duration}
-                                isSelect={true}
-                            >
+                            <FormField icon={Clock} name="duration" isSelect>
                                 <option value="15 minutes">15 minutes</option>
                                 <option value="30 minutes">30 minutes</option>
                                 <option value="45 minutes">45 minutes</option>
