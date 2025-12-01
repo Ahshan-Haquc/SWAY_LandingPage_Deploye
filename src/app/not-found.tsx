@@ -1,6 +1,6 @@
 import BurgerMenu from "@/components/BurgerMenu";
 import Link from "next/link";
-import { FaGhost } from "react-icons/fa"; // Changed icon to a more relevant 'ghost' or similar
+import { FaGhost } from "react-icons/fa"; 
 
 const NotFound = () => {
   return (

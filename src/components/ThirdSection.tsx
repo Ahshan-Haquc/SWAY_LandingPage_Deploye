@@ -18,13 +18,10 @@ const ThirdSection = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    // Add custom class for styling the dots container
     dotsClass: "slick-dots custom-dots",
   };
 
   return (
-    // FIX: Add p-8 py-10 or similar padding to create space for the dots.
-    // We keep overflow-hidden but add vertical padding.
     <div
       className="w-full px-2 py-10 rounded-2xl overflow-hidden" 
       data-aos="zoom-in"

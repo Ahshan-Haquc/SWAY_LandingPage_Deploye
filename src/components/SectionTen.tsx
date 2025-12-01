@@ -19,11 +19,10 @@ const SectionTen = () => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          // SHOW ONLY ONCE
           if (entry.isIntersecting && !hasShown) {
             setShowPopup(true);
-            setHasShown(true);        // 🔥 Prevent future popup
-            observer.disconnect();    // Stop observing
+            setHasShown(true);      
+            observer.disconnect(); 
           }
         });
       },

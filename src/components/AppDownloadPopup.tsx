@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { X } from "lucide-react"; // If using lucide icons
+import { X } from "lucide-react"; 
 
 export default function AppDownloadPopup() {
   const footerRef = useRef<HTMLElement | null>(null);

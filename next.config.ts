@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
     domains: ["images.pexels.com"],
   },
   reactCompiler: true,
+  // experimental: {
+  //   turbopack: false,
+  // },
 };
 
 export default nextConfig;

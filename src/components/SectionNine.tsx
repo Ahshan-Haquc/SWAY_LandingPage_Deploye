@@ -1,4 +1,3 @@
-// components/SectionNine.jsx
 import React from "react";
 import PricingCart from "./PricingCart";
 import { pricingData } from "../data/pricingData";

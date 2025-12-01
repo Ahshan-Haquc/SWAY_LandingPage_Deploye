@@ -1,4 +1,3 @@
-// app/join/page.tsx    OR   src/pages/join.tsx
 "use client";
 
 import React, { useEffect, useState } from "react";
@@ -29,7 +28,6 @@ export default function page() {
   }, []);
 
   const validateEmail = (e: string) => {
-    // Simple, practical email regex
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e.trim());
   };
 
@@ -46,10 +44,6 @@ export default function page() {
 
     try {
       setSubmitting(true);
-
-      // --- Example: send to your API here ---
-      // await fetch('/api/subscribe', { method: 'POST', body: JSON.stringify({ name, email }) })
-      // For demo we just wait
       await new Promise((r) => setTimeout(r, 900));
 
       // store that user subscribed (so popup / call-to-action won't keep showing)
@@ -192,7 +186,6 @@ export default function page() {
                     <button
                       type="button"
                       onClick={() => {
-                        // Optional: open app download modal or link
                         window.location.href = "/download";
                       }}
                       className="px-4 py-3 rounded-xl border border-slate-200 text-sm"

@@ -11,7 +11,7 @@ const CookieConsentBanner = () => {
     const consent = localStorage.getItem("cookie_consent");
 
     // If user already accepted or rejected → don't show
-    if (consent === "accepted" || consent === "closed") return;
+    if (consent === "accepted" || consent === "rejected") return;
 
     // Delay slightly before showing
     setTimeout(() => setVisible(true), 1200);
@@ -63,11 +63,11 @@ const CookieConsentBanner = () => {
 
           {/* Reject Button */}
           <button
-            onClick={() => closeBanner("closed")}
+            onClick={() => closeBanner("rejected")}
             className="px-5 py-3 border border-gray-400 rounded-lg text-sm md:text-base 
             text-gray-700 hover:bg-gray-200 transition"
           >
-            Close
+            Reject
           </button>
 
           {/* Accept Button */}
