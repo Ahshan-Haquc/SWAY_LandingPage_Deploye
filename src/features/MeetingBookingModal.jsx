@@ -94,9 +94,9 @@ const MeetingBookingModal = () => {
 
             {/* MODAL BOX */}
             <div
-                style={{ color: COLORS.dark, borderColor: COLORS.primary }}
+                style={{ color: COLORS.dark }}
                 className={`fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
-        w-[95%] max-w-5xl bg-white rounded-2xl shadow-2xl z-[1000] overflow-hidden border-t-8
+        w-[95%] max-w-5xl bg-white rounded-2xl shadow-2xl z-[1000] overflow-hidden 
         ${closing ? "animate-slideDown" : "animate-slideUp"}`}
             >
                 {/* MODAL HEADER */}
@@ -216,7 +216,7 @@ const MeetingBookingModal = () => {
                         <button
                             type="submit"
                             style={{ backgroundColor: COLORS.primary }}
-                            className={`mt-4 text-white py-3 rounded-xl font-bold text-lg shadow-md transition transform hover:bg-[#6a97d5] hover:scale-[1.01]`}
+                            className={`mt-4 text-white py-3 rounded-xl font-bold text-lg shadow-md transition transform hover:bg-[#709de1] hover:scale-[1.01]`}
                         >
                             Confirm Booking
                         </button>
