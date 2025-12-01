@@ -5,19 +5,19 @@ const CookieConsentBanner = () => {
   const [visible, setVisible] = useState(false);
   const [closing, setClosing] = useState(false);
 
-  const ANIMATION_DURATION = 300; // ms
+  const ANIMATION_DURATION = 300; 
 
   useEffect(() => {
     const consent = localStorage.getItem("cookie_consent");
 
     // If user already accepted or rejected → don't show
-    if (consent === "accepted" || consent === "rejected") return;
+    if (consent === "accepted" || consent === "closed") return;
 
     // Delay slightly before showing
     setTimeout(() => setVisible(true), 1200);
   }, []);
 
-  const closeBanner = (choice : any) => {
+  const closeBanner = (choice : string) => {
     localStorage.setItem("cookie_consent", choice);
     setClosing(true);
 
@@ -31,7 +31,7 @@ const CookieConsentBanner = () => {
 
   return (
     <>
-      {/* ===== COOKIE BANNER ===== */}
+      {/*   COOKIE BANNER   */}
       <div
         className={`fixed bottom-0 left-0 w-full bg-white shadow-[0_-4px_20px_rgba(0,0,0,0.2)]
         z-9999 px-6 py-6 md:px-12 md:py-8 flex flex-col md:flex-row items-start md:items-center 
@@ -63,11 +63,11 @@ const CookieConsentBanner = () => {
 
           {/* Reject Button */}
           <button
-            onClick={() => closeBanner("rejected")}
+            onClick={() => closeBanner("closed")}
             className="px-5 py-3 border border-gray-400 rounded-lg text-sm md:text-base 
             text-gray-700 hover:bg-gray-200 transition"
           >
-            Reject
+            Close
           </button>
 
           {/* Accept Button */}
@@ -81,7 +81,7 @@ const CookieConsentBanner = () => {
         </div>
       </div>
 
-      {/* ===== ANIMATIONS ===== */}
+      {/*   ANIMATIONS   */}
       <style jsx global>{`
         @keyframes slideUp {
           from {
