@@ -29,7 +29,7 @@ const PricingCart = ({
   annualPrice,
   annualSave,
   animationDelay,
-  
+
 }: {
   bgColor: string;
   textColor: string;
@@ -46,12 +46,12 @@ const PricingCart = ({
   annualSave: string;
   animationDelay: number;
 }) => {
-    useEffect(() => {
-      AOS.init({
-        duration: 1000, 
-        once: false,
-      });
-    }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
 
   const CORAL_RED = bgColor;
   const LIGHT_YELLOW = '#FFF1B0';
@@ -60,12 +60,12 @@ const PricingCart = ({
   const FeatureIcon = ({ IconSVGimage, text }: { IconSVGimage: any, text: string }) => (
     <div className="flex flex-col items-center space-y-2 w-1/4">
       <Image
-  src={IconSVGimage}
-  alt="icon"
-  width={55}
-  height={55}
-  className="transition-all group-hover:invert group-hover:brightness-0"
-/>
+        src={IconSVGimage}
+        alt="icon"
+        width={55}
+        height={55}
+        className="transition-all group-hover:invert group-hover:brightness-0"
+      />
 
       <p className="text-xs font-medium text-center" >
         {text}
@@ -76,12 +76,12 @@ const PricingCart = ({
   const FeatureIcon2 = ({ IconSVGimage, text, text2 }: { IconSVGimage: any, text: string, text2: string }) => (
     <div className="flex justify-center items-center space-y-2 w-1/2 group-hover:text-white text-black">
       <Image
-  src={IconSVGimage}
-  alt="icon"
-  width={55}
-  height={55}
-  className="transition-all group-hover:invert group-hover:brightness-0"
-/>
+        src={IconSVGimage}
+        alt="icon"
+        width={55}
+        height={55}
+        className="transition-all group-hover:invert group-hover:brightness-0"
+      />
 
       <div>
         <p className="text-xs font-medium" >{text}</p>
@@ -92,9 +92,8 @@ const PricingCart = ({
 
   return (
     <div
-      className={`group text-black max-h-fit md:min-h-[600px] md:max-h-fit rounded-xl w-full md:w-1/3 p-2 md:p-4 flex flex-col items-center text-center   hover:-translate-y-5  duration-300 bg-[#b4cffd] hover:bg-[#ff6464] hover:text-white ${title==="MOMENTUM" && "-translate-y-0 md:-translate-y-10 hover:-translate-y-15"}`}
-
-      data-aso="fade-up" 
+      className={`group text-black max-h-fit md:min-h-[640px] md:max-h-fit rounded-xl w-full md:w-1/3 p-2 md:p-4 flex flex-col items-center text-center   hover:-translate-y-5  duration-300 bg-[#b4cffd] hover:bg-[#ff6464] hover:text-white `}
+      
     >
 
       {/* === 1. Header Section === */}
@@ -115,12 +114,12 @@ const PricingCart = ({
         {/* <div className="text-5xl mb-2 opacity-80">🏃</div> */}
         {/* <Image src={p1} alt="icon" width={55} height={55} className="mx-auto"/> */}
         <Image
-  src={p1}
-  alt="icon"
-  width={55}
-  height={55}
-  className="transition-all group-hover:invert group-hover:brightness-0 mx-auto"
-/>
+          src={p1}
+          alt="icon"
+          width={55}
+          height={55}
+          className="transition-all group-hover:invert group-hover:brightness-0 mx-auto"
+        />
 
         <p className="text-xs font-light"><b className="text-sm">{sessionLine1}</b></p>
         <p className="text-xs font-light"><b className="text-sm">{sessionLine2}</b></p>
@@ -139,9 +138,9 @@ const PricingCart = ({
         <FeatureIcon2 IconSVGimage={p7} text={extraFeatures[2]} text2={extraFeatures[3]} />
       </div>
 
-      <PricingCartPriceToggle pricingName={title}/>
-        
-      </div>
+      <PricingCartPriceToggle pricingName={title} />
+
+    </div>
   );
 };
 

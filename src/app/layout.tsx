@@ -6,7 +6,6 @@ import SideBar from "@/components/SideBar";
 import ChatIcon from "@/components/NavBar";
 
 import { Montserrat } from "next/font/google";
-// import CookieConsentBanner from "@/features/CookieConsentBanner";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -29,16 +28,12 @@ export default function RootLayout({
         <meta name="color-scheme" content="light" />
       </head>
       <body className={`${montserrat.className} mx-auto flex justify-center`} style={{ backgroundColor: "white" }}>
-        {/* inside Providers */}
         <Providers>
           <div className="w-full px-0">
             <BurgerMenu />
             <SideBar />
             <ChatIcon />
-
             {children}
-
-            {/* <CookieConsentBanner /> */}
           </div>
         </Providers>
 
