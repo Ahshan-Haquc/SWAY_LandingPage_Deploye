@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Instagram, Linkedin } from "lucide-react";
 import { BsWhatsapp } from "react-icons/bs";
+import MeetingBookingModal from '../../features/MeetingBookingModal';
 
 export default function ContactUs() {
     const [form, setForm] = useState({ name: "", email: "", phone: "", service: "", message: "" });
@@ -20,6 +21,7 @@ export default function ContactUs() {
     };
 
     return (
+        <>
         <div className="min-h-screen max-w-[1440px] mx-auto bg-white text-[#1a2a33] px-6 2xl:p-0  pt-20 pb-16 flex justify-center items-center">
 
 
@@ -127,6 +129,8 @@ export default function ContactUs() {
                 </div>
             </div>
         </div>
+        <MeetingBookingModal/>
+        </>
     );
 }
 
