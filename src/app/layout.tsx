@@ -6,6 +6,8 @@ import SideBar from "@/components/SideBar";
 import ChatIcon from "@/components/NavBar";
 
 import { Montserrat } from "next/font/google";
+import MeetingBookingModal from "@/features/MeetingBookingModal";
+import CookieBanerLastUpdated from "@/features/CookieBanerLastUpdated";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -34,6 +36,7 @@ export default function RootLayout({
             <SideBar />
             <ChatIcon />
             {children}
+            <CookieBanerLastUpdated/>
           </div>
         </Providers>
 

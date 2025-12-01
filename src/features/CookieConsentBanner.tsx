@@ -7,18 +7,18 @@ const CookieConsentBanner = () => {
 
   const ANIMATION_DURATION = 300; 
 
-  // useEffect(() => {
-    // const consent = localStorage.getItem("cookie_consent");
+  useEffect(() => {
+    const consent = localStorage.getItem("cookie_consent");
 
-    // // If user already accepted or rejected → don't show
-    // if (consent === "accepted" || consent === "rejected") return;
+    // If user already accepted or rejected → don't show
+    if (consent === "accepted" || consent === "rejected") return;
 
     // Delay slightly before showing
-  // }, []);
-  setTimeout(() => setVisible(true), 1200);
+    setTimeout(() => setVisible(true), 1200);
+  }, []);
 
   const closeBanner = (choice : string) => {
-    // localStorage.setItem("cookie_consent", choice);
+    localStorage.setItem("cookie_consent", choice);
     setClosing(true);
 
     setTimeout(() => {
