@@ -122,7 +122,7 @@ const ChatBot = () => {
 
   return (
     <>
-      {/* Floating Chat Button */}
+      {/* Floating Chat Button for phone and desktop*/}
       {!open && (
         <button
           onClick={() => setOpen(true)}
