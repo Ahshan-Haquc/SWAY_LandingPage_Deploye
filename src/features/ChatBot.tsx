@@ -2,6 +2,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { MessageCircle, X, Send, User, Bot } from "lucide-react";
 import { faqData } from "@/data/chatBotAnswerData";
+import swayIcon from "../../public/SwayWhiteLogo.png"
+import Image from "next/image";
 
 const COLORS = {
   primary: "#80B1FB",
@@ -104,7 +106,7 @@ const ChatBot = () => {
       }
     }
 
-    return "I’m not sure about this. I can only answer questions related to our membership, workouts, or booking a call. Try rephrasing your question!";
+    return "I am not sure about this. I can only answer questions related to our membership, workouts, or booking a call. Try rephrasing your question!";
   };
 
   // Clicking “Book Meeting” will open your meeting modal
@@ -125,7 +127,7 @@ const ChatBot = () => {
         <button
           onClick={() => setOpen(true)}
           style={{ backgroundColor: COLORS.primary }}
-          className="fixed bottom-8 right-8 text-white p-5 rounded-full shadow-2xl hover:scale-105 transition-transform duration-300 z-9999 animate-pulse-slow"
+          className="fixed bottom-8 right-8 text-white p-3 md:p-5 rounded-full shadow-2xl hover:scale-105 transition-transform duration-300 z-9999 animate-pulse-slow"
         >
           <MessageCircle size={28} strokeWidth={2.5} />
         </button>
@@ -145,9 +147,12 @@ const ChatBot = () => {
                 color: 'white'
             }}
           >
-            <div className="flex items-center">
-              <MessageCircle size={20} className="mr-2 opacity-80" />
-              <h3 className="font-extrabold text-lg tracking-wide">Sway Support</h3>
+            <div className="flex items-center gap-2">
+              {/* <MessageCircle size={20} className="mr-2 opacity-80" /> */}
+              <div className="h-10 w-40 relative">
+              <Image src={swayIcon} alt="SWAY" fill className="h-full w-full object-contain"/>
+              </div>
+              <h3 className="font-extralight text-[11px] mb-1.5 text-white/65 tracking-widest">SUPPORT</h3>
             </div>
             <button 
               onClick={() => setOpen(false)}
