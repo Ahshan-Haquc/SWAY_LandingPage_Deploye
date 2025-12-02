@@ -60,11 +60,11 @@ export default function page() {
   };
 
   return (
-    <main className="min-h-screen  py-16 px-6 md:px-12 flex justify-center items-center" data-aos="zoom-in">
+    <main className="min-h-screen  py-16 px-6 md:px-12 flex justify-center items-center" >
       <div className="max-w-5xl mx-auto">
 
         {/* Hero */}
-        <section className="text-center mb-10">
+        <section className="text-center mb-10" data-aos="zoom-in">
           <h1 className="text-3xl md:text-4xl font-extrabold text-black mb-3">
             Join the SWAY Mailing List
           </h1>
@@ -75,7 +75,7 @@ export default function page() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
           {/* Left: Benefits & social proof */}
-          <div className="flex flex-col justify-center gap-6 ">
+          <div className="flex flex-col justify-center gap-6 " data-aos="fade-right" >
             <div className="bg-white rounded-2xl p-6 transform transition hover:scale-[1.01]">
               <h2 className="text-xl text-black font-semibold mb-3">Why subscribe?</h2>
               <ul className="space-y-3 text-slate-700">
@@ -113,7 +113,7 @@ export default function page() {
           </div>
 
           {/* Right: Subscription card */}
-          <div>
+          <div  data-aos="fade-left" >
             <div className="bg-white rounded-3xl p-6 md:p-8 relative overflow-hidden border border-[#80b1fb]">
               {/* Decorative gradient circle */}
               <div className="absolute -right-20 -top-20 w-56 h-56  bg-linear-to-tr from-[#80b1fb] to-[#B3D2FF] opacity-20 rounded-full pointer-events-none" />

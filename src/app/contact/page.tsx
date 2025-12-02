@@ -22,12 +22,12 @@ export default function ContactUs() {
 
     return (
         <>
-        <div className="min-h-screen max-w-[1440px] mx-auto bg-white text-[#1a2a33] px-6 2xl:p-0  pt-20 pb-16 flex justify-center items-center" data-aos="zoom-in">
+        <div className="min-h-screen max-w-[1440px] mx-auto bg-white text-[#1a2a33] px-6 2xl:p-0  pt-20 pb-16 flex justify-center items-center" >
 
 
             <div className="grid md:grid-cols-2 gap-16">
                 {/* Left Contact Info */}
-                <div className="">
+                <div className="" data-aos="fade-right">
                     {/* Header Section */}
                     <div className="max-w-3xl mb-14">
                         <h1 className="text-4xl md:text-5xl font-semibold mb-4 tracking-tight">Get in Touch</h1>
@@ -58,7 +58,7 @@ export default function ContactUs() {
                 </div>
 
                 {/* Right Form */}
-                <div>
+                <div data-aos="fade-left">
                     {submitted && (
                         <div className="mb-6 p-4 bg-green-100 border border-green-300 text-green-700 rounded-lg">
                             Thank you! Your message has been sent successfully.
