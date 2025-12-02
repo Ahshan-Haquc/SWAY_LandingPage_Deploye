@@ -18,7 +18,7 @@ const SectionSix = () => {
       />
 
       {/* text part  */}
-      <div className="bg-white mt-22 2xl:mt-28 py-2 md:py-3 px-4 md:px-12 xl:px-24" data-aos="zoom-in" data-aos-delay="300">
+      <div className="bg-white mt-0 md:mt-28 2xl:mt-28 py-2 md:py-3 px-4 md:px-12 xl:px-24" data-aos="zoom-in" data-aos-delay="300">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 max-w-7xl mx-auto">
           <div className="flex flex-col items-center space-y-2 md:space-y-4">
             {/* Main Headline */}
@@ -68,10 +68,10 @@ const SectionSix = () => {
         </div>
       </div>
       <div className="flex justify-center items-center gap-5 my-6 md:my-8"  data-aos="zoom-in" data-aos-delay="300">
-        <button className="w-44 sm:w-64 mt-4 py-1 md:py-3 px-3 md:px-6 bg-[#FF6464] text-gray-700 text-sm md:text-lg font-semibold rounded-full shadow-lg hover:bg-[#Faefb8] transition duration-300">
+        <button className="w-44 sm:w-64 mt-4 py-2 md:py-3 px-2 md:px-6 bg-[#FF6464] text-gray-700 text-sm md:text-lg font-semibold rounded-full shadow-lg hover:bg-[#Faefb8] transition duration-300">
           BOOK
         </button>
-        <a href="https://maps.app.goo.gl/FHMrit8v5zBdyq6FA" target="_blank" rel="noopener noreferrer" className="w-44 sm:w-64 mt-4 py-1 md:py-3 px-3 md:px-6 border border-[#FF6464] text-gray-700  text-sm md:text-lg font-semibold rounded-full shadow-lg hover:bg-[#Faefb8] hover:border-[#Faefb8] transition duration-300 text-center">
+        <a href="https://maps.app.goo.gl/FHMrit8v5zBdyq6FA" target="_blank" rel="noopener noreferrer" className="w-44 sm:w-64 mt-4 py-2 md:py-3 px-2 md:px-6 border border-[#FF6464] text-gray-700  text-sm md:text-lg font-semibold rounded-full shadow-lg hover:bg-[#Faefb8] hover:border-[#Faefb8] transition duration-300 text-center">
           Google Map
         </a>
       </div>

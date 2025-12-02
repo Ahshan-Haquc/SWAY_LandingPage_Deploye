@@ -52,10 +52,10 @@ const SectionTen = () => {
       {/* ================= SECTION TEN ================= */}
       <footer id="footer-section" ref={sectionRef}>
         <div className="my-3 md:my-8 p-6 md:p-10 bg-[#80B1FB] rounded-xl h-fit flex flex-col justify-between shadow-xl">
-          <h2 className="text-2xl md:text-3xl font-bold text-white tracking-wide mb-3">
+          <h2 className="text-lg md:text-3xl font-bold text-white tracking-wide mb-3">
             LEARN TO MOVE THE SWAY WAY
           </h2>
-          <p className="text-sm md:text-base text-white/90 mb-6">
+          <p className="text-xs md:text-base text-white/90 mb-6">
             Browse and download resources and training guides to help you move
             better, build habits and become stronger.
           </p>

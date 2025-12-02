@@ -127,7 +127,7 @@ const ChatBot = () => {
         <button
           onClick={() => setOpen(true)}
           style={{ backgroundColor: COLORS.primary }}
-          className="fixed bottom-8 right-8 text-white p-3 md:p-5 rounded-full shadow-2xl hover:scale-105 transition-transform duration-300 z-9999 animate-pulse-slow"
+          className="fixed bottom-14 md:bottom-8 right-8 text-white p-3 md:p-5 rounded-full shadow-2xl hover:scale-105 transition-transform duration-300 z-9999 animate-pulse-slow"
         >
           <MessageCircle size={28} strokeWidth={2.5} />
         </button>

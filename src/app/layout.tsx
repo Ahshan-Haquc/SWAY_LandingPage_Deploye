@@ -32,7 +32,7 @@ export default function RootLayout({
       </head>
       <body className={`${montserrat.className} mx-auto flex justify-center`} style={{ backgroundColor: "white" }}>
         <Providers>
-          <div className="w-full px-0">
+          <div className="w-full px-0 ">
             <BurgerMenu />
             <SideBar />
             <ChatIcon />

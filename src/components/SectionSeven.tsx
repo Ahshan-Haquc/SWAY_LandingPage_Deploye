@@ -13,7 +13,7 @@ const SectionSeven = () => {
       <HeadingImg  h1={h7} h2={h8} h3={h9} phoneImg={headerSecondImage} />
 
       {/* text part hello */}
-      <div className="bg-white mt-2 md:mt-28 py-2 md:py-8 px-4 md:px-12 xl:px-24" data-aos="zoom-in" data-aos-delay="300">
+      <div className="bg-white mt-2 mb-10 md:mb-0 md:mt-28 py-2 md:py-8 px-4 md:px-12 xl:px-24" data-aos="zoom-in" data-aos-delay="300">
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 max-w-7xl mx-auto">
 
@@ -60,7 +60,7 @@ const SectionSeven = () => {
             </p>
 
             {/* Subscription Form */}
-            <div className="w-full max-w-md ml-auto pt-4">
+            <div className="w-full max-w-md mx-auto pt-4">
               {/* Labels and Input */}
               <div className="flex justify-between items-center w-full text-sm font-normal tracking-widest mb-1">
                 <label htmlFor="rebuild-email-input" className="text-[#FF6464] opacity-90">

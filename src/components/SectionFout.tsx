@@ -95,76 +95,76 @@ const PersonalTrainingSection = () => {
   };
 
   return (
-    <div className="flex justify-center py-8 md:py-16 mx-auto  px-2 md:px-0">
+    <div className="flex justify-center py-8 md:py-16 mx-auto  px-2 md:px-0 overflow-hidden">
       <Slider {...settings} className="w-full">
         {trainingData.map((item, index) => (
-          <div className="h-fit w-fit p-4">
-          <div
-            key={index}
-            className="w-full  h-screen md:h-[550px] xl:h-[750px] p-4 md:p-5 xl:p-10 bg-white border-2 border-gray-500  rounded-xl"
-          >
-            {/* i want these two div will be center aligned vertically and horizontally */}
-            <div className="grid grid-cols-1 md:grid-cols-2  gap-2 md:gap-12 h-full">
+          <div className="h-fit w-fit p-1 md:p-4">
+            <div
+              key={index}
+              className="w-full  h-screen md:h-[550px] xl:h-[750px] p-4 md:p-5 xl:p-10 bg-white border-2 border-gray-500  rounded-xl"
+            >
+              {/* i want these two div will be center aligned vertically and horizontally */}
+              <div className="grid grid-cols-1 md:grid-cols-2  gap-2 md:gap-12 h-full">
 
-              {/* LEFT COLUMN */}
-              <div className="flex flex-col justify-between items-center gap-3 p-6">
-                <h2 className="text-xl md:text-2xl 2xl:text-5xl font-normal text-gray-900 text-center">
-                  {item.title}
-                </h2>
+                {/* LEFT COLUMN */}
+                <div className="flex flex-col justify-between items-center gap-3 p-6">
+                  <h2 className="text-xl md:text-2xl 2xl:text-5xl font-normal text-gray-900 text-center">
+                    {item.title}
+                  </h2>
 
-                <p className="text-xs md:text-sm xl:text-xl text-gray-800">
-                  {item.subtitle}
-                </p>
+                  <p className="text-xs md:text-sm xl:text-xl text-gray-800">
+                    {item.subtitle}
+                  </p>
 
-                <p className="text-xs md:text-sm xl:text-xl font-medium text-gray-800 text-center leading-relaxed">
-                  {item.description1}
-                </p>
+                  <p className="text-xs md:text-sm xl:text-xl font-medium text-gray-800 text-center leading-relaxed">
+                    {item.description1}
+                  </p>
 
-                {/* Description with hyperlink */}
-                <p className="text-xs md:text-sm xl:text-xl text-center text-gray-600 leading-relaxed">
-                  {item.description2}
-                  {item.linkText && (
-                    <a
-                      href={item.linkHref}
-                      className="underline text-black font-medium hover:text-[#80b1fb]"
-                    >
-                      {item.linkText}
-                    </a>
-                  )}
-                </p>
+                  {/* Description with hyperlink */}
+                  <p className="text-xs md:text-sm xl:text-xl text-center text-gray-600 leading-relaxed">
+                    {item.description2}
+                    {item.linkText && (
+                      <a
+                        href={item.linkHref}
+                        className="underline text-black font-medium hover:text-[#80b1fb]"
+                      >
+                        {item.linkText}
+                      </a>
+                    )}
+                  </p>
 
-                <p className="text-xs md:text-sm xl:text-xl text-gray-600 text-center">{item.price}</p>
+                  <p className="text-xs md:text-sm xl:text-xl text-gray-600 text-center">{item.price}</p>
 
-                <button className="w-44 sm:w-64 mt-4 py-1 md:py-3 px-3 md:px-6 bg-[#FF6464] text-gray-800 text-sm md:text-lg font-semibold rounded-full shadow-lg hover:bg-[#Faefb8] transition duration-300">
-                  BOOK
-                </button>
+                  <button className="w-44 sm:w-64 mt-4 py-2 md:py-3 px-2 md:px-6 bg-[#FF6464] text-gray-800 text-sm md:text-lg font-semibold rounded-full shadow-lg hover:bg-[#Faefb8] transition duration-300">
+                    BOOK
+                  </button>
 
-                <div className="flex space-x-2 text-xs text-gray-600 pt-2">
-                  {item.tags.map((tag, i) => (
-                    <span
-                      key={i}
-                      className="border border-gray-300 px-2 py-1 rounded-full bg-gray-50"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                  <div className="flex space-x-2 text-xs text-gray-600 pt-2">
+                    {item.tags.map((tag, i) => (
+                      <span
+                        key={i}
+                        className="border border-gray-300 px-2 py-1 rounded-full bg-gray-50"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
+
+                {/* RIGHT COLUMN - IMAGE */}
+                <div className="relative w-full aspect-square my-auto pr-0 xl:pr-4">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-cover rounded-lg"
+                    priority
+                  />
+                </div>
+
+
               </div>
-
-              {/* RIGHT COLUMN - IMAGE */}
-              <div className="relative w-full aspect-square my-auto pr-0 xl:pr-4">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover rounded-lg"
-                  priority
-                />
-              </div>
-
-
             </div>
-          </div>
           </div>
         ))}
       </Slider>
