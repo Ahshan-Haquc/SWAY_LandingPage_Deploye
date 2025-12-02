@@ -30,7 +30,7 @@ const ThirdSection = () => {
       {/* FIX: Removed overflow-hidden from here, keeping it on the parent container */}
       <Slider {...settings} className="w-full">
         {/* SLIDE 1 */}
-        <div className="!flex !justify-center !items-center w-full rounded-2xl overflow-hidden p-1">
+        <div className="flex! justify-center! items-center! w-full rounded-2xl overflow-hidden p-1">
           <div className="h-124 xl:h-82 w-full bg-[#FF6464] grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-6 p-4 md:p-12 xl:p-22 items-center rounded-2xl ">
             {/* LEFT BOX */}
             <div className="flex justify-between gap-2 text-white h-fit">
@@ -70,7 +70,7 @@ const ThirdSection = () => {
         </div>
 
         {/* SLIDE 2 */}
-        <div className="!flex !justify-center !items-center w-full rounded-2xl overflow-hidden p-1">
+        <div className="flex! justify-center! items-center! w-full rounded-2xl overflow-hidden p-1">
           <div className="h-124 xl:h-82 w-full bg-[#FF6464] grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-6 p-4 md:p-12 xl:p-22 items-center  rounded-2xl ">
             {/* LEFT BOX */}
             <div className="flex justify-between gap-2 text-white">

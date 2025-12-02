@@ -88,7 +88,7 @@ const MeetingBookingModal = () => {
         <>
             {/* BACKDROP */}
             <div
-                className={`fixed inset-0 bg-black/50 flex items-center justify-center z-[999] 
+                className={`fixed inset-0 bg-black/50 flex items-center justify-center z-999 
         ${closing ? "animate-fadeOut" : "animate-fadeIn"}`}
                 onClick={handleClose}
             ></div>
@@ -97,7 +97,7 @@ const MeetingBookingModal = () => {
             <div
                 style={{ color: COLORS.dark }}
                 className={`fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
-        w-[95%] max-w-5xl bg-white rounded-2xl shadow-2xl z-[1000] overflow-hidden 
+        w-[95%] max-w-5xl bg-white rounded-2xl shadow-2xl z-9999 overflow-hidden 
         ${closing ? "animate-slideDown" : "animate-slideUp"}`}
             >
                 {/* MODAL HEADER */}
@@ -124,9 +124,9 @@ const MeetingBookingModal = () => {
                 <div className="p-6">
 
 
-                    <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+                    <form onSubmit={handleSubmit} className="flex flex-col gap-1 md:gap-4">
                         {/* Personal Info */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 md:grid-cols-2   gap-1 md:gap-4">
                             <div className="relative">
                                 <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">
                                     <UserRound size={18} />
@@ -157,7 +157,7 @@ const MeetingBookingModal = () => {
                         </div>
 
                         {/* Meeting Details */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 md:grid-cols-2  gap-1 md:gap-4">
                             <div className="relative">
                                 <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">
                                     <Book size={18} />
@@ -181,7 +181,7 @@ const MeetingBookingModal = () => {
                         </div>
 
                         {/* Date/Time Selector */}
-                        <label className="text-sm font-semibold mt-2" htmlFor="datetime-input">
+                        <label className="text-sm font-semibold mt-1 md:mt-2" htmlFor="datetime-input">
                             Preferred Date & Time
                         </label>
                         <input
@@ -195,7 +195,7 @@ const MeetingBookingModal = () => {
                         />
 
                         {/* Notes/Context */}
-                        <label className="text-sm font-semibold mt-2" htmlFor="notes-input">
+                        <label className="text-sm font-semibold mt-1 md:mt-2" htmlFor="notes-input">
                             Notes / What would you like to discuss?
                         </label>
                         <textarea
@@ -212,7 +212,7 @@ const MeetingBookingModal = () => {
                         <button
                             type="submit"
                             style={{ backgroundColor: COLORS.primary }}
-                            className={`mt-4 text-white py-3 rounded-xl font-bold text-lg shadow-md transition transform hover:bg-[#709de1] hover:scale-[1.01]`}
+                            className={`mt-2 md:mt-4 text-white py-3 rounded-xl font-bold text-lg shadow-md transition transform hover:bg-[#709de1] hover:scale-[1.01]`}
                         >
                             Confirm Booking
                         </button>

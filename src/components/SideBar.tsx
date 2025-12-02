@@ -33,7 +33,7 @@ const SideBar = () => {
           className="
             md:hidden 
             fixed top-0 left-0 
-            w-2/3 h-full
+            w-full h-full
             bg-[#4e4d59] 
             z-[999] 
             p-6 flex flex-col gap-5

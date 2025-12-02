@@ -64,11 +64,11 @@ export default function page() {
       <div className="max-w-5xl mx-auto">
 
         {/* Hero */}
-        <section className="text-center mb-10" data-aos="zoom-in">
-          <h1 className="text-3xl md:text-4xl font-extrabold text-black mb-3">
+        <section className="text-center my-10" data-aos="zoom-in">
+          <h1 className="text-3xl md:text-4xl font-extrabold text-black text-start md:text-center mb-3">
             Join the SWAY Mailing List
           </h1>
-          <p className="text-slate-600 max-w-2xl mx-auto">
+          <p className="text-slate-600 max-w-2xl text-start md:text-center mx-auto">
             Stay ahead of your fitness journey with weekly training guides, nutrition tips, exclusive offers and early access to new programs — delivered straight to your inbox.
           </p>
         </section>
@@ -162,7 +162,7 @@ export default function page() {
                       placeholder="you@example.com"
                       required
                       className={`w-full rounded-xl text-black border px-4 py-2 text-sm focus:outline-none focus:ring-2 ${
-                        validateEmail(email) ? "border-slate-200 focus:ring-[#4e4d59]" : "border-red-200 focus:ring-red-300"
+                        validateEmail(email) ? "border-slate-200 focus:ring-[#4e4d59]" : "border-blue-200 focus:ring-[#80B1FB]"
                       }`}
                     />
                     {!validateEmail(email) && email.length > 0 && (
