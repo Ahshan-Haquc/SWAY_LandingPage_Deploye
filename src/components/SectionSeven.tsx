@@ -4,6 +4,7 @@ import HeadingImg from './headingImage/HeadingImg';
 import h7 from '../../public/h7.jpg';
 import h8 from '../../public/h8.jpg';
 import h9 from '../../public/h9.jpg';
+import CorporatePopup from '@/features/CorporatePopup';
 
 const SectionSeven = () => {
 
@@ -41,7 +42,7 @@ const SectionSeven = () => {
           </div>
 
           {/* === RIGHT COLUMN: Key Features and Form === */}
-          <div className="flex flex-col space-y-2 md:space-y-4 items-center">
+          <div className="flex flex-col space-y-2 md:space-y-4 items-center" id='seven-section'>
 
             {/* Program Motto / Structure */}
             <div className="text-xs md:text-sm xl:text-lg font-light text-gray-700 text-center">
@@ -84,6 +85,7 @@ const SectionSeven = () => {
           </div>
         </div>
       </div>
+      <CorporatePopup/>
     </>
   );
 };

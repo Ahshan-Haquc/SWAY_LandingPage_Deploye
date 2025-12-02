@@ -68,7 +68,7 @@ const SectionTen = () => {
       {/*  POPUP  */}
       {showPopup && (
         <div
-          className={`fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-999 ${backdropClass}`}
+          className={`fixed inset-0 bg-black/60  flex items-center justify-center z-999 ${backdropClass}`}
         >
           <div className={`bg-white w-full max-w-sm mx-4 rounded-3xl shadow-2xl p-8 relative ${modalClass}`}>
             
