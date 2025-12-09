@@ -25,8 +25,8 @@ const Footer = () => {
         </div>
 
         {/* <div className="text-[#FF6464] text-3xl md:text-5xl font-light">Y</div> */}
-        <div className="relative w-12 h-8 md:w-32 md:h-12">
-          <Image src={LogoIcon} alt="Y" fill className="object-contain" />
+        <div className="relative w-8 h-8 md:w-14 md:h-18">
+          <Image src={LogoIcon} alt="Y" fill className="object-contain absolute top-0 right-0" />
         </div>
       </div>
 
@@ -55,7 +55,7 @@ const Footer = () => {
         {/* --- Join Sway Section --- */}
         <div>
           <h4 className="text-sm font-semibold text-[#FF6464] mb-6 tracking-widest">
-            JOIN SWAY
+            JOIN MAILING LIST
           </h4>
 
           {/* Email Input */}
@@ -79,8 +79,8 @@ const Footer = () => {
               {/* SUBSCRIBE BUTTON */}
               <button
                 disabled={!email.trim()}
-                className={`text-xs font-semibold transition-colors duration-200 
-                  ${email.trim() ? "text-[#FF6464] hover:text-[#b32c2c]" : "text-gray-500 cursor-not-allowed"}`}
+                className={`text-xs font-semibold transition-all duration-300 
+                  ${email.trim() ? "text-[#FF6464] hover:text-[#ff5454] hover:cursor-pointer" : "text-[#FFF1B0] cursor-not-allowed"}`}
               >
                 SUBSCRIBE
               </button>
@@ -89,15 +89,21 @@ const Footer = () => {
 
           {/* Social Icons */}
           <div className="flex space-x-4 mt-8">
-            <a href="#" aria-label="Instagram" className="hover:text-[#FF6464] transition-colors duration-200">
+            <a href="https://www.instagram.com/swaystudiolondon/" aria-label="Instagram" className="hover:text-[#FF6464] transition-colors duration-200">
               <Instagram size={20} />
             </a>
 
-            <a href="#" aria-label="LinkedIn" className="hover:text-[#FF6464] transition-colors duration-200">
+            <a href="https://www.linkedin.com/company/sway-studio-wellness/posts/?feedView=all" aria-label="LinkedIn" className="hover:text-[#FF6464] transition-colors duration-200">
               <Linkedin size={20} />
             </a>
 
-            <a href="#" aria-label="WhatsApp" className="hover:text-[#FF6464] transition-colors duration-200">
+            <a
+              href="https://wa.me/442031287541?text=Hi%20Sway%20Studio!%20I%20found%20you%20online%20and%20would%20love%20to%20know%20more%20%F0%9F%98%8A"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Contact us on WhatsApp"
+              className="hover:text-[#FF6464] transition-colors duration-200"
+            >
               <BsWhatsapp size={20} />
             </a>
           </div>

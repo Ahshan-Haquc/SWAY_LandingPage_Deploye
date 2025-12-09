@@ -54,7 +54,7 @@ const PricingCartPriceToggle = ({ pricingName }: { pricingName: string }) => {
                   <div className="w-2 h-2 rounded-full" style={{ backgroundColor: selectedPlan === "monthly" ? "#FF6464" : LIGHT_BG, }}></div>
                 </div>
               </div>
-              <div className="flex flex-col text-start">
+              <div className="flex flex-col text-start  ml-1 lg:ml-2">
               <span className="text-xs xl:text-sm ">MONTHLY</span>
               <p className="text-lg xl:text-sm ">£1050</p>
               </div>
@@ -74,7 +74,7 @@ const PricingCartPriceToggle = ({ pricingName }: { pricingName: string }) => {
                   <div className="w-2 h-2 rounded-full" style={{ backgroundColor: selectedPlan === "annual" ? "#FF6464" : LIGHT_BG, }}></div>
                 </div>
               </div>
-              <div className="flex flex-col text-start">
+              <div className="flex flex-col text-start ml-1 lg:ml-2">
                 <span className="text-xs xl:text-sm ">ANNUALLY</span>
                 <p className="text-lg xl:text-sm">£11,440</p>
                 <p className="text-xs">SAVE £500</p>

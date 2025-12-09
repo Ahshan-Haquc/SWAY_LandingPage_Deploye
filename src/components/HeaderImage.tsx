@@ -96,7 +96,7 @@ const HeaderImage = () => {
     {/* for desktop  */}
       <div className="w-full relative mt-10 md:mt-25 xl:mt-30 hidden md:block">
 
-        {/* ======= CENTER TEXT ======= */}
+        {/*   CENTER TEXT   */}
         <div
           data-aos="zoom-in"
           className="absolute top-24 md:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
@@ -105,7 +105,7 @@ const HeaderImage = () => {
           PERSONALISED WELLNESS. REDEFINED FOR EVERY BODY.
         </div>
 
-        {/* ======= 3-IMAGE GRID ======= */}
+        {/*   3-IMAGE GRID   */}
         <div className="grid grid-cols-3 items-center justify-center">
 
           {/** -- LEFT SMALL IMAGE -- */}
@@ -137,12 +137,12 @@ const HeaderImage = () => {
 
         </div>
 
-        {/* ======= Logo + Rating ======= */}
+        {/*   Logo + Rating   */}
         <div
           data-aos="zoom-in"
           className="absolute bottom-5 md:bottom-3 xl:bottom-10 left-1/2 -translate-x-1/2 z-50 flex flex-col items-center"
         >
-          <div className="w-40 sm:w-56">
+          <div className="w-50 sm:w-60 xl:w-78">
             <Image src={headerLogo} alt="SWAY" className="object-contain w-full h-auto" />
           </div>
 
@@ -160,11 +160,6 @@ const HeaderImage = () => {
               {/* for phone  */}
       <div className="w-full relative mt-18 px-4 sm:px-6 block md:hidden">
 
-        {/* ======= CENTER TEXT (Positioned above the images) ======= */}
-        {/* Moved the text out of the absolute position for better flow on mobile */}
-
-
-        {/* ======= STACKED IMAGE LAYOUT ======= */}
         <div className="flex flex-col gap-3">
 
           {/* -- TOP SMALL IMAGE -- */}
@@ -220,8 +215,6 @@ const HeaderImage = () => {
           </div>
 
         </div>
-
-        {/* ======= Logo + Rating (Positioned below the images) ======= */}
 
       </div>
     </>

@@ -4,6 +4,7 @@ import BurgerMenu from "@/components/BurgerMenu";
 import Providers from "@/redux/providers";
 import SideBar from "@/components/SideBar";
 import ChatIcon from "@/components/NavBar";
+import logo from "../../public/LogoIcon.png"
 
 import { Montserrat } from "next/font/google";
 import MeetingBookingModal from "@/features/MeetingBookingModal";
@@ -18,7 +19,11 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Sway",
   description: "Sway Landing Page",
+  icons: {
+    icon: "/LogoIcon.png",
+  },
 };
+
 
 export default function RootLayout({
   children,

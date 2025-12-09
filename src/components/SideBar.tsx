@@ -10,11 +10,11 @@ import { useDispatch, useSelector } from "react-redux";
 const pages = [
   { name: "Home", href: "/" },
   { name: "Contact", href: "/contact" },
-  { name: "Services + Shop", href: "#" },
+  { name: "Shop", href: "/shop" },
   { name: "Join Mailing List", href: "/joinMailingList" },
   { name: "Living In Wellness", href: "/livingInWellness" },
   { name: "Resources", href: "/resource" },
-  { name: "Blog", href: "#" },
+  { name: "Blog", href: "/blog" },
 ];
 
 const SideBar = () => {
