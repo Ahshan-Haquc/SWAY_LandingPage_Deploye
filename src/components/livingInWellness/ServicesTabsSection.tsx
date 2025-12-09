@@ -6,9 +6,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 // IMPORT YOUR IMAGES
-import imgTwo from '../../../public/yankruv.jpg';
 import LogoIcon from "../../../public/LogoIcon.png";
 import imgNew from "../../../public/Untitled design.png";
+import imgTwo from '../../../public/yankruv.jpg';
+import imgThree from '../../../public/gym.jpg';
 import Link from "next/link";
 
 export default function ServicesTabsSection() {
@@ -138,7 +139,7 @@ export default function ServicesTabsSection() {
                 data-aos-delay="300"
               >
                 <Image
-                  src={imgTwo}
+                  src={imgThree}
                   fill
                   alt="Image"
                   className="object-cover rounded-xl"

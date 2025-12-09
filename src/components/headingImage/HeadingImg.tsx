@@ -29,22 +29,23 @@ const HeadingImg = ({ h1, h2, h3, phoneImg, isText1Show=false, isText2Show=false
         </div>
         )}
 
-        {/* ======= 3-IMAGE GRID ======= */}
+        {/*  3-IMAGE GRID   */}
         <div className="grid grid-cols-3 items-center justify-center">
 
           {/** -- LEFT SMALL IMAGE -- */}
           <div
-            className="relative aspect-square rounded-3xl overflow-hidden "
+            className="relative aspect-square rounded-3xl overflow-hidden shadow-xl shadow-[#79fcf8]/15"
             data-aos="fade-left"
             data-aos-delay="300"
           >
             <Image src={h1} alt="Left Image" fill className="object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-transparent"></div>
           </div>
 
           {/** -- BIG MIDDLE IMAGE (Center from all sides) -- */}
           <div
             className="relative rounded-3xl overflow-hidden 
-          h-40 md:h-92 xl:h-[550px]  md:scale-110 z-20"
+          h-40 md:h-92 xl:h-[550px]  md:scale-110 z-20 shadow-xl shadow-[#79fcf8]/15"
             data-aos="zoom-in"
           >
             <Image src={h2} alt="Middle Big Image" fill className="object-cover" />
@@ -52,16 +53,17 @@ const HeadingImg = ({ h1, h2, h3, phoneImg, isText1Show=false, isText2Show=false
 
           {/** -- RIGHT SMALL IMAGE -- */}
           <div
-            className="relative aspect-square rounded-3xl overflow-hidden "
+            className="relative aspect-square rounded-3xl overflow-hidden shadow-xl shadow-[#79fcf8]/15"
             data-aos="fade-right"
             data-aos-delay="300"
           >
             <Image src={h3} alt="Right Image" fill className="object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-transparent"></div>
           </div>
 
         </div>
 
-        {/* ======= Logo + Rating ======= */}
+        {/*   Logo + Rating   */}
         {isText2Show && (
         <div
           data-aos="zoom-in"

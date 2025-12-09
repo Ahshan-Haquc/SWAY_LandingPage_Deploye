@@ -8,7 +8,25 @@ export default function ContactUs() {
     const [form, setForm] = useState({ name: "", email: "", phone: "", service: "", message: "" });
     const [submitted, setSubmitted] = useState(false);
 
-    const services = ["Residential Management", "Coorporate", "Move", "Fuel", "Recovery", "Mind", "Other"];
+    const services = [
+  "Personal Training",
+  "Pilates",
+  "Nutrition & Dietetics",
+  "Physiotherapy / Rehab",
+  "Psychotherapy / Coaching",
+  "Sports / Recovery Massage",
+  "Sway Studio 1:1 Session",
+  "Corporate Wellness Services",
+  "Residential Building Services",
+  "Free Consultation",
+  "Other / Not Sure Yet"
+];
+    // const services = ["Residential Management", "Coorporate", "Move", "Fuel", "Recovery", "Mind", "Other"];
+    const contactInfo={
+        instagram: "https://www.instagram.com/swaystudiolondon/",
+        linkedIn: "https://www.linkedin.com/company/sway-studio-wellness/posts/?feedView=all",
+        whatsapp: "https://wa.me/442031287541?text=Hi%20Sway%20Studio!%20I%20found%20you%20online%20and%20would%20love%20to%20know%20more%20%F0%9F%98%8A"
+    }
 
     const handleChange = (e: any) => {
         setForm({ ...form, [e.target.name]: e.target.value });
@@ -45,14 +63,14 @@ export default function ContactUs() {
 
                         <div className="space-y-2">
                             <a href="mailto:info@totalfit.co.uk" className="block underline">info@totalfit.co.uk</a>
-                            <a href="tel:01732882302" className="block underline">01732 882302</a>
+                            <a href={contactInfo.whatsapp} target="_blank" className="block underline">+44 20 3128 7541</a>
                         </div>
 
                         <div className="flex space-x-6 text-xl mt-6">
-                            <a href="#" className="hover:text-[#FF6464]"><Facebook /></a>
-                            <a href="#" className="hover:text-[#FF6464]"><Instagram /></a>
-                            <a href="#" className="hover:text-[#FF6464]"><Linkedin /></a>
-                            <a href="#" className="hover:text-[#FF6464]"><BsWhatsapp size={20} /></a>
+                            <a href={contactInfo.instagram} target="_blank" className="hover:text-[#FF6464]"><Instagram /></a>
+                            <a href={contactInfo.linkedIn} target="_blank" className="hover:text-[#FF6464]"><Linkedin /></a>
+                            <a href={contactInfo.whatsapp} target="_blank" rel="noopener noreferrer"
+              aria-label="Contact us on WhatsApp" className="hover:text-[#FF6464]"><BsWhatsapp size={20} /></a>
                         </div>
                     </div>
                 </div>

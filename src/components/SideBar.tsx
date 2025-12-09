@@ -12,7 +12,7 @@ const pages = [
   { name: "Contact", href: "/contact" },
   { name: "Shop", href: "/shop" },
   { name: "Join Mailing List", href: "/joinMailingList" },
-  { name: "Living In Wellness", href: "/livingInWellness" },
+  { name: "Corp and Residential", href: "/livingInWellness" },
   { name: "Resources", href: "/resource" },
   { name: "Blog", href: "/blog" },
 ];
@@ -74,7 +74,7 @@ const SideBar = () => {
       {/* {mobileMenuOpen && ( */}
       <div className={`h-full w-full fixed bg-black/90 duration-800 transition-all ease-out  ${mobileMenuOpen ? "hidden md:flex opacity-100 z-900 ": "hidden md:flex opacity-0 -z-10"}`} onClick={() => dispatch(toggleMobileMenu())}>
       </div>
-        <div className={`flex flex-col fixed top-1/2 -translate-y-1/2  h-2/3 w-64 bg-[#4e4d59] shadow-lg p-6 z-[1000] rounded-tr-3xl rounded-br-3xl duration-800 transition-all ease-out ${mobileMenuOpen ? "hidden md:flex left-0": "hidden md:flex -left-70"}`} >
+        <div className={`flex flex-col fixed top-1/2 -translate-y-1/2  h-2/3 w-68 bg-[#4e4d59] shadow-lg p-6 z-[1000] rounded-tr-3xl rounded-br-3xl duration-800 transition-all ease-out ${mobileMenuOpen ? "hidden md:flex left-0": "hidden md:flex -left-70"}`} >
           <div className="flex flex-col gap-4 mt-10">
 
             {pages.map((page, index) => {
