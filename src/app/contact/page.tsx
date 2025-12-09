@@ -1,10 +1,16 @@
 "use client"
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Instagram, Linkedin } from "lucide-react";
 import { BsWhatsapp } from "react-icons/bs";
 import MeetingBookingModal from '../../features/MeetingBookingModal';
 
 export default function ContactUs() {
+    useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
+
     const [form, setForm] = useState({ name: "", email: "", phone: "", service: "", message: "" });
     const [submitted, setSubmitted] = useState(false);
 

@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function CheckIcon({ className = "w-4 h-4 inline-block mr-2" }: { className?: string }) {
   return (
@@ -58,6 +60,10 @@ export default function page() {
       setSubmitting(false);
     }
   };
+
+  useEffect(() => {
+      AOS.init({ once: true });
+    }, []);
 
   return (
     <main className="min-h-screen  py-16 px-6 md:px-12 flex justify-center items-center" >

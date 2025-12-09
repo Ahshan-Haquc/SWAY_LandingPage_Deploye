@@ -95,7 +95,7 @@ export default function CorporatePopup() {
                 When your team moves better, they work better.
               </p>
 
-              <p className="text-sm md:text-base">
+              <p className="text-sm md:text-base text-gray-800">
                 <a href="#" className="underline font-semibold text-blue-600">
                   Contact us
                 </a>{" "}

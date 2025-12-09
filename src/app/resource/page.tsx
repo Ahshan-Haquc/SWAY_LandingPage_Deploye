@@ -2,6 +2,8 @@
 import Footer from "@/components/Footer";
 import ResourceHeader from "@/components/resourcePage/ResouceHeader";
 import { useRef } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function ResourcesPage() {
   const emailSectionRef = useRef<HTMLDivElement | null>(null);
