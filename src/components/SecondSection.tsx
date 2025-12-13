@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const infoText = [
@@ -22,7 +23,7 @@ const SecondSection = () => {
         ))
       }
       <p className="text-[10px] md:text-sm xl:text-lg text-center">
-        Begin your journey with a <a href="" className="underline">free consultation</a>. We&apos;ll build your team, your plan, your results.
+        Begin your journey with a <Link href="/freeConsultation" className="underline">free consultation</Link>. We&apos;ll build your team, your plan, your results.
       </p>
       
     </div>

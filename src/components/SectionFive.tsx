@@ -33,7 +33,7 @@ const SectiveFive = () => {
       {/* Bottom Row: Subscription Form */}
       <div className="flex flex-col w-full md:max-w-1/2">
         {/* Labels */}
-        <div className="flex justify-between w-full text-xs md:text-sm font-normal tracking-widest mb-2">
+        <div className="flex justify-between w-full text-xs md:text-sm font-normal tracking-widest">
           <label htmlFor="email-input" className="text-[#FF6464] opacity-90">
             EMAIL
           </label>

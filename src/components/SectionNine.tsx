@@ -1,6 +1,7 @@
 import React from "react";
 import PricingCart from "./PricingCart";
 import { pricingData } from "../data/pricingData";
+import Link from "next/link";
 
 const pricingBoxes = [
   {
@@ -89,7 +90,7 @@ const SectionNine = () => {
                         {box.save}
                       </p>
                       <p className="mt-1 text-xs text-gray-500 self-start group-hover:text-white">
-                        v'single session price.
+                        v&apos;single session price.
                       </p>
                     </div>
                   )}
@@ -107,7 +108,7 @@ const SectionNine = () => {
         </div>
 
         <h4 className="text-xs md:text-sm font-bold  text-gray-900 text-center translate-y-4 md:translate-y-10">
-          Book your <a href="" className="underline"> free consultation</a> with any membership or package to get today.
+          Book your <Link href="/freeConsultation" className="underline"> free consultation</Link> with any membership or package to get today.
         </h4>
       </div>
         <div className="w-68 mx-auto  rounded-xl text-2xl font-light tracking-wide bg-[#FAEFB8] px-8 py-4 translate-y-4"></div>
