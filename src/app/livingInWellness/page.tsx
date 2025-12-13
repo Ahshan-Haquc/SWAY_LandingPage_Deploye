@@ -1,11 +1,6 @@
 "use client"
 import Footer from '@/components/Footer';
-import React from 'react';
-import Image from "next/image";
-import imgOne from '../../../public/curated.jpg';
-import imgTwo from '../../../public/yankruv.jpg';
-import LogoIcon from "../../../public/LogoIcon.png";
-import imgNew from "../../../public/Untitled design.png";
+import React, { Suspense } from 'react';
 import h7 from '../../../public/h7.jpg';
 import h8 from '../../../public/h8.jpg';
 import h9 from '../../../public/h9.jpg';
@@ -21,9 +16,9 @@ const page = () => {
         <div className='max-w-7xl mx-auto'>
         <HeadingImg  h1={h7} h2={h8} h3={h9} phoneImg={headerSecondImage} />
 
-        
+        <Suspense fallback={<div className="min-h-screen" />}>
             <ServicesTabsSection/>
-            
+        </Suspense>    
             <Footer/>
         </div>
             </>
@@ -31,4 +26,5 @@ const page = () => {
 };
 
 export default page;
+
 
