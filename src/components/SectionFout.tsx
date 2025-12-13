@@ -84,23 +84,24 @@ const trainingData = [
 ];
 
 const PersonalTrainingSection = () => {
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 12000,
+    delay : 3000,
   };
 
   return (
     <div className="flex justify-center py-8 md:py-16 mx-auto  px-2 md:px-0 overflow-hidden">
       <Slider {...settings} className="w-full">
         {trainingData.map((item, index) => (
-          <div className="h-fit w-fit p-1 md:p-4">
+          <div className="h-fit w-fit p-1 md:p-4" key={index}>
             <div
-              key={index}
+              
               className="w-full  h-screen md:h-[550px] xl:h-[750px] p-4 md:p-5 xl:p-10 bg-white border-2 border-gray-500  rounded-xl"
             >
               {/* i want these two div will be center aligned vertically and horizontally */}
@@ -112,7 +113,7 @@ const PersonalTrainingSection = () => {
                     {item.title}
                   </h2>
 
-                  <p className="text-xs md:text-sm xl:text-xl text-gray-800">
+                  <p className="text-xs md:text-sm xl:text-xl text-center text-gray-800">
                     {item.subtitle}
                   </p>
 

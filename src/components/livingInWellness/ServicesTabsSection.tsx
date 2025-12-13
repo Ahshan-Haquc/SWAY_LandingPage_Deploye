@@ -106,7 +106,7 @@ export default function ServicesTabsSection() {
                 </p>
 
                 <p className="text-xs md:text-sm xl:text-lg font-light">
-                  Transform your building's wellbeing.
+                  Transform your building&apos;s wellbeing.
                 </p>
 
                 <Link href="/contact" className="px-6 py-3 bg-[#FF6464] text-white ">
@@ -164,7 +164,7 @@ export default function ServicesTabsSection() {
                 </p>
 
                 <p className="text-xs md:text-sm xl:text-lg font-light">
-                  Transform your building's wellbeing.
+                  Transform your building&apos;s wellbeing.
                 </p>
 
                 <Link href="/contact" className="px-6 py-3 bg-[#FF6464] text-white ">
@@ -185,7 +185,7 @@ export default function ServicesTabsSection() {
       >
         <div className="flex justify-between items-start mb-4">
           <h1 className="text-xl md:text-3xl xl:text-4xl font-light tracking-wide max-w-2xl">
-            LET'S SWAY TOGETHER
+            LET&apos;S SWAY TOGETHER
           </h1>
 
           <div className="relative w-12 h-8 md:w-32 md:h-12">
