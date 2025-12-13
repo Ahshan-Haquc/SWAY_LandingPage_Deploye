@@ -153,7 +153,7 @@ export default function ContactUs() {
                 </div>
             </div>
         </div>
-        <MeetingBookingModal/>
+        {/* <MeetingBookingModal/> */}
         </>
     );
 }

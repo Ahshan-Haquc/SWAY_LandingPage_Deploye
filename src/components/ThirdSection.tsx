@@ -10,14 +10,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const ThirdSection = () => {
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 9000,
     dotsClass: "slick-dots custom-dots",
   };
 

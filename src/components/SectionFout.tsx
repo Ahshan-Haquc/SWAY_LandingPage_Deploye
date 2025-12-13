@@ -5,6 +5,7 @@ import img3 from '../../public/img3.jpg'
 import img4 from '../../public/img4.jpg'
 import img5 from '../../public/img5.jpg'
 import img6 from '../../public/img6.jpg'
+import img7 from '../../public/Untitled design.png'
 
 import React from "react";
 import Image from "next/image";
@@ -18,7 +19,7 @@ const trainingData = [
       "Our elite personal training coaches bring unparalleled expertise across movement disciplines - strength, Pilates, posture, and mobility. Whether online or in person, your dedicated coach uses the Sway methodology to tailor each session around your body's needs, ensuring safe form and sustainable habit-building. Every rep matters. Every session counts.",
     description2: "Begin your journey with our simple, ",
     linkText: "free consultation.",
-    linkHref: "#",
+    linkHref: "/freeConsultation",
     price: "Prices start at £75 per session. See pricing options below.",
     tags: ["1:1", "2:1", "in-person", "on-line"],
     image: img1,
@@ -54,7 +55,7 @@ const trainingData = [
       "Refine your alignment, improve posture, and cultivate inner strength with bespoke Pilates sessions that move beyond the reformer. Our expert instructors tailor every movement to your body's needs, weaving breath, precision, and mindful control into every workout. Stronger support. Better posture. A more balanced you.",
     description2: "Begin your Pilates journey with our simple, ",
     linkText: "free consultation.",
-    linkHref: "#",
+    linkHref: "/freeConsultation",
     price: "Prices start at £75 per session. See pricing options below.",
     tags: ["1:1", "2:1", "in-person", "on-line"],
     image: img4,
@@ -81,26 +82,37 @@ const trainingData = [
     tags: ["1:1", "in-person"],
     image: img6,
   },
+  {
+    title: "RE-BUILD - BODY TRANSFORMATION",
+    subtitle: "Recalibrate your body. Reveal your strength.",
+    description1:
+      "This is more than training - it's a transformation. Over **12 weeks and 36 expertly coached sessions**, RE-BUILD delivers visible change through strength, movement precision, and performance quality. With **three dedicated hours of nutrition from a registered dietitian, ongoing tracking, and weekly refinements**.",
+    description2: "Commit to change and contact us to start your Re-Build plan today.",
+    price: "Prices start at £75 per session. See pricing options below.",
+    tags: ["1:1", "in-person"],
+    image: img7,
+  },
 ];
 
 const PersonalTrainingSection = () => {
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 12000,
+    delay : 3000,
   };
 
   return (
     <div className="flex justify-center py-8 md:py-16 mx-auto  px-2 md:px-0 overflow-hidden">
       <Slider {...settings} className="w-full">
         {trainingData.map((item, index) => (
-          <div className="h-fit w-fit p-1 md:p-4">
+          <div className="h-fit w-fit p-1 md:p-4 overflow-hidden" key={index}>
             <div
-              key={index}
+              
               className="w-full  h-screen md:h-[550px] xl:h-[750px] p-4 md:p-5 xl:p-10 bg-white border-2 border-gray-500  rounded-xl"
             >
               {/* i want these two div will be center aligned vertically and horizontally */}
@@ -112,7 +124,7 @@ const PersonalTrainingSection = () => {
                     {item.title}
                   </h2>
 
-                  <p className="text-xs md:text-sm xl:text-xl text-gray-800">
+                  <p className="text-xs md:text-sm xl:text-xl text-center text-gray-800">
                     {item.subtitle}
                   </p>
 

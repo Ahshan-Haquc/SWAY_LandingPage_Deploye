@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { X } from "lucide-react";
 import Image from "next/image";
 import imgOne from "../../public/corporate.png";
+import Link from "next/link";
 
 export default function CorporatePopup() {
   const [showPopup, setShowPopup] = useState(false);
@@ -96,9 +97,9 @@ export default function CorporatePopup() {
               </p>
 
               <p className="text-sm md:text-base text-gray-800">
-                <a href="#" className="underline font-semibold text-blue-600">
+                <Link href="/contact" className="underline font-semibold text-blue-600">
                   Contact us
-                </a>{" "}
+                </Link>{" "}
                 for a bespoke corporate wellbeing package.
               </p>
             </div>

@@ -19,13 +19,13 @@ const SectiveFive = () => {
       <div className="flex justify-between items-start mb-4">
         {/* Headline */}
         <h1 className="text-xl md:text-3xl xl:text-4xl font-light tracking-wide max-w-2xl">
-          LET'S SWAY TOGETHER
+          LET&apos;S SWAY TOGETHER
         </h1>
         
         {/* <div className="text-[#FF6464] text-5xl md:text-6xl font-light opacity-80">
           Y
         </div> */}
-        <div className="relative w-12 h-8 md:w-32 md:h-12">
+        <div className="relative mt-1 md:mt-0 w-6 md:w-12 h-6 md:h-12">
           <Image src={LogoIcon} alt="Y" fill className="object-contain" />
         </div>
       </div>
@@ -33,7 +33,7 @@ const SectiveFive = () => {
       {/* Bottom Row: Subscription Form */}
       <div className="flex flex-col w-full md:max-w-1/2">
         {/* Labels */}
-        <div className="flex justify-between w-full text-xs md:text-sm font-normal tracking-widest mb-2">
+        <div className="flex justify-between w-full text-xs md:text-sm font-normal tracking-widest">
           <label htmlFor="email-input" className="text-[#FF6464] opacity-90">
             EMAIL
           </label>
