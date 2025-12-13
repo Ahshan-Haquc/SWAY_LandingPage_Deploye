@@ -110,7 +110,7 @@ const PersonalTrainingSection = () => {
     <div className="flex justify-center py-8 md:py-16 mx-auto  px-2 md:px-0 overflow-hidden">
       <Slider {...settings} className="w-full">
         {trainingData.map((item, index) => (
-          <div className="h-fit w-fit p-1 md:p-4" key={index}>
+          <div className="h-fit w-fit p-1 md:p-4 overflow-hidden" key={index}>
             <div
               
               className="w-full  h-screen md:h-[550px] xl:h-[750px] p-4 md:p-5 xl:p-10 bg-white border-2 border-gray-500  rounded-xl"

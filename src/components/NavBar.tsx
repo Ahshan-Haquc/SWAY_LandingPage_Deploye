@@ -17,8 +17,8 @@ const ChatIcon = () => {
     <>
       {showIcon && (
         <div className="fixed top-4 md:top-5 left-1/2 -translate-x-1/2 z-100 bg-black/40 backdrop-blur-[10px] px-1 py-1 md:py-1 rounded-full flex items-center shadow-lg text-nowrap text-white">
-          <Link href="/" className="h-12 w-12 flex items-center rounded-full duration-300 hover:bg-[#FF6464]">
-          <div className="hidden md:block h-8 w-8 relative filter brightness-0 invert mx-4  ">
+          <Link href="/" className="hidden md:flex h-12 w-12  items-center rounded-full duration-300 hover:bg-[#FF6464]">
+          <div className=" h-8 w-8 relative filter brightness-0 invert mx-4  ">
           <div
           
           >
