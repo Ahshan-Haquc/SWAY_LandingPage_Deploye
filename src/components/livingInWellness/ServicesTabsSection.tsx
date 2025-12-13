@@ -51,7 +51,7 @@ export default function ServicesTabsSection() {
   };
 
   return (
-    <div className="min-h-screen text-center ">
+    <div className="min-h-screen text-center text-gray-800">
       <div className="relative h-fit mx-auto py-6 pt-22 md:pt-0 overflow-hidden rounded-xl mt-8 md:mt-12">
 
         {/* ---------------- TAB NAVIGATION ---------------- */}
@@ -210,7 +210,7 @@ export default function ServicesTabsSection() {
 
       {/* ---------------- EMAIL BOX ---------------- */}
       <div
-        className="bg-[#80b1fb] max-w-[1440px] mx-auto rounded-xl text-white p-4 md:p-8 h-40 md:h-60 my-10"
+        className="bg-[#80b1fb] max-w-[1440px] mx-auto rounded-xl text-white p-4 md:p-8 h-40 md:h-50 my-10"
         data-aos="fade-up"
       >
         <div className="flex justify-between mb-4">
@@ -218,16 +218,32 @@ export default function ServicesTabsSection() {
             LET&apos;S SWAY TOGETHER
           </h1>
 
-          <div className="relative w-12 h-8 md:w-32 md:h-12">
-            <Image src={LogoIcon} alt="Logo" fill />
+          <div className="relative w-10 h-8 md:w-12 md:h-12">
+            <Image src={LogoIcon} alt="Logo" fill className="h-full w-full object-contain"/>
           </div>
         </div>
 
-        <input
-          type="email"
-          placeholder="Your email"
-          className="w-full bg-transparent border-b text-center focus:outline-none"
-        />
+        <div className="flex flex-col w-full md:max-w-1/2">
+        {/* Labels */}
+        <div className="flex justify-between w-full text-xs md:text-sm font-normal tracking-widest">
+          <label htmlFor="email-input" className="text-[#FF6464] opacity-90">
+            EMAIL
+          </label>
+          <button className="text-[#FF6464] opacity-90 hover:opacity-100 transition-opacity duration-200">
+            JOIN MAILING LIST
+          </button>
+        </div>
+        
+        {/* Input Field (Bottom Border) */}
+        <div className="border-b border-white pb-1">
+          <input
+            id="email-input"
+            type="email"
+            placeholder=""
+            className="bg-transparent text-white w-full focus:outline-none placeholder-gray-400 text-base md:text-lg"
+          />
+        </div>
+      </div>
       </div>
     </div>
   );
