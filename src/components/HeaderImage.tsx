@@ -8,8 +8,10 @@ import h2 from "../../public/hhtwo.jpg";
 import h3 from "../../public/hThree.jpg";
 import headerLogo from "../../public/SwayWhiteLogo.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeaderImage = () => {
+  const googleReviewLink = "https://www.google.com/maps/place/Sway+Fitness+Studio/@51.4575066,-0.1098339,17z/data=!4m8!3m7!1s0xad249cd39d40b62d:0xf1b8e57683cd4a65!8m2!3d51.4575066!4d-0.1098339!9m1!1b1!16s%2Fg%2F11ww765hv0?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D";
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -72,14 +74,14 @@ const HeaderImage = () => {
             <Image src={headerLogo} alt="SWAY" className="object-contain w-full h-auto" />
           </div>
 
-          <div className="flex flex-col items-center mt-3 text-white">
+          <a href={googleReviewLink} target="_blank" className="flex flex-col items-center mt-3 text-white">
             <div className="flex gap-3 bg-black/20 px-3 py-1 rounded-full ">
               {Array.from({ length: 5 }).map((_, i) => (
                 <span key={i} className="text-yellow-400 text-lg">★</span>
               ))}
             </div>
             <p className="text-xs sm:text-sm mt-2 opacity-90">4.9 · 9.7k Reviews</p>
-          </div>
+          </a>
         </div>
       </div>
 

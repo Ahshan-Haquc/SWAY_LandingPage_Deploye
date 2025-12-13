@@ -5,6 +5,7 @@ import img3 from '../../public/img3.jpg'
 import img4 from '../../public/img4.jpg'
 import img5 from '../../public/img5.jpg'
 import img6 from '../../public/img6.jpg'
+import img7 from '../../public/Untitled design.png'
 
 import React from "react";
 import Image from "next/image";
@@ -80,6 +81,16 @@ const trainingData = [
     price: "Prices start at £75 per session. See pricing options below.",
     tags: ["1:1", "in-person"],
     image: img6,
+  },
+  {
+    title: "RE-BUILD - BODY TRANSFORMATION",
+    subtitle: "Recalibrate your body. Reveal your strength.",
+    description1:
+      "This is more than training - it's a transformation. Over **12 weeks and 36 expertly coached sessions**, RE-BUILD delivers visible change through strength, movement precision, and performance quality. With **three dedicated hours of nutrition from a registered dietitian, ongoing tracking, and weekly refinements**.",
+    description2: "Commit to change and contact us to start your Re-Build plan today.",
+    price: "Prices start at £75 per session. See pricing options below.",
+    tags: ["1:1", "in-person"],
+    image: img7,
   },
 ];
 
