@@ -107,8 +107,21 @@ export default function ServicesTabsSection() {
                   movement, and wellbeing training.
                 </p>
 
-                <Link href="/contact" className="px-6 py-3 bg-white text-black">
-                  Contact us
+                <Link
+                  href="/contact"
+                  className="relative overflow-hidden px-6 py-3 rounded-2xl bg-white text-black font-medium group"
+                >
+                  {/* Orange sliding background */}
+                  <span
+                    className="absolute inset-0 bg-orange-500 scale-x-0 origin-left 
+               transition-transform duration-500 ease-in-out
+               group-hover:scale-x-100"
+                  />
+
+                  {/* Button text */}
+                  <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
+                    Contact us
+                  </span>
                 </Link>
               </div>
             </div>
@@ -116,12 +129,12 @@ export default function ServicesTabsSection() {
 
           {/* ---------- TAB 2: RESIDENTIAL MANAGEMENT ---------- */}
           {activeTab === 1 && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-15 items-center text-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-15 items-center bg-[#FAEFB8] py-12 px-8 mb-12 text-center rounded-2xl">
               <div
                 className="flex flex-col items-center space-y-4 p-8 order-2 md:order-1"
                 data-aos="zoom-in"
               >
-                <h2 className="text-lg md:text-xl xl:text-4xl text-nowrap font-light text-white bg-[#FF6464] px-2 mb-10">
+                <h2 className="text-lg md:text-xl xl:text-4xl font-light mb-10">
                   RESIDENTIAL MANAGEMENT
                 </h2>
 
@@ -139,9 +152,19 @@ export default function ServicesTabsSection() {
 
                 <Link
                   href="/contact"
-                  className="px-6 py-3 bg-[#FF6464] text-white"
+                  className="relative overflow-hidden px-6 py-3 rounded-2xl bg-white text-black font-medium group"
                 >
-                  Contact us
+                  {/* Orange sliding background */}
+                  <span
+                    className="absolute inset-0 bg-orange-500 scale-x-0 origin-left 
+               transition-transform duration-500 ease-in-out
+               group-hover:scale-x-100"
+                  />
+
+                  {/* Button text */}
+                  <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
+                    Contact us
+                  </span>
                 </Link>
               </div>
 
@@ -161,7 +184,7 @@ export default function ServicesTabsSection() {
 
           {/* ---------- TAB 3: GYM MANAGEMENT ---------- */}
           {activeTab === 2 && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-15 items-center text-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-15 items-center bg-[#FAEFB8] py-12 px-8 mb-12 text-center rounded-2xl">
               <div
                 className="w-full h-44 md:h-98 relative"
                 data-aos="fade-left"
@@ -178,7 +201,7 @@ export default function ServicesTabsSection() {
                 className="flex flex-col items-center space-y-4 p-8"
                 data-aos="zoom-in"
               >
-                <h2 className="text-lg md:text-xl xl:text-4xl font-light text-white bg-[#FF6464] px-2 mb-10">
+                <h2 className="text-lg md:text-xl xl:text-4xl font-light mb-10">
                   GYM MANAGEMENT
                 </h2>
 
@@ -198,9 +221,19 @@ export default function ServicesTabsSection() {
 
                 <Link
                   href="/contact"
-                  className="px-6 py-3 bg-[#FF6464] text-white"
+                  className="relative overflow-hidden px-6 py-3 rounded-2xl bg-white text-black font-medium group"
                 >
-                  Contact us
+                  {/* Orange sliding background */}
+                  <span
+                    className="absolute inset-0 bg-orange-500 scale-x-0 origin-left 
+               transition-transform duration-500 ease-in-out
+               group-hover:scale-x-100"
+                  />
+
+                  {/* Button text */}
+                  <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
+                    Contact us
+                  </span>
                 </Link>
               </div>
             </div>
@@ -219,31 +252,31 @@ export default function ServicesTabsSection() {
           </h1>
 
           <div className="relative w-10 h-8 md:w-12 md:h-12">
-            <Image src={LogoIcon} alt="Logo" fill className="h-full w-full object-contain"/>
+            <Image src={LogoIcon} alt="Logo" fill className="h-full w-full object-contain" />
           </div>
         </div>
 
         <div className="flex flex-col w-full md:max-w-1/2">
-        {/* Labels */}
-        <div className="flex justify-between w-full text-xs md:text-sm font-normal tracking-widest">
-          <label htmlFor="email-input" className="text-[#FF6464] opacity-90">
-            EMAIL
-          </label>
-          <button className="text-[#FF6464] opacity-90 hover:opacity-100 transition-opacity duration-200">
-            JOIN MAILING LIST
-          </button>
+          {/* Labels */}
+          <div className="flex justify-between w-full text-xs md:text-sm font-normal tracking-widest">
+            <label htmlFor="email-input" className="text-[#FF6464] opacity-90">
+              EMAIL
+            </label>
+            <button className="text-[#FF6464] opacity-90 hover:opacity-100 transition-opacity duration-200">
+              JOIN MAILING LIST
+            </button>
+          </div>
+
+          {/* Input Field (Bottom Border) */}
+          <div className="border-b border-white pb-1">
+            <input
+              id="email-input"
+              type="email"
+              placeholder=""
+              className="bg-transparent text-white w-full focus:outline-none placeholder-gray-400 text-base md:text-lg"
+            />
+          </div>
         </div>
-        
-        {/* Input Field (Bottom Border) */}
-        <div className="border-b border-white pb-1">
-          <input
-            id="email-input"
-            type="email"
-            placeholder=""
-            className="bg-transparent text-white w-full focus:outline-none placeholder-gray-400 text-base md:text-lg"
-          />
-        </div>
-      </div>
       </div>
     </div>
   );

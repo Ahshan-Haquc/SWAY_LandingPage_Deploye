@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 import HeaderImage from "@/components/HeaderImage";
 import SecondSection from "@/components/SecondSection";
-import SectionEight from "@/components/SectionEight";
+// import SectionEight from "@/components/SectionEight";
 import SectiveFive from "@/components/SectionFive";
 import SectionFout from "@/components/SectionFout";
 import SectionNine from "@/components/SectionNine";
@@ -14,17 +14,17 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="max-w-[1440px] mx-auto w-full">
-      <HeaderImage/>
-      <SecondSection/>
-      <ThirdSection/>
-      <SectionFout/>
-      <SectiveFive/>
-      <SectionSix/>
-      <SectionSeven/>
+      <HeaderImage />
+      <SecondSection />
+      <ThirdSection />
+      <SectionFout />
+      <SectiveFive />
+      <SectionSix />
+      <SectionSeven />
       {/* <SectionEight/> */}
-      <SectionNine/>
-      <SectionTen/>
-      <Footer/>
+      <SectionNine />
+      <SectionTen />
+      <Footer />
     </div>
   );
 }
