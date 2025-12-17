@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
-import logo from '../../public/LogoIcon.png'
+import logo from '../../public/LogoIcon.png';
 import Image from "next/image";
 
 const ChatIcon = () => {
@@ -16,18 +16,28 @@ const ChatIcon = () => {
   return (
     <>
       {showIcon && (
-        <div className="fixed top-4 md:top-5 left-1/2 -translate-x-1/2 z-100 bg-black/40 backdrop-blur-[10px] px-1 py-1 md:py-1 rounded-full flex items-center shadow-lg text-nowrap text-white">
-          <Link href="/" className="hidden md:flex h-12 w-12  items-center rounded-full duration-300 hover:bg-[#FF6464]">
-            <div className="h-8 w-8 relative filter brightness-0 invert mx-4  ">
-              <div>
-                <Image alt="Y" src={logo} fill className="h-full w-full object-contain " />
-              </div>
+        <div className="fixed top-4 md:top-5 left-1/2 -translate-x-1/2 z-100 bg-black/40 backdrop-blur-[10px] ml-2 py-1 md:py-1 rounded-full flex items-center shadow-lg text-nowrap text-white">
+
+          {/* LOGO (visible on mobile + desktop) */}
+          <Link
+            href="/"
+            className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full duration-300 hover:bg-[#FF6464]"
+          >
+            <div className="h-6 w-6 md:h-8 md:w-8 relative filter brightness-0 invert">
+              <Image
+                alt="Y"
+                src={logo}
+                fill
+                className="object-contain"
+              />
             </div>
           </Link>
 
           <Link
             href="/contact"
-            className={`text-white  text-xs md:text-sm px-2 md:px-4 py-4 rounded-full transition duration-300 ${isActive("/contact") ? "bg-[#FF6464] hover:bg-[#FF6464] text-black hover:text-white" : "hover:bg-[#FF6464]"
+            className={`text-white text-xs md:text-sm px-2 md:px-4 py-4 rounded-full transition duration-300 ${isActive("/contact")
+              ? "bg-[#FF6464] hover:bg-[#FF6464] text-black hover:text-white"
+              : "hover:bg-[#FF6464]"
               }`}
           >
             CONTACT US
@@ -35,7 +45,9 @@ const ChatIcon = () => {
 
           <Link
             href="/freeConsultation"
-            className={`text-white text-xs md:text-sm px-2 md:px-4 py-4 rounded-full transition duration-400 ${isActive("/freeConsultation") ? "bg-[#FF6464] hover:bg-[#FF6464] text-black hover:text-white" : "hover:bg-[#FF6464]"
+            className={`text-white text-xs md:text-sm px-2 md:px-4 py-4 rounded-full transition duration-400 ${isActive("/freeConsultation")
+              ? "bg-[#FF6464] hover:bg-[#FF6464] text-black hover:text-white"
+              : "hover:bg-[#FF6464]"
               }`}
           >
             FREE CONSULTATION

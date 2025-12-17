@@ -7,7 +7,7 @@ export const pricingData = [
     description: "Build confidence, strength, and control with every session.",
     bestFor: "Anyone starting or rebuilding their wellness journey.",
     sessionLine1: "4 x Personal Training or Pilates/month",
-    sessionLine2: "2 x specialist services/month - your choice each time", 
+    sessionLine2: "2 x specialist services/month - your choice each time",
     features: ["Physiotherapy", "Massage", "Dietitian", "Psychotherapy"],
     extraFeatures: ["UNLIMITED", "In app support", "UNLIMITED", "Concierge service"],
     monthlyPrice: "£450",
@@ -21,7 +21,7 @@ export const pricingData = [
     title: "MOMENTUM",
     subtitle: "Maximum support. Maximum results.",
     description: "Your specialist team driving peak performance and lasting change.",
-    bestFor: "High performers chasing big rewards and  lasting transformation.",
+    bestFor: "High performers chasing big rewards and lasting transformation.",
     sessionLine1: "12 x Personal Training or Pilates/month",
     sessionLine2: "3 x specialist services/month",
     features: ["Physiotherapy", "Massage", "Dietitian", "Psychotherapy"],
@@ -46,5 +46,28 @@ export const pricingData = [
     annualPrice: "£6,900",
     annualSave: "£300",
     animationDelay: 600,
-  }
+  },
+  {
+    bgColor: "#B3D0FD",
+    textColor: "black",
+    title: "FLEX",
+    subtitle: "Sway Online Coaching",
+    description: "One programme. Support when needed. The system adapts. The direction stays the same.",
+    bestFor: "Core online membership explaining how Sway works.",
+    features: [
+      "Unlimited in-app support",
+      "30-minute weekly chat",
+      "Unlimited concierge service",
+      "In-app training"
+    ],
+    extraFeatures: [],
+    monthlyPrice: undefined,
+    annualPrice: undefined,
+    annualSave: undefined,
+    animationDelay: 800,
+    cta: {
+      text: "Download Brochure",
+      action: "/path/to/brochure.pdf",
+    },
+  },
 ];

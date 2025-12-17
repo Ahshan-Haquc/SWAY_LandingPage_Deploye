@@ -15,6 +15,7 @@ const pages = [
   { name: "Residential Wellbeing", href: "/livingInWellness?tab=residential" },
   { name: "Gym Management", href: "/livingInWellness?tab=gym" },
   { name: "Shop", href: "/shop" },
+  { name: "The Retreat", href: "/retreat" },
   { name: "Blog", href: "/blog" },
   { name: "Resources", href: "/resource" },
   { name: "Join Mailing List", href: "/joinMailingList" },
