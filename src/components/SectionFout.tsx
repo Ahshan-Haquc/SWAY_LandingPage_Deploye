@@ -9,11 +9,23 @@ import img6 from '../../public/img6.jpg';
 import img7 from '../../public/Untitled design.png';
 
 import React, { useState } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Slider from "react-slick";
 import Link from 'next/link';
 
-const trainingData = [
+interface TrainingItem {
+  title: string;
+  subtitle: string;
+  description1: string;
+  description2: string;
+  linkText?: string;
+  linkHref?: string;
+  price: string;
+  tags: string[];
+  image: StaticImageData;
+}
+
+const trainingData: TrainingItem[] = [
   {
     title: "PERSONAL TRAINING",
     subtitle: "Elevate your fitness. Empower your form.",
@@ -106,112 +118,78 @@ const PersonalTrainingSection = () => {
     autoplaySpeed: 12000,
   };
 
+  const TextContent: React.FC<{ item: TrainingItem; className?: string }> = ({
+    item,
+    className = "",
+  }) => (
+    <div className={`flex flex-col justify-between items-center gap-3 p-6 ${className}`}>
+      <h2 className="text-xl md:text-2xl 2xl:text-5xl font-normal text-center">{item.title}</h2>
+      <p className="text-xs md:text-sm xl:text-xl text-center">{item.subtitle}</p>
+      <p className="text-xs md:text-sm xl:text-xl font-medium text-center leading-relaxed">{item.description1}</p>
+      <p className="text-xs md:text-sm xl:text-xl text-center leading-relaxed">
+        {item.description2}
+        {item.linkText && (
+          <a href={item.linkHref} className="underline font-medium hover:text-[#80b1fb]">
+            {item.linkText}
+          </a>
+        )}
+      </p>
+      <p className="text-xs md:text-sm xl:text-xl text-center">{item.price}</p>
+
+      <Link href="/freeConsultation" className="relative overflow-hidden px-6 py-3 rounded-2xl bg-white text-black font-medium group border mt-2">
+        <span className="absolute inset-0 bg-[#FF6464] scale-x-0 origin-right transition-transform duration-500 ease-in-out group-hover:scale-x-100" />
+        <span className="relative z-10 transition-colors duration-500 group-hover:text-white">Book</span>
+      </Link>
+
+      <div className="flex flex-wrap justify-center gap-2 text-xs text-gray-600 pt-2">
+        {item.tags.map((tag, i) => (
+          <span key={i} className="border border-gray-300 px-2 py-1 rounded-full bg-gray-50">{tag}</span>
+        ))}
+      </div>
+    </div>
+  );
+
   return (
     <div className="flex justify-center py-8 md:py-16 mx-auto px-2 md:px-0 overflow-hidden">
       <Slider {...settings} className="w-full">
-        {trainingData.map((item, index) => {
-          const isExpanded = expandedIndex === index;
+        {trainingData.map((item, index) => (
+          <div key={index} className="h-fit w-fit p-1 md:p-4 overflow-hidden">
+            <div className="w-full h-screen md:h-[550px] xl:h-[750px] p-4 md:p-5 xl:p-10 bg-white border-2 border-gray-500 rounded-xl">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12 h-full items-center">
+                
+                {/* LEFT COLUMN */}
+                <div className="hidden md:flex">
+                  <TextContent item={item} className="text-gray-900" />
+                </div>
 
-          return (
-            <div className="h-fit w-fit p-1 md:p-4 overflow-hidden" key={index}>
-              <div className="w-full h-screen md:h-[550px] xl:h-[750px] p-4 md:p-5 xl:p-10 bg-white border-2 border-gray-500 rounded-xl">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12 h-full items-center">
-
-                  {/* LEFT COLUMN */}
-                  <div className="flex flex-col items-center gap-3 p-4 md:p-6 text-center">
-                    <h2 className="text-xl md:text-2xl 2xl:text-5xl font-normal text-gray-900">
-                      {item.title}
-                    </h2>
-
-                    <p className="text-xs md:text-sm xl:text-xl text-gray-800">
-                      {item.subtitle}
-                    </p>
-
-                    {/* Description 1 with mobile clamp */}
-                    <p
-                      className={`text-xs md:text-sm xl:text-xl font-medium text-gray-800 leading-relaxed transition-all duration-300 ${!isExpanded ? 'line-clamp-3 md:line-clamp-none' : ''
-                        }`}
-                    >
-                      {item.description1}
-                    </p>
-
-                    {/* See more button (mobile only) */}
-                    <button
-                      onClick={() =>
-                        setExpandedIndex(isExpanded ? null : index)
-                      }
-                      className="md:hidden text-sm font-semibold text-black underline"
-                    >
-                      {isExpanded ? 'See less' : 'See more'}
-                    </button>
-
-                    {/* Description 2 */}
-                    <p className="text-xs md:text-sm xl:text-xl text-gray-600 leading-relaxed">
-                      {item.description2}
-                      {item.linkText && (
-                        <a
-                          href={item.linkHref}
-                          className="underline text-black font-medium hover:text-[#80b1fb]"
-                        >
-                          {item.linkText}
-                        </a>
-                      )}
-                    </p>
-
-                    <p className="text-xs md:text-sm xl:text-xl text-gray-600">
-                      {item.price}
-                    </p>
-
-
-                    <Link href="/freeConsultation"
-                      className="relative overflow-hidden px-6 py-3 rounded-2xl bg-white text-black font-medium group border"
-                    >
-                      {/* Orange sliding background */}
-                      <span
-                        className="absolute inset-0 bg-orange-500 scale-x-0 origin-left 
-               transition-transform duration-500 ease-in-out
-               group-hover:scale-x-100"
-                      />
-
-                      {/* Button text */}
-                      <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
-                        Book
-                      </span>
-                    </Link>
-
-                    <div className="flex flex-wrap justify-center gap-2 text-xs text-gray-600 pt-2">
+                {/* RIGHT COLUMN IMAGE + MOBILE OVERLAY */}
+                <div className="relative w-full aspect-square my-auto">
+                  <Image src={item.image} alt={item.title} fill className="object-cover rounded-lg" priority />
+                  <div className="absolute inset-0 bg-black/70 opacity-0 hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-white p-6 rounded-lg md:hidden text-center">
+                    <h2 className="text-xl sm:text-2xl font-normal mb-2">{item.title}</h2>
+                    <p className="text-sm mb-2">{item.subtitle}</p>
+                    <p className="text-xs mb-3">{item.description1.substring(0, 100)}...</p>
+                    <p className="text-xs mb-3">{item.price}</p>
+                    <button className="px-6 py-2 bg-[#FF6464] text-white rounded-full text-sm font-semibold">BOOK</button>
+                    <div className="flex space-x-2 text-xs pt-2">
                       {item.tags.map((tag, i) => (
-                        <span
-                          key={i}
-                          className="border border-gray-300 px-2 py-1 rounded-full bg-gray-50"
-                        >
-                          {tag}
-                        </span>
+                        <span key={i} className="border border-white px-2 py-1 rounded-full">{tag}</span>
                       ))}
                     </div>
                   </div>
-
-                  {/* RIGHT COLUMN */}
-                  <div className="relative w-full md:w-full h-[250px] sm:h-[260px] md:h-auto md:aspect-square overflow-hidden my-auto">
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      fill
-                      className="object-cover rounded-lg"
-                      priority
-                    />
-                  </div>
                 </div>
+
               </div>
             </div>
-          );
-        })}
+          </div>
+        ))}
       </Slider>
     </div>
   );
 };
 
 export default PersonalTrainingSection;
+
 
 
 
