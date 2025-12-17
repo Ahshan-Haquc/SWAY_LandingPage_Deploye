@@ -7,7 +7,6 @@ import h9 from '../../../public/h9.jpg';
 import headerSecondImage from '../../../public/SwayThirdHeader.jpg'
 import HeadingImg from '@/components/headingImage/HeadingImg';
 import ServicesTabsSection from '@/components/livingInWellness/ServicesTabsSection';
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 const page = () => {

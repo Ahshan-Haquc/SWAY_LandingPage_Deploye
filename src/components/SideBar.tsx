@@ -4,7 +4,7 @@ import { toggleMobileMenu } from "@/redux/slice/sidebarSlice";
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React from "react";
+
 import { useDispatch, useSelector } from "react-redux";
 
 const pages = [
@@ -15,6 +15,7 @@ const pages = [
   { name: "Residential Wellbeing", href: "/livingInWellness?tab=residential" },
   { name: "Gym Management", href: "/livingInWellness?tab=gym" },
   { name: "Shop", href: "/shop" },
+  { name: "The Retreat", href: "/retreat" },
   { name: "Blog", href: "/blog" },
   { name: "Resources", href: "/resource" },
   { name: "Join Mailing List", href: "/joinMailingList" },
@@ -77,30 +78,30 @@ const SideBar = () => {
 
       {/* DESKTOP SIDEBAR */}
       {/* {mobileMenuOpen && ( */}
-      <div className={`h-full w-full fixed bg-black/90 duration-800 transition-all ease-out  ${mobileMenuOpen ? "hidden md:flex opacity-100 z-900 ": "hidden md:flex opacity-0 -z-10"}`} onClick={() => dispatch(toggleMobileMenu())}>
+      <div className={`h-full w-full fixed bg-black/90 duration-800 transition-all ease-out  ${mobileMenuOpen ? "hidden md:flex opacity-100 z-900 " : "hidden md:flex opacity-0 -z-10"}`} onClick={() => dispatch(toggleMobileMenu())}>
       </div>
-        <div className={`flex flex-col fixed top-1/2 -translate-y-1/2  h-fit w-68 lg:w-74 xl:w-78 bg-[#4e4d59] shadow-lg p-6 z-1000 rounded-tr-3xl rounded-br-3xl duration-800 transition-all ease-out ${mobileMenuOpen ? "hidden md:flex left-0": "hidden md:flex -left-70 lg:-left-76 xl:-left-80"}`} >
-          <div className="flex flex-col gap-0 lg:gap-1 2xl:gap-2 ">
+      <div className={`flex flex-col fixed top-1/2 -translate-y-1/2  h-fit w-68 lg:w-74 xl:w-78 bg-[#4e4d59] shadow-lg p-6 z-1000 rounded-tr-3xl rounded-br-3xl duration-800 transition-all ease-out ${mobileMenuOpen ? "hidden md:flex left-0" : "hidden md:flex -left-70 lg:-left-76 xl:-left-80"}`} >
+        <div className="flex flex-col gap-0 lg:gap-1 2xl:gap-2 ">
 
-            {pages.map((page, index) => {
-              const isActive = pathname === page.href;
-              return (
-                <Link
-                  key={index}
-                  href={page.href}
-                  className={`text-md lg:text-lg font-medium py-2 px-4 rounded-lg transition
+          {pages.map((page, index) => {
+            const isActive = pathname === page.href;
+            return (
+              <Link
+                key={index}
+                href={page.href}
+                className={`text-md lg:text-lg font-medium py-2 px-4 rounded-lg transition
                   ${isActive
-                      ? "bg-[#FF6464] text-black shadow-md"
-                      : "text-gray-300 hover:bg-white/10"
-                    }`}
-                  onClick={() => dispatch(toggleMobileMenu())}
-                >
-                  {page.name}
-                </Link>
-              );
-            })}
-          </div>
+                    ? "bg-[#FF6464] text-black shadow-md"
+                    : "text-gray-300 hover:bg-white/10"
+                  }`}
+                onClick={() => dispatch(toggleMobileMenu())}
+              >
+                {page.name}
+              </Link>
+            );
+          })}
         </div>
+      </div>
       {/* )} */}
     </div>
   );
