@@ -1,5 +1,5 @@
 "use client"
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { MessageCircle, X, Send, User, Bot } from "lucide-react";
 import { faqData } from "@/data/chatBotAnswerData";
 import swayIcon from "../../public/SwayWhiteLogo.png"
@@ -7,9 +7,9 @@ import Image from "next/image";
 
 const COLORS = {
   primary: "#80B1FB",
-  accent: "#ed6e6a", 
-  dark: "#4E4D59", 
-  light: "#F0F3F7", 
+  accent: "#ed6e6a",
+  dark: "#4E4D59",
+  light: "#F0F3F7",
 };
 
 type ChatMessage = {
@@ -29,11 +29,10 @@ const ChatBubble = ({ message }: { message: ChatMessage }) => (
       </div>
     )}
     <div
-      className={`p-3 text-sm rounded-3xl max-w-[80%]  whitespace-pre-wrap transition-all duration-300 ${
-        message.sender === "user"
-          ? "bg-[#4E4D59] text-white rounded-tr-none" 
+      className={`p-3 text-sm rounded-3xl max-w-[80%]  whitespace-pre-wrap transition-all duration-300 ${message.sender === "user"
+          ? "bg-[#4E4D59] text-white rounded-tr-none"
           : "bg-white text-gray-800 rounded-tl-none border border-gray-100"
-      }`}
+        }`}
       style={message.text === "..." ? { color: COLORS.accent, fontStyle: 'italic', boxShadow: 'none' } : {}}
       dangerouslySetInnerHTML={{ __html: message.text.replace(/\n/g, "<br/>") }}
     />
@@ -62,9 +61,9 @@ const ChatBot = () => {
   // Initial welcome message
   useEffect(() => {
     if (open && messages.length === 0) {
-      setMessages([{ 
-        sender: "bot", 
-        text: "Hi there! I'm your Sway Assistant, ready to help you move better. How can I assist you today? Try asking about 'services' or 'pricing' or 'workout plans' or others." 
+      setMessages([{
+        sender: "bot",
+        text: "Hi there! I'm your Sway Assistant, ready to help you move better. How can I assist you today? Try asking about 'services' or 'pricing' or 'workout plans' or others."
       }]);
     }
   }, [open]);
@@ -75,13 +74,13 @@ const ChatBot = () => {
 
     const userMsg: ChatMessage = { sender: "user", text: input };
     setMessages((prev) => [...prev, userMsg]);
-    setInput(""); 
+    setInput("");
 
     const typingMsg: ChatMessage = { sender: "bot", text: "..." };
     setMessages((prev) => [...prev, typingMsg]);
 
     const reply = getBotReply(input);
-    
+
     // Simulate thinking time
     setTimeout(() => {
       setMessages((prev) => {
@@ -135,26 +134,26 @@ const ChatBot = () => {
 
       {/* Chat Window */}
       {open && (
-        <div 
+        <div
           className="fixed bottom-8 right-8 w-80 md:w-96 bg-white rounded-2xl shadow-2xl z-9999 flex flex-col h-[70vh] max-h-[550px] transform transition-all duration-300 ease-out animate-slideIn border-4 border-gray-100/50"
         >
-          
+
           {/* Header */}
-          <div 
+          <div
             className="flex items-center justify-between px-5 py-4 text-white rounded-t-[14px] shadow-md"
-            style={{ 
-                background: `linear-gradient(90deg, ${COLORS.primary} 0%, #6a97d5 100%)`, 
-                color: 'white'
+            style={{
+              background: `linear-gradient(90deg, ${COLORS.primary} 0%, #6a97d5 100%)`,
+              color: 'white'
             }}
           >
             <div className="flex items-center gap-2">
               {/* <MessageCircle size={20} className="mr-2 opacity-80" /> */}
               <div className="h-10 w-40 relative">
-              <Image src={swayIcon} alt="SWAY" fill className="h-full w-full object-contain"/>
+                <Image src={swayIcon} alt="SWAY" fill className="h-full w-full object-contain" />
               </div>
               <h3 className="font-extralight text-[11px] mb-1.5 text-white/65 tracking-widest">SUPPORT</h3>
             </div>
-            <button 
+            <button
               onClick={() => setOpen(false)}
               className="p-1 rounded-full hover:bg-white/20 transition"
               aria-label="Close Chat"
@@ -164,14 +163,14 @@ const ChatBot = () => {
           </div>
 
           {/* Messages Container */}
-          <div 
+          <div
             className="flex-1 p-4 overflow-y-auto space-y-4"
             style={{ backgroundColor: COLORS.light }}
           >
             {messages.map((msg, idx) => (
               <ChatBubble key={idx} message={msg} />
             ))}
-            <div ref={chatEndRef}></div> 
+            <div ref={chatEndRef}></div>
           </div>
 
           {/* Input Area */}
@@ -189,11 +188,10 @@ const ChatBot = () => {
               onClick={handleSend}
               disabled={!input.trim()}
               style={{ backgroundColor: COLORS.primary }}
-              className={`text-white p-3 rounded-full transition duration-200 shadow-lg ${
-                input.trim() 
-                  ? "hover:bg-[#6a97d5] active:scale-95" 
+              className={`text-white p-3 rounded-full transition duration-200 shadow-lg ${input.trim()
+                  ? "hover:bg-[#6a97d5] active:scale-95"
                   : "opacity-60 cursor-not-allowed"
-              }`}
+                }`}
               aria-label="Send Message"
             >
               <Send size={20} />
