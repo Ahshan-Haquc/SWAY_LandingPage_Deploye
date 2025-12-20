@@ -25,45 +25,45 @@ const SectionSix = () => {
 
           {/* LEFT COLUMN */}
           <div className="flex flex-col items-center md:items-start space-y-4 mx-4 md:mx-0 lg:mx-0">
-            <h2 className="text-lg md:text-xl xl:text-3xl font-light text-gray-800 tracking-wide text-center md:text-left">
+            <h2 className="text-2xl md:text-xl xl:text-3xl font-somibold text-gray-900 tracking-wide text-center md:text-left">
               POP-UP GROUP CLASSES
             </h2>
 
-            <p className="text-xs md:text-sm xl:text-lg font-light text-gray-700 text-center md:text-left max-w-xl">
+            <p className="text-lg md:text-sm xl:text-lg font-light text-gray-900 text-center md:text-left max-w-xl">
               Move with purpose. Pop-up and power up.
             </p>
 
-            <p className="text-xs md:text-sm xl:text-lg font-light text-gray-700 text-center md:text-left max-w-xl leading-relaxed">
+            <p className="text-lg md:text-sm xl:text-lg font-light text-gray-700 text-center md:text-left max-w-xl leading-relaxed">
               Dynamic, location-based, mat Pilates delivered the Sway way — 60 minutes of energy, precision teaching, and focused movement. With expert coaching and attention to detail, every class is designed to move smarter, not just harder.
             </p>
 
-            <p className="text-xs md:text-sm xl:text-lg font-light text-gray-700 text-center md:text-left max-w-xl leading-relaxed">
+            <p className="text-lg md:text-sm xl:text-lg font-light text-gray-700 text-center md:text-left max-w-xl leading-relaxed">
               With a coach for every 10 participants, expect personal attention in a vibrant group setting. Open to all levels. Just bring your mat and your best self.
             </p>
           </div>
 
           {/* RIGHT COLUMN */}
-          <div className="flex flex-col space-y-4 items-center md:items-start text-gray-700">
-            <div className="text-xs md:text-sm xl:text-lg font-semibold text-red-400/80">
+          <div className="flex flex-col space-y-4 items-center md:items-start text-gray-700 lg:ml-48 md:ml-24 sm:ml-0 ml-0">
+            <div className="text-lg md:text-sm xl:text-lg font-semibold text-red-400/80">
               NEXT POP-UP CLASS:
             </div>
 
-            <div className="text-xs md:text-sm xl:text-lg leading-relaxed">
+            <div className="text-lg md:text-sm xl:text-lg leading-relaxed">
               <p>Sunday 17th August, 9am</p>
               <p>Please arrive 8:50</p>
             </div>
 
-            <div className="text-xs md:text-sm xl:text-lg leading-relaxed">
+            <div className="text-base md:text-sm xl:text-lg leading-relaxed">
               <p>St Barnabas Parish Hall,</p>
               <p>23 Dulwich Village,</p>
               <p>London SE21 7BT</p>
             </div>
 
             <div className="space-y-1">
-              <p className="text-xs md:text-sm xl:text-lg font-semibold text-red-400/80">
+              <p className="text-base md:text-sm xl:text-lg font-semibold text-red-400/80">
                 £15 per class with −25% donated to Refuge
               </p>
-              <p className="text-xs md:text-sm xl:text-lg">
+              <p className="text-base md:text-sm xl:text-lg">
                 For women and children. Against domestic violence.
               </p>
             </div>

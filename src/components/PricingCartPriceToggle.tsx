@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 
 const LIGHT_BG = "#D9E7FE";
 const ACTIVE_BG = "#FAEFB8";
