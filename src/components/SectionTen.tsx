@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { DownloadCloud, X } from "lucide-react";
 
 const SectionTen = () => {
@@ -21,8 +21,8 @@ const SectionTen = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting && !hasShown) {
             setShowPopup(true);
-            setHasShown(true);      
-            observer.disconnect(); 
+            setHasShown(true);
+            observer.disconnect();
           }
         });
       },
@@ -71,7 +71,7 @@ const SectionTen = () => {
           className={`fixed inset-0 bg-black/60  flex items-center justify-center z-999 ${backdropClass}`}
         >
           <div className={`bg-white w-full max-w-sm mx-4 rounded-3xl shadow-2xl p-8 relative ${modalClass}`}>
-            
+
             <button
               onClick={handleClose}
               className="absolute top-4 right-4 text-gray-400 hover:text-gray-800 transition p-1"
@@ -81,10 +81,10 @@ const SectionTen = () => {
 
             {/* Add image here */}
             <div className="my-6">
-              <img 
-                src="https://images.pexels.com/photos/243698/pexels-photo-243698.jpeg" 
-                alt="Mobile app" 
-                className="w-full h-auto rounded-xl" 
+              <img
+                src="https://images.pexels.com/photos/243698/pexels-photo-243698.jpeg"
+                alt="Mobile app"
+                className="w-full h-auto rounded-xl"
               />
             </div>
 

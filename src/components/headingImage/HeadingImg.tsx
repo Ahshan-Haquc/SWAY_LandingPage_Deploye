@@ -1,12 +1,10 @@
 import Image from "next/image";
-import React from "react";
 import headerLogo from "../../../public/SwayWhiteLogo.png";
 
 const HeadingImg = ({
   h1,
   h2,
   h3,
-  phoneImg,
   isText1Show = false,
   isText2Show = false,
 }: {

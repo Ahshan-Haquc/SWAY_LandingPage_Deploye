@@ -18,12 +18,13 @@ export default function Home() {
       <SecondSection />
       <ThirdSection />
       <SectionFout />
+      <SectionTen />
       <SectiveFive />
       <SectionSix />
       <SectionSeven />
       {/* <SectionEight/> */}
       <SectionNine />
-      <SectionTen />
+
       <Footer />
     </div>
   );
