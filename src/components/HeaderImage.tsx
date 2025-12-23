@@ -58,7 +58,7 @@ const HeaderImage = () => {
 
           {/* Right */}
           <div
-            className="relative aspect-square rounded-3xl overflow-hidden shadow-xl shadow-[#79fcf8]/15"
+            className="relative aspect-square rounded-3xl md:rounded-3xl overflow-hidden shadow-xl shadow-[#79fcf8]/15 "
             data-aos="fade-right"
             data-aos-delay="300"
           >
@@ -93,14 +93,14 @@ const HeaderImage = () => {
       </div>
 
       {/* ================= MOBILE (HORIZONTAL + CROPPED SIDES) ================= */}
-      <div className="w-full relative mt-18 overflow-hidden block md:hidden">
+      <div className="w-full relative mt-18 overflow-hidden block md:hidden mx-4 ">
         <div className="relative flex items-center justify-center h-[420px]">
           {/* Left image */}
           <div
-            className="absolute left-[-20%] w-[65%] h-[300px] rounded-3xl overflow-hidden shadow-xl opacity-80"
+            className="absolute left-[-20%] w-[65%] h-[300px] rounded-3xl overflow-hidden shadow-xl opacity-80 "
             data-aos="fade-right"
           >
-            <Image src={h1} alt="Left Mobile" fill className="object-cover" />
+            <Image src={h1} alt="Left Mobile" fill className="object-cover " />
             <div className={gradientOverlay} />
             <div className={orangeGradient} />
           </div>

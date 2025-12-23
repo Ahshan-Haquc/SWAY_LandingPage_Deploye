@@ -51,7 +51,7 @@ const SectionTen = () => {
     <>
       {/* ================= SECTION TEN ================= */}
       <footer id="footer-section" ref={sectionRef}>
-        <div className="my-3 md:my-8 p-6 md:p-10 bg-[#80B1FB] rounded-xl h-fit flex flex-col justify-between shadow-xl">
+        <div className="my-3 md:my-8 p-6 md:p-10 bg-[#80B1FB] mx-4 lg:mx-0 md:mx-0  rounded-xl h-fit flex flex-col justify-between shadow-xl">
           <h2 className="text-lg md:text-3xl font-bold text-white tracking-wide mb-3">
             LEARN TO MOVE THE SWAY WAY
           </h2>

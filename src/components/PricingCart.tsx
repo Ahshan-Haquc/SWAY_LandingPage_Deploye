@@ -37,7 +37,7 @@ type PricingCartProps = {
   };
 };
 
-const ORANGE_BG = "#F87171";
+const ORANGE_BG = "#FF6464";
 
 const PricingCart: React.FC<PricingCartProps> = ({
   bgColor,
