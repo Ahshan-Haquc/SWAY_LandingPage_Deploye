@@ -157,7 +157,7 @@ const SectionNine = () => {
   ];
 
   return (
-    <div className="bg-[#FAEFB8] px-2 md:px-8 mb-7 md:mb-0 md:mt-16 rounded-xl">
+    <div className="bg-[#FAEFB8] px-2 md:px-8 mb-7 md:mb-0 md:mt-16 rounded-xl mx-4 lg:mx-0 md:mx-0">
       <h2
         className="w-fit mx-auto text-2xl xl:text-3xl rounded-xl font-light tracking-wide bg-[#FAEFB8] text-black px-8 py-4 -translate-y-4"
         data-aos="fade-down"

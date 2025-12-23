@@ -12,7 +12,7 @@ const SectionSeven = () => {
       <HeadingImg h1={h7} h2={h8} h3={h9} phoneImg={headerSecondImage} />
 
       {/* Styled Section following "The Retreat" layout */}
-      <div className="bg-[#F5F1EA] mt-2 mb-10 md:mb-0 md:mt-28 rounded-2xl py-16 md:py-24 px-4 md:px-12 xl:px-24" data-aos="fade-up" data-aos-delay="300">
+      <div className="bg-[#F5F1EA] mx-4 lg:mx-0 md:mx-0 mt-2 mb-10 md:mb-0 md:mt-28 rounded-2xl py-16 md:py-24 px-4 md:px-12 xl:px-24" data-aos="fade-up" data-aos-delay="300">
 
         <div className=" grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 max-w-7xl mx-auto items-center">
 

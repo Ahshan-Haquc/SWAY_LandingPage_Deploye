@@ -51,11 +51,11 @@ export default function ServicesTabsSection() {
   };
 
   return (
-    <div className="min-h-screen text-center text-gray-800">
+    <div className="min-h-screen text-center text-gray-800 ">
       <div className="relative h-fit mx-auto py-6 pt-22 md:pt-0 overflow-hidden rounded-xl mt-8 md:mt-12">
 
         {/* ---------------- TAB NAVIGATION ---------------- */}
-        <div className="flex justify-center gap-6 mt-6 text-gray-500">
+        <div className=" flex justify-center gap-6 mt-6 text-gray-500">
           {["Corporate Training", "Residential Management", "Gym Management"].map(
             (item, index) => (
               <button
@@ -76,7 +76,7 @@ export default function ServicesTabsSection() {
         </div>
 
         {/* ---------------- TAB CONTENT ---------------- */}
-        <div className="w-full mx-auto p-2 md:p-12">
+        <div className="w-full mx-auto px-2 md:p-12">
 
           {/* ---------- TAB 1: CORPORATE TRAINING ---------- */}
           {activeTab === 0 && (
@@ -107,20 +107,19 @@ export default function ServicesTabsSection() {
                   movement, and wellbeing training.
                 </p>
 
+
                 <Link
                   href="/contact"
-                  className="relative overflow-hidden px-6 py-3 rounded-2xl bg-white text-black font-medium group"
+                  className="relative overflow-hidden px-6 py-3 rounded-2xl bg-white text-black font-medium group w-44 sm:w-64 text-center border"
                 >
                   {/* Orange sliding background */}
                   <span
-                    className="absolute inset-0 bg-orange-500 scale-x-0 origin-left 
-               transition-transform duration-500 ease-in-out
-               group-hover:scale-x-100"
+                    className="absolute inset-0 bg-[#FF6464] scale-x-0 origin-left transition-transform duration-500 ease-in-out group-hover:scale-x-100"
                   />
 
                   {/* Button text */}
                   <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
-                    Contact us
+                    Contact Us
                   </span>
                 </Link>
               </div>
@@ -152,18 +151,16 @@ export default function ServicesTabsSection() {
 
                 <Link
                   href="/contact"
-                  className="relative overflow-hidden px-6 py-3 rounded-2xl bg-white text-black font-medium group"
+                  className="relative overflow-hidden px-6 py-3 rounded-2xl bg-white text-black font-medium group w-44 sm:w-64 text-center border"
                 >
                   {/* Orange sliding background */}
                   <span
-                    className="absolute inset-0 bg-orange-500 scale-x-0 origin-left 
-               transition-transform duration-500 ease-in-out
-               group-hover:scale-x-100"
+                    className="absolute inset-0 bg-[#FF6464] scale-x-0 origin-left transition-transform duration-500 ease-in-out group-hover:scale-x-100"
                   />
 
                   {/* Button text */}
                   <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
-                    Contact us
+                    Contact Us
                   </span>
                 </Link>
               </div>
@@ -221,18 +218,16 @@ export default function ServicesTabsSection() {
 
                 <Link
                   href="/contact"
-                  className="relative overflow-hidden px-6 py-3 rounded-2xl bg-white text-black font-medium group"
+                  className="relative overflow-hidden px-6 py-3 rounded-2xl bg-white text-black font-medium group w-44 sm:w-64 text-center border"
                 >
                   {/* Orange sliding background */}
                   <span
-                    className="absolute inset-0 bg-orange-500 scale-x-0 origin-left 
-               transition-transform duration-500 ease-in-out
-               group-hover:scale-x-100"
+                    className="absolute inset-0 bg-[#FF6464] scale-x-0 origin-left transition-transform duration-500 ease-in-out group-hover:scale-x-100"
                   />
 
                   {/* Button text */}
                   <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
-                    Contact us
+                    Contact Us
                   </span>
                 </Link>
               </div>
