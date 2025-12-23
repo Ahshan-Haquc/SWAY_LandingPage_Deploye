@@ -21,9 +21,9 @@ const HeadingImg = ({
     "absolute inset-0 bg-gradient-to-tr from-orange-200/35 via-orange-400/20 to-orange-300/10 pointer-events-none";
 
   return (
-    <div className="px-4">
+    <div className="mx-4">
       {/* ================= MOBILE ================= */}
-      <div className="w-full h-[280px] relative block md:hidden overflow-hidden ">
+      <div className="w-full h-[280px] relative block md:hidden overflow-hidden px-22 mx-4">
         <div className="relative flex items-center justify-center h-full">
           {/* Left */}
           <div
