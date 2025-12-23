@@ -93,7 +93,7 @@ const HeaderImage = () => {
       </div>
 
       {/* ================= MOBILE (HORIZONTAL + CROPPED SIDES) ================= */}
-      <div className="w-full relative mt-18 overflow-hidden block md:hidden mx-4 ">
+      <div className="w-full relative mt-18 overflow-hidden block md:hidden px-18 mx-4">
         <div className="relative flex items-center justify-center h-[420px]">
           {/* Left image */}
           <div
