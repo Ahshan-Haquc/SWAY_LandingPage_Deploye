@@ -238,7 +238,7 @@ export default function ServicesTabsSection() {
 
       {/* ---------------- EMAIL BOX ---------------- */}
       <div
-        className="bg-[#80b1fb] max-w-[1440px] mx-auto rounded-xl text-white p-4 md:p-8 h-40 md:h-50 my-10"
+        className="bg-[#80b1fb] mx-4 lg:mx-0 md:mx-0 max-w-[1440px]  rounded-xl text-white p-4 md:p-8 h-40 md:h-50 my-10"
         data-aos="fade-up"
       >
         <div className="flex justify-between mb-4">
